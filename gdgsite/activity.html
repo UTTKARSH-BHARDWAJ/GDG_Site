@@ -63,19 +63,6 @@
                     </ul>
                 </nav>
                 <div class="header-controls">
-                    <div class="lang-dropdown">
-                        <button class="btn-icon" id="lang-select-btn" title="Change Language">
-                            🌐 <span id="lang-btn-text"
-                                style="font-size: 0.8rem; font-weight: 600; margin-left: 0.2rem;">EN</span>
-                        </button>
-                        <div class="lang-menu">
-                            <button class="lang-item" data-lang="en">English</button>
-                            <button class="lang-item" data-lang="zh">繁體中文</button>
-                            <button class="lang-item" data-lang="zh-CN">简体中文</button>
-                            <button class="lang-item" data-lang="ja">日本語</button>
-                            <button class="lang-item" data-lang="ko">한국어</button>
-                        </div>
-                    </div>
                     <button class="btn-icon" id="theme-toggle" title="Toggle theme">🌓</button>
                     <button class="btn-icon menu-btn" id="menu-toggle-btn" aria-label="Toggle Menu">☰</button>
                 </div>
@@ -231,100 +218,7 @@
 
     <!-- Dynamic Content Engine -->
     <script>
-        // Campus Events Data
-        const EVENTS_DATA = [
-            {
-                id: 1,
-                titleEn: "Gemini AI Student Hackathon",
-                titleZh: "Gemini AI 學生黑客松",
-                descEn: "Work in teams to prototype Web apps powered by Gemini API. Prizes sponsored by Google Developers.",
-                descZh: "團隊協作開發由 Gemini API 驅動的網頁應用雛形，優勝團隊可獲得 Google Developers 贊助獎品。",
-                date: "2026-06-20",
-                city: "AI/ML",
-                type: "Hackathon",
-                isCampus: true,
-                audience: "In-person",
-                image: "/google_sticker_3.gif"
-            },
-            {
-                id: 2,
-                titleEn: "Compose Camp DCE 2025",
-                titleZh: "Compose 技術營 DCE 2025",
-                descEn: "Learn how to build Android apps with modern UI architectures using Jetpack Compose.",
-                descZh: "透過實作體驗，學習如何使用 Jetpack Compose 這款現代化工具建構 Android 原生介面。",
-                date: "2025-10-12",
-                city: "Android",
-                type: "ComposeCamp",
-                isCampus: true,
-                audience: "In-person",
-                image: "/dash-big.svg"
-            },
-            {
-                id: 3,
-                titleEn: "Google Cloud Study Jam: Kubernetes & BigQuery",
-                titleZh: "Google 雲端研習營：Kubernetes 與 BigQuery",
-                descEn: "Get hands-on training on container management and serverless databases with Qwiklabs.",
-                descZh: "透過 Qwiklabs 實作平台，獲取有關容器管理與無伺服器資料庫的實務操作訓練。",
-                date: "2025-09-05",
-                city: "Cloud",
-                type: "CloudStudyJam",
-                isCampus: false,
-                audience: "Hybrid",
-                image: "/google_sticker_3.gif"
-            },
-            {
-                id: 4,
-                titleEn: "Info Session: Solution Challenge 2026 Kickoff",
-                titleZh: "資訊分享會：2026 解決方案挑戰賽啟動儀式",
-                descEn: "Learn how you can participate in the annual global Solution Challenge to build UN SDG projects.",
-                descZh: "了解如何參加年度全球 Solution Challenge 挑戰賽，並圍繞聯合國永續發展目標設計專案。",
-                date: "2026-01-10",
-                city: "General",
-                type: "SolutionChallenge",
-                isCampus: false,
-                audience: "In-person",
-                image: "/dash-big.svg"
-            },
-            {
-                id: 5,
-                titleEn: "Android 16 API Features Technical Seminar",
-                titleZh: "Android 16 新功能技術研討會",
-                descEn: "Join us as we explore the new SDK features, API additions, and UI design enhancements.",
-                descZh: "與我們一同探索 Android 16 的全新 SDK 特性、API 新增項目與 UI 設計改良點。",
-                date: "2026-07-10",
-                city: "Android",
-                type: "TechTalk",
-                isCampus: true,
-                audience: "Hybrid",
-                image: "/google_sticker_3.gif"
-            },
-            {
-                id: 6,
-                titleEn: "Firebase Web Application Development Bootcamp",
-                titleZh: "Firebase 網頁應用程式開發特訓班",
-                descEn: "Learn to integrate real-time databases, user authentication, and hosting for your college projects.",
-                descZh: "學習如何為您的專題專案整合即時資料庫、使用者身分驗證與靜態網頁代管服務。",
-                date: "2025-08-18",
-                city: "Web",
-                type: "TechTalk",
-                isCampus: false,
-                audience: "Virtual",
-                image: "/dash-big.svg"
-            },
-            {
-                id: 7,
-                titleEn: "Introduction to UI/UX and Material Design 3",
-                titleZh: "UI/UX 與 Material Design 3 設計美學入門",
-                descEn: "A student talk on creating aesthetically pleasing mobile interfaces with Material Design rules.",
-                descZh: "由學生主講的技術分享，分享如何使用 Material Design 規範設計美觀的行動介面。",
-                date: "2025-08-05",
-                city: "UI/UX",
-                type: "TechTalk",
-                isCampus: false,
-                audience: "In-person",
-                image: "/google_sticker_3.gif"
-            }
-        ];
+        const EVENTS_DATA = [];
 
         document.addEventListener('DOMContentLoaded', () => {
             const citySelect = document.getElementById('filter-city');

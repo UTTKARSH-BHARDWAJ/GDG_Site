@@ -412,8 +412,11 @@ main {
 }
 
 .hero-gif {
-    max-width: 300px;
+    max-width: 420px;
     height: auto;
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+    transform: translateZ(0);
 }
 
 @media (max-width: 768px) {
