@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="/favicon.ico" />
     <title data-i18n="metadata.chapters.title">Core Domains | GDG on Campus DCE</title>
     <meta name="description" content="Core technical domains of GDG on Campus Dronacharya College of Engineering" />
-    
+
     <!-- Base Stylesheet -->
     <link rel="stylesheet" href="/assets/css/styles.css" />
-    
+
     <!-- Theme Initializer -->
     <script src="/assets/js/theme.js"></script>
     <style>
@@ -20,7 +21,7 @@
             gap: 0.75rem;
             margin: 2rem 0;
         }
-        
+
         .tab-btn {
             background-color: var(--card);
             border: var(--border-width) solid var(--border);
@@ -32,25 +33,25 @@
             color: var(--foreground);
             transition: all var(--transition-speed);
         }
-        
+
         .tab-btn:hover {
             background-color: var(--accent);
         }
-        
+
         .tab-btn.active {
             background-color: var(--google-blue);
             color: #121212;
             border-color: var(--google-blue);
             box-shadow: var(--shadow-md);
         }
-        
+
         .chapter-card-header {
             display: flex;
             align-items: center;
             gap: 1rem;
             margin-bottom: 1rem;
         }
-        
+
         .chapter-avatar {
             width: 3.5rem;
             height: 3.5rem;
@@ -67,14 +68,18 @@
         }
     </style>
 </head>
+
 <body>
     <div class="app-container">
         <!-- Site Header -->
         <header class="site-header">
             <div class="container header-container">
                 <a href="/index.html" class="logo-link">
-                    <img src="/GDG-Dark.svg" alt="GDG Logo" class="logo-img" />
-                    <span style="font-weight: 700; font-size: 1.1rem; color: var(--foreground); margin-left: 0.5rem; display: inline-block;">on Campus DCE</span>
+                    <img src="/Logo_1.svg" alt="GDG Logo Icon" class="logo-icon" />
+                    <div class="logo-text-block">
+                        <img src="/Logo_2.svg" alt="Google Developer Groups" class="logo-text-img logo-line1" />
+                        <img src="/Logo_3.svg" alt="on Campus DCE" class="logo-text-img logo-line2" />
+                    </div>
                 </a>
                 <nav>
                     <ul class="nav-links" id="nav-links-menu">
@@ -82,7 +87,8 @@
                             <a href="/index.html" class="nav-link" data-i18n="navigation.home">Home</a>
                         </li>
                         <li>
-                            <a href="/activity.html" class="nav-link" data-i18n="navigation.recentActivities">Recent Activities</a>
+                            <a href="/activity.html" class="nav-link" data-i18n="navigation.recentActivities">Recent
+                                Activities</a>
                         </li>
                         <li class="nav-dropdown">
                             <span class="nav-link" id="annual-dropdown-btn">
@@ -90,31 +96,42 @@
                             </span>
                             <div class="dropdown-menu">
                                 <a href="/annual_activity.html?event=devfest" class="dropdown-item">
-                                    <span class="dropdown-item-title" data-i18n="navigation.devfest.title">Compose Camp</span>
-                                    <span class="dropdown-item-desc" data-i18n="navigation.devfest.description">Learn how to build Android apps with native UI.</span>
+                                    <span class="dropdown-item-title" data-i18n="navigation.devfest.title">Compose
+                                        Camp</span>
+                                    <span class="dropdown-item-desc" data-i18n="navigation.devfest.description">Learn
+                                        how to build Android apps with native UI.</span>
                                 </a>
                                 <a href="/annual_activity.html?event=io_extended" class="dropdown-item">
-                                    <span class="dropdown-item-title" data-i18n="navigation.googleIOExtended.title">Solution Challenge</span>
-                                    <span class="dropdown-item-desc" data-i18n="navigation.googleIOExtended.description">Build solutions to help community challenges.</span>
+                                    <span class="dropdown-item-title"
+                                        data-i18n="navigation.googleIOExtended.title">Solution Challenge</span>
+                                    <span class="dropdown-item-desc"
+                                        data-i18n="navigation.googleIOExtended.description">Build solutions to help
+                                        community challenges.</span>
                                 </a>
                                 <a href="/annual_activity.html?event=cloud_study_jam" class="dropdown-item">
-                                    <span class="dropdown-item-title" data-i18n="navigation.cloudStudyJam.title">Google Cloud Campaign</span>
-                                    <span class="dropdown-item-desc" data-i18n="navigation.cloudStudyJam.description">Hands-on laboratories on Cloud fundamentals.</span>
+                                    <span class="dropdown-item-title" data-i18n="navigation.cloudStudyJam.title">Google
+                                        Cloud Campaign</span>
+                                    <span class="dropdown-item-desc"
+                                        data-i18n="navigation.cloudStudyJam.description">Hands-on laboratories on Cloud
+                                        fundamentals.</span>
                                 </a>
                             </div>
                         </li>
                         <li>
-                            <a href="/chapters.html" class="nav-link active" data-i18n="navigation.chapters">Core Domains</a>
+                            <a href="/chapters.html" class="nav-link active" data-i18n="navigation.chapters">Core
+                                Domains</a>
                         </li>
                         <li>
-                            <a href="/code_of_conduct.html" class="nav-link" data-i18n="navigation.codeOfConduct">Code of Conduct</a>
+                            <a href="/code_of_conduct.html" class="nav-link" data-i18n="navigation.codeOfConduct">Code
+                                of Conduct</a>
                         </li>
                     </ul>
                 </nav>
                 <div class="header-controls">
                     <div class="lang-dropdown">
                         <button class="btn-icon" id="lang-select-btn" title="Change Language">
-                            🌐 <span id="lang-btn-text" style="font-size: 0.8rem; font-weight: 600; margin-left: 0.2rem;">EN</span>
+                            🌐 <span id="lang-btn-text"
+                                style="font-size: 0.8rem; font-weight: 600; margin-left: 0.2rem;">EN</span>
                         </button>
                         <div class="lang-menu">
                             <button class="lang-item" data-lang="en">English</button>
@@ -134,7 +151,8 @@
         <section class="page-title-section">
             <div class="container">
                 <h1 class="page-title" data-i18n="chaptersSection.title">Core Domains</h1>
-                <p class="page-subtitle" data-i18n="chaptersSection.selectCityDescription">Please select a domain to explore core activities</p>
+                <p class="page-subtitle" data-i18n="chaptersSection.selectCityDescription">Please select a domain to
+                    explore core activities</p>
             </div>
         </section>
 
@@ -160,20 +178,26 @@
                     <img src="/GDG-Dark.svg" alt="GDG Logo" class="footer-logo" />
                     <div class="footer-disclaimer-title" data-i18n="footer.disclaimer">Disclaimer</div>
                     <p class="footer-disclaimer-text">
-                        <span data-i18n="footer.disclaimerText">GDG on Campus Dronacharya College of Engineering is an independent student group; our activities and opinions have no affiliation with Google Inc. For more information, see</span>
-                        <a href="https://developers.google.com/community/gdg/" target="_blank" class="footer-disclaimer-link">developers.google.com/community/gdg/</a>.
+                        <span data-i18n="footer.disclaimerText">GDG on Campus Dronacharya College of Engineering is an
+                            independent student group; our activities and opinions have no affiliation with Google Inc.
+                            For more information, see</span>
+                        <a href="https://developers.google.com/community/gdg/" target="_blank"
+                            class="footer-disclaimer-link">developers.google.com/community/gdg/</a>.
                     </p>
                 </div>
                 <div class="footer-links-grid">
                     <div class="footer-links-col">
                         <div class="footer-links-title">Resources</div>
-                        <a href="/code_of_conduct.html" class="footer-link" data-i18n="footer.codeOfConduct">Code of Conduct</a>
+                        <a href="/code_of_conduct.html" class="footer-link" data-i18n="footer.codeOfConduct">Code of
+                            Conduct</a>
                         <a href="/chapters.html" class="footer-link" data-i18n="navigation.chapters">Core Domains</a>
                     </div>
                     <div class="footer-links-col">
                         <div class="footer-links-title">Community</div>
-                        <a href="https://gdg.community.dev" target="_blank" class="footer-link">Google Developer Groups</a>
-                        <a href="https://developers.google.com" target="_blank" class="footer-link">Google Developers</a>
+                        <a href="https://gdg.community.dev" target="_blank" class="footer-link">Google Developer
+                            Groups</a>
+                        <a href="https://developers.google.com" target="_blank" class="footer-link">Google
+                            Developers</a>
                     </div>
                 </div>
             </div>
@@ -188,18 +212,22 @@
     <div class="modal-overlay" id="qr-modal">
         <div class="modal-box">
             <button class="modal-close" id="qr-close-btn">&times;</button>
-            <h3 id="qr-dialog-title" style="font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--google-blue);" data-i18n="chaptersSection.qrTitle">Join Group</h3>
-            <p id="qr-dialog-desc" style="font-size: 0.9rem; color: var(--muted-foreground);" data-i18n="chaptersSection.qrDesc">Scan this QR code with your mobile device or click the button to join the domain's official group chat</p>
-            
+            <h3 id="qr-dialog-title" style="font-size: 1.5rem; margin-bottom: 0.5rem; color: var(--google-blue);"
+                data-i18n="chaptersSection.qrTitle">Join Group</h3>
+            <p id="qr-dialog-desc" style="font-size: 0.9rem; color: var(--muted-foreground);"
+                data-i18n="chaptersSection.qrDesc">Scan this QR code with your mobile device or click the button to join
+                the domain's official group chat</p>
+
             <canvas id="qr-canvas" width="200" height="200" class="qr-code-img"></canvas>
-            
-            <a href="#" id="qr-target-link" target="_blank" class="btn-brand" data-i18n="chaptersSection.findUs" style="width: 100%; display: block; text-align: center;">Join Group</a>
+
+            <a href="#" id="qr-target-link" target="_blank" class="btn-brand" data-i18n="chaptersSection.findUs"
+                style="width: 100%; display: block; text-align: center;">Join Group</a>
         </div>
     </div>
 
     <!-- Localization Script -->
     <script src="/assets/js/i18n.js"></script>
-    
+
     <!-- Domains Script -->
     <script>
         const DOMAINS_DATA = [
@@ -268,7 +296,7 @@
         document.addEventListener('DOMContentLoaded', () => {
             const tabs = document.querySelectorAll('.tab-btn');
             const grid = document.getElementById('chapters-grid');
-            
+
             const qrModal = document.getElementById('qr-modal');
             const qrCloseBtn = document.getElementById('qr-close-btn');
             const qrCanvas = document.getElementById('qr-canvas');
@@ -277,7 +305,7 @@
 
             const renderDomains = (divFilter) => {
                 const lang = window.i18n.getLang();
-                
+
                 const filtered = DOMAINS_DATA.filter(dm => {
                     if (divFilter === 'all') return true;
                     return dm.division === divFilter;
@@ -311,25 +339,25 @@
                     `;
                     grid.appendChild(card);
                 });
-                
+
                 window.i18n.translatePage(lang);
             };
 
             window.showQRCode = (name, url) => {
                 const lang = window.i18n.getLang();
-                
+
                 qrTitle.setAttribute('data-chapter', name);
                 const titleTemplate = window.i18n.t('chaptersSection.qrTitle');
                 qrTitle.textContent = titleTemplate.replace('{{chapterName}}', name);
                 qrLink.href = url;
-                
+
                 qrModal.classList.add('active');
 
                 // Generate Canvas QR Code
                 const ctx = qrCanvas.getContext('2d');
                 const width = qrCanvas.width;
                 const height = qrCanvas.height;
-                
+
                 ctx.fillStyle = '#ffffff';
                 ctx.fillRect(0, 0, width, height);
 
@@ -390,7 +418,7 @@
                 tab.addEventListener('click', () => {
                     tabs.forEach(t => t.classList.remove('active'));
                     tab.classList.add('active');
-                    
+
                     const region = tab.getAttribute('data-region');
                     renderDomains(region);
                 });
@@ -406,4 +434,5 @@
         });
     </script>
 </body>
+
 </html>
