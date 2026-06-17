@@ -679,13 +679,9 @@ main {
     max-width: 25rem;
 }
 
-.footer-logo {
-    height: 2.25rem;
+.footer-logo-wrap {
     margin-bottom: 1rem;
-}
-
-.dark .footer-logo {
-    filter: brightness(1.2) contrast(1.1);
+    display: inline-flex;
 }
 
 .footer-disclaimer-title {
