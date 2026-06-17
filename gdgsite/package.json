@@ -1,0 +1,17 @@
+{
+  "name": "gdg-taiwan-static",
+  "version": "1.0.0",
+  "description": "Google Developer Groups Taiwan Static Website",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js 3000"
+  },
+  "keywords": [
+    "gdg",
+    "taiwan",
+    "google-developer-groups"
+  ],
+  "author": "",
+  "license": "ISC"
+}

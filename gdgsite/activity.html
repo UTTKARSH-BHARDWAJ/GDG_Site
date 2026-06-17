@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="/favicon.ico" />
+    <title data-i18n="metadata.activity.title">Recent Activities | GDG on Campus DCE</title>
+    <meta name="description" content="Recent activities of Google Developer Groups on Campus Dronacharya College of Engineering" />
+    
+    <!-- Base Stylesheet -->
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    
+    <!-- Theme Initializer -->
+    <script src="/assets/js/theme.js"></script>
+    <style>
+        .search-container {
+            margin-bottom: 1rem;
+            width: 100%;
+        }
+        .search-input-wrapper {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+        .search-icon {
+            position: absolute;
+            left: 1rem;
+            color: var(--muted-foreground);
+        }
+        .filter-input.search-bar {
+            padding-left: 2.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Site Header -->
+        <header class="site-header">
+            <div class="container header-container">
+                <a href="/index.html" class="logo-link">
+                    <img src="/GDG-Dark.svg" alt="GDG Logo" class="logo-img" />
+                    <span style="font-weight: 700; font-size: 1.1rem; color: var(--foreground); margin-left: 0.5rem; display: inline-block;">on Campus DCE</span>
+                </a>
+                <nav>
+                    <ul class="nav-links" id="nav-links-menu">
+                        <li>
+                            <a href="/index.html" class="nav-link" data-i18n="navigation.home">Home</a>
+                        </li>
+                        <li>
+                            <a href="/activity.html" class="nav-link active" data-i18n="navigation.recentActivities">Recent Activities</a>
+                        </li>
+                        <li class="nav-dropdown">
+                            <span class="nav-link" id="annual-dropdown-btn">
+                                <span data-i18n="navigation.annualActivities">Flagship Campaigns</span> ▼
+                            </span>
+                            <div class="dropdown-menu">
+                                <a href="/annual_activity.html?event=devfest" class="dropdown-item">
+                                    <span class="dropdown-item-title" data-i18n="navigation.devfest.title">Compose Camp</span>
+                                    <span class="dropdown-item-desc" data-i18n="navigation.devfest.description">Learn how to build Android apps with native UI.</span>
+                                </a>
+                                <a href="/annual_activity.html?event=io_extended" class="dropdown-item">
+                                    <span class="dropdown-item-title" data-i18n="navigation.googleIOExtended.title">Solution Challenge</span>
+                                    <span class="dropdown-item-desc" data-i18n="navigation.googleIOExtended.description">Build solutions to help community challenges.</span>
+                                </a>
+                                <a href="/annual_activity.html?event=cloud_study_jam" class="dropdown-item">
+                                    <span class="dropdown-item-title" data-i18n="navigation.cloudStudyJam.title">Google Cloud Campaign</span>
+                                    <span class="dropdown-item-desc" data-i18n="navigation.cloudStudyJam.description">Hands-on laboratories on Cloud fundamentals.</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="/chapters.html" class="nav-link" data-i18n="navigation.chapters">Core Domains</a>
+                        </li>
+                        <li>
+                            <a href="/code_of_conduct.html" class="nav-link" data-i18n="navigation.codeOfConduct">Code of Conduct</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-controls">
+                    <div class="lang-dropdown">
+                        <button class="btn-icon" id="lang-select-btn" title="Change Language">
+                            🌐 <span id="lang-btn-text" style="font-size: 0.8rem; font-weight: 600; margin-left: 0.2rem;">EN</span>
+                        </button>
+                        <div class="lang-menu">
+                            <button class="lang-item" data-lang="en">English</button>
+                            <button class="lang-item" data-lang="zh">繁體中文</button>
+                            <button class="lang-item" data-lang="zh-CN">简体中文</button>
+                            <button class="lang-item" data-lang="ja">日本語</button>
+                            <button class="lang-item" data-lang="ko">한국어</button>
+                        </div>
+                    </div>
+                    <button class="btn-icon" id="theme-toggle" title="Toggle theme">🌓</button>
+                    <button class="btn-icon menu-btn" id="menu-toggle-btn" aria-label="Toggle Menu">☰</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Page Header -->
+        <section class="page-title-section">
+            <div class="container">
+                <h1 class="page-title" data-i18n="activitySection.title">Recent Activities</h1>
+                <p class="page-subtitle" data-i18n="mainSection.description">GDG on Campus Dronacharya College of Engineering activities catalog</p>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <main class="container">
+            <!-- Filter Section -->
+            <div class="filter-bar">
+                <div class="search-container">
+                    <div class="search-input-wrapper">
+                        <span class="search-icon">🔍</span>
+                        <input type="text" id="search-keyword" class="filter-input search-bar" placeholder="Search activities..." />
+                    </div>
+                </div>
+                <div class="filter-grid">
+                    <!-- Technical Domain Filter -->
+                    <div class="filter-group">
+                        <label for="filter-city" class="filter-label" data-i18n="activitySection.filterCity">Technical Domain</label>
+                        <select id="filter-city" class="filter-select">
+                            <option value="all" data-i18n="activitySection.allCities">Any Domain</option>
+                            <option value="AI/ML">AI / ML</option>
+                            <option value="Android">Android</option>
+                            <option value="Web">Web Development</option>
+                            <option value="Cloud">Google Cloud</option>
+                            <option value="UI/UX">UI / UX Design</option>
+                            <option value="General">General</option>
+                        </select>
+                    </div>
+                    <!-- Campaign Filter -->
+                    <div class="filter-group">
+                        <label for="filter-type" class="filter-label" data-i18n="activitySection.filterType">Campaign</label>
+                        <select id="filter-type" class="filter-select">
+                            <option value="all" data-i18n="activitySection.allTypes">Any Campaign</option>
+                            <option value="ComposeCamp" data-i18n="navigation.devfest.title">Compose Camp</option>
+                            <option value="SolutionChallenge" data-i18n="navigation.googleIOExtended.title">Solution Challenge</option>
+                            <option value="CloudStudyJam" data-i18n="navigation.cloudStudyJam.title">Google Cloud Campaign</option>
+                            <option value="TechTalk">Speaker Session / Tech Talk</option>
+                            <option value="Hackathon">Hackathon</option>
+                        </select>
+                    </div>
+                    <!-- Participation Mode Filter -->
+                    <div class="filter-group">
+                        <label for="filter-campus" class="filter-label" data-i18n="activitySection.filterCampus">Participation</label>
+                        <select id="filter-campus" class="filter-select">
+                            <option value="all" data-i18n="activitySection.allParticipation">Any Participation</option>
+                            <option value="campus" data-i18n="activitySection.campusOnly">Members Only</option>
+                            <option value="non-campus" data-i18n="activitySection.nonCampusOnly">Open to All</option>
+                        </select>
+                    </div>
+                    <!-- Clear Filters -->
+                    <div>
+                        <button id="btn-clear-filters" class="btn-clear" data-i18n="activitySection.clearFilters">Clear All</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Results Counter -->
+            <div style="margin-bottom: 1.5rem; font-weight: 500; font-size: 1.1rem; text-align: left;">
+                <span id="showing-results-text" data-count="0">Showing 0 events</span>
+            </div>
+
+            <!-- Event Cards Grid -->
+            <div class="cards-grid" id="events-grid">
+                <!-- Dynamically generated by JS -->
+            </div>
+            
+            <!-- No Events Placeholder -->
+            <div id="no-events-placeholder" style="display:none; text-align:center; padding: 4rem 1rem;" class="coc-section">
+                <p style="font-size: 1.5rem; font-weight: 600; color: var(--muted-foreground);" data-i18n="activitySection.noEvents">No events found matching the criteria</p>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="container footer-content">
+                <div class="footer-brand">
+                    <img src="/GDG-Dark.svg" alt="GDG Logo" class="footer-logo" />
+                    <div class="footer-disclaimer-title" data-i18n="footer.disclaimer">Disclaimer</div>
+                    <p class="footer-disclaimer-text">
+                        <span data-i18n="footer.disclaimerText">GDG on Campus Dronacharya College of Engineering is an independent student group; our activities and opinions have no affiliation with Google Inc. For more information, see</span>
+                        <a href="https://developers.google.com/community/gdg/" target="_blank" class="footer-disclaimer-link">developers.google.com/community/gdg/</a>.
+                    </p>
+                </div>
+                <div class="footer-links-grid">
+                    <div class="footer-links-col">
+                        <div class="footer-links-title">Resources</div>
+                        <a href="/code_of_conduct.html" class="footer-link" data-i18n="footer.codeOfConduct">Code of Conduct</a>
+                        <a href="/chapters.html" class="footer-link" data-i18n="navigation.chapters">Core Domains</a>
+                    </div>
+                    <div class="footer-links-col">
+                        <div class="footer-links-title">Community</div>
+                        <a href="https://gdg.community.dev" target="_blank" class="footer-link">Google Developer Groups</a>
+                        <a href="https://developers.google.com" target="_blank" class="footer-link">Google Developers</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container footer-bottom">
+                <div>&copy; 2026 <span data-i18n="footer.siteName">GDG on Campus DCE</span>. All Rights Reserved.</div>
+                <div>Created with passion for Google Developers at Dronacharya College of Engineering.</div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Calendar Dialog Modal -->
+    <div class="modal-overlay" id="calendar-modal">
+        <div class="modal-box">
+            <button class="modal-close" id="calendar-close-btn">&times;</button>
+            <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--google-blue);" data-i18n="activitySection.calendar.title">Activity Calendar</h3>
+            <p style="margin-bottom: 1.5rem;" data-i18n="chapterCard.clickForQR">Add this event to your calendar to stay updated</p>
+            <div style="display: flex; flex-direction: column; gap: 0.75rem;">
+                <button class="btn-clear" onclick="alert('Added to Google Calendar!')" data-i18n="activitySection.calendar.google">Add to Google Calendar</button>
+                <button class="btn-clear" onclick="alert('Added to Apple Calendar!')" data-i18n="activitySection.calendar.apple">Add to Apple Calendar</button>
+                <button class="btn-clear" onclick="alert('iCal file downloaded!')" data-i18n="activitySection.calendar.ical">Download iCal file</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Localization Script -->
+    <script src="/assets/js/i18n.js"></script>
+    
+    <!-- Dynamic Content Engine -->
+    <script>
+        // Campus Events Data
+        const EVENTS_DATA = [
+            {
+                id: 1,
+                titleEn: "Gemini AI Student Hackathon",
+                titleZh: "Gemini AI 學生黑客松",
+                descEn: "Work in teams to prototype Web apps powered by Gemini API. Prizes sponsored by Google Developers.",
+                descZh: "團隊協作開發由 Gemini API 驅動的網頁應用雛形，優勝團隊可獲得 Google Developers 贊助獎品。",
+                date: "2026-06-20",
+                city: "AI/ML",
+                type: "Hackathon",
+                isCampus: true,
+                audience: "In-person",
+                image: "/google_sticker_3.gif"
+            },
+            {
+                id: 2,
+                titleEn: "Compose Camp DCE 2025",
+                titleZh: "Compose 技術營 DCE 2025",
+                descEn: "Learn how to build Android apps with modern UI architectures using Jetpack Compose.",
+                descZh: "透過實作體驗，學習如何使用 Jetpack Compose 這款現代化工具建構 Android 原生介面。",
+                date: "2025-10-12",
+                city: "Android",
+                type: "ComposeCamp",
+                isCampus: true,
+                audience: "In-person",
+                image: "/dash-big.svg"
+            },
+            {
+                id: 3,
+                titleEn: "Google Cloud Study Jam: Kubernetes & BigQuery",
+                titleZh: "Google 雲端研習營：Kubernetes 與 BigQuery",
+                descEn: "Get hands-on training on container management and serverless databases with Qwiklabs.",
+                descZh: "透過 Qwiklabs 實作平台，獲取有關容器管理與無伺服器資料庫的實務操作訓練。",
+                date: "2025-09-05",
+                city: "Cloud",
+                type: "CloudStudyJam",
+                isCampus: false,
+                audience: "Hybrid",
+                image: "/google_sticker_3.gif"
+            },
+            {
+                id: 4,
+                titleEn: "Info Session: Solution Challenge 2026 Kickoff",
+                titleZh: "資訊分享會：2026 解決方案挑戰賽啟動儀式",
+                descEn: "Learn how you can participate in the annual global Solution Challenge to build UN SDG projects.",
+                descZh: "了解如何參加年度全球 Solution Challenge 挑戰賽，並圍繞聯合國永續發展目標設計專案。",
+                date: "2026-01-10",
+                city: "General",
+                type: "SolutionChallenge",
+                isCampus: false,
+                audience: "In-person",
+                image: "/dash-big.svg"
+            },
+            {
+                id: 5,
+                titleEn: "Android 16 API Features Technical Seminar",
+                titleZh: "Android 16 新功能技術研討會",
+                descEn: "Join us as we explore the new SDK features, API additions, and UI design enhancements.",
+                descZh: "與我們一同探索 Android 16 的全新 SDK 特性、API 新增項目與 UI 設計改良點。",
+                date: "2026-07-10",
+                city: "Android",
+                type: "TechTalk",
+                isCampus: true,
+                audience: "Hybrid",
+                image: "/google_sticker_3.gif"
+            },
+            {
+                id: 6,
+                titleEn: "Firebase Web Application Development Bootcamp",
+                titleZh: "Firebase 網頁應用程式開發特訓班",
+                descEn: "Learn to integrate real-time databases, user authentication, and hosting for your college projects.",
+                descZh: "學習如何為您的專題專案整合即時資料庫、使用者身分驗證與靜態網頁代管服務。",
+                date: "2025-08-18",
+                city: "Web",
+                type: "TechTalk",
+                isCampus: false,
+                audience: "Virtual",
+                image: "/dash-big.svg"
+            },
+            {
+                id: 7,
+                titleEn: "Introduction to UI/UX and Material Design 3",
+                titleZh: "UI/UX 與 Material Design 3 設計美學入門",
+                descEn: "A student talk on creating aesthetically pleasing mobile interfaces with Material Design rules.",
+                descZh: "由學生主講的技術分享，分享如何使用 Material Design 規範設計美觀的行動介面。",
+                date: "2025-08-05",
+                city: "UI/UX",
+                type: "TechTalk",
+                isCampus: false,
+                audience: "In-person",
+                image: "/google_sticker_3.gif"
+            }
+        ];
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const citySelect = document.getElementById('filter-city');
+            const typeSelect = document.getElementById('filter-type');
+            const campusSelect = document.getElementById('filter-campus');
+            const searchKeyword = document.getElementById('search-keyword');
+            const clearBtn = document.getElementById('btn-clear-filters');
+            const eventsGrid = document.getElementById('events-grid');
+            const noEventsPlaceholder = document.getElementById('no-events-placeholder');
+            const resultsText = document.getElementById('showing-results-text');
+            
+            const calendarModal = document.getElementById('calendar-modal');
+            const calendarCloseBtn = document.getElementById('calendar-close-btn');
+
+            // Re-render functions
+            const renderEvents = () => {
+                const lang = window.i18n.getLang();
+                const cityFilter = citySelect.value; // Technical Domain
+                const typeFilter = typeSelect.value; // Campaign
+                const campusFilter = campusSelect.value;
+                const searchVal = searchKeyword.value.toLowerCase().trim();
+
+                const filtered = EVENTS_DATA.filter(evt => {
+                    // Domain match
+                    if (cityFilter !== 'all' && evt.city !== cityFilter) return false;
+                    // Type match
+                    if (typeFilter !== 'all' && evt.type !== typeFilter) return false;
+                    // Campus match
+                    if (campusFilter === 'campus' && !evt.isCampus) return false;
+                    if (campusFilter === 'non-campus' && evt.isCampus) return false;
+                    // Search match
+                    if (searchVal) {
+                        const title = (lang === 'en' ? evt.titleEn : evt.titleZh).toLowerCase();
+                        const desc = (lang === 'en' ? evt.descEn : evt.descZh).toLowerCase();
+                        if (!title.includes(searchVal) && !desc.includes(searchVal)) return false;
+                    }
+                    return true;
+                });
+
+                // Sort by date descending
+                filtered.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+                // Clear
+                eventsGrid.innerHTML = '';
+
+                if (filtered.length === 0) {
+                    noEventsPlaceholder.style.display = 'block';
+                    resultsText.style.display = 'none';
+                } else {
+                    noEventsPlaceholder.style.display = 'none';
+                    resultsText.style.display = 'block';
+                    resultsText.setAttribute('data-count', filtered.length);
+                    
+                    const template = window.i18n.t('activitySection.showingResults');
+                    resultsText.textContent = template.replace('{{count}}', filtered.length);
+
+                    filtered.forEach(evt => {
+                        const isLive = new Date(evt.date).toDateString() === new Date().toDateString();
+                        const badgeText = isLive ? window.i18n.t('eventCard.live') : window.i18n.t(`navigation.${evt.type}.title`) || evt.type;
+                        const audienceTranslated = window.i18n.t(`audienceTypeMap.${evt.audience}`);
+                        
+                        const title = lang === 'en' ? evt.titleEn : evt.titleZh;
+                        const desc = lang === 'en' ? evt.descEn : evt.descZh;
+
+                        const card = document.createElement('div');
+                        card.className = 'content-card';
+                        card.innerHTML = `
+                            <div class="card-image-wrapper">
+                                <img src="${evt.image}" alt="${title}" class="card-image" />
+                                <span class="card-badge ${isLive ? 'live' : ''}">${badgeText}</span>
+                            </div>
+                            <div class="card-body">
+                                <div class="card-date">📅 ${evt.date}</div>
+                                <h3 class="card-title">${title}</h3>
+                                <p class="card-desc">${desc}</p>
+                                <div class="card-meta">
+                                    <div class="card-meta-item">🛠️ ${evt.city} (${audienceTranslated})</div>
+                                    <button class="btn-card" onclick="openCalendarDialog()">${window.i18n.t('activitySection.calendar.subscribe')}</button>
+                                </div>
+                            </div>
+                        `;
+                        eventsGrid.appendChild(card);
+                    });
+                }
+            };
+
+            window.openCalendarDialog = () => {
+                calendarModal.classList.add('active');
+            };
+
+            calendarCloseBtn.addEventListener('click', () => {
+                calendarModal.classList.remove('active');
+            });
+            calendarModal.addEventListener('click', (e) => {
+                if (e.target === calendarModal) calendarModal.classList.remove('active');
+            });
+
+            // Listeners
+            citySelect.addEventListener('change', renderEvents);
+            typeSelect.addEventListener('change', renderEvents);
+            campusSelect.addEventListener('change', renderEvents);
+            searchKeyword.addEventListener('input', renderEvents);
+            
+            clearBtn.addEventListener('click', () => {
+                citySelect.value = 'all';
+                typeSelect.value = 'all';
+                campusSelect.value = 'all';
+                searchKeyword.value = '';
+                renderEvents();
+            });
+
+            window.addEventListener('language-changed', renderEvents);
+
+            // Initial render
+            setTimeout(renderEvents, 100);
+        });
+    </script>
+</body>
+</html>
