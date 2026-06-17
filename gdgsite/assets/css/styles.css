@@ -1150,3 +1150,87 @@ main {
         height: 2.5rem;
     }
 }
+
+/* Organizers Section Styling */
+.organizers-section {
+    padding: 4rem 0;
+}
+
+.organizers-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    color: var(--foreground);
+}
+
+.organizers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2.5rem;
+    justify-items: center;
+}
+
+.organizer-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--card);
+    border: var(--border-width) solid var(--border);
+    border-radius: var(--radius);
+    padding: 2rem 1.5rem;
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed);
+    width: 100%;
+    max-width: 260px;
+    box-shadow: var(--shadow-sm);
+}
+
+.organizer-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.organizer-image-wrapper {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 1.25rem;
+    border: 3px solid var(--border);
+}
+
+.organizer-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-speed);
+}
+
+.organizer-card:hover .organizer-image {
+    transform: scale(1.05);
+}
+
+.organizer-name {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    color: var(--foreground);
+}
+
+.organizer-role {
+    font-size: 0.9rem;
+    color: var(--muted-foreground);
+    margin-bottom: 0.75rem;
+}
+
+.organizer-link {
+    font-size: 0.9rem;
+    color: var(--google-blue);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color var(--transition-speed);
+}
+
+.organizer-link:hover {
+    color: var(--foreground);
+}
