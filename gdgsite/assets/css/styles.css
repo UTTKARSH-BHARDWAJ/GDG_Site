@@ -1280,3 +1280,30 @@ main {
     object-fit: contain;
 }
 
+/* Footer Social Icons Styling */
+.footer-socials {
+    display: flex;
+    gap: 0.75rem;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+
+.footer-social-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: var(--border);
+    color: var(--muted-foreground);
+    transition: background-color var(--transition-speed), color var(--transition-speed), transform var(--transition-speed);
+}
+
+.footer-social-icon:hover {
+    background-color: var(--foreground);
+    color: var(--background);
+    transform: translateY(-2px);
+}
+
+
