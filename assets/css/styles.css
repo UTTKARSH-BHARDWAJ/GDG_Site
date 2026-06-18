@@ -528,7 +528,7 @@ main {
 
 @media (max-width: 768px) {
     .info-grid {
-        grid-template-cols: 1fr;
+        grid-template-columns: 1fr;
         gap: 2rem;
     }
 }
@@ -637,7 +637,7 @@ main {
 
 .sisters-grid {
     display: grid;
-    grid-template-cols: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
 
@@ -695,7 +695,7 @@ main {
 
 @media (max-width: 992px) {
     .sisters-grid {
-        grid-template-cols: 1fr;
+        grid-template-columns: 1fr;
         gap: 1.5rem;
     }
 }
@@ -830,7 +830,7 @@ main {
 
 .filter-grid {
     display: grid;
-    grid-template-cols: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1.25rem;
     align-items: flex-end;
 }
@@ -1345,4 +1345,348 @@ main {
     transform: translateY(-2px);
 }
 
+/* ============================================
+   GLOBAL OVERFLOW & IMAGE SAFETY
+   ============================================ */
+html, body {
+    overflow-x: hidden;
+}
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.hero-title,
+.cta-quote,
+.card-title,
+.sister-name,
+.organizer-name,
+.page-title {
+    overflow-wrap: break-word;
+    word-break: break-word;
+}
+
+/* ============================================
+   TABLET BREAKPOINT (≤ 768px)
+   ============================================ */
+@media (max-width: 768px) {
+    .hero-gif {
+        max-width: 300px;
+    }
+
+    .info-section {
+        padding: 3rem 0;
+    }
+
+    .info-tag {
+        font-size: 2rem;
+    }
+
+    .cta-section {
+        padding: 3rem 0;
+    }
+
+    .mascot-container {
+        width: 260px;
+        height: 260px;
+        border-radius: 2rem;
+    }
+
+    .cta-quote {
+        font-size: 1.2rem;
+    }
+
+    .btn-brand {
+        font-size: 1rem;
+        padding: 0.6rem 1.5rem;
+    }
+
+    .sisters-section {
+        padding: 3rem 0;
+    }
+
+    .sisters-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .sister-card {
+        padding: 1.75rem;
+    }
+
+    .organizers-section {
+        padding: 3rem 0;
+    }
+
+    .organizers-title {
+        font-size: 1.75rem;
+    }
+
+    .organizers-grid {
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .organizer-card {
+        padding: 1.25rem 1rem;
+        max-width: 200px;
+    }
+
+    .organizer-image-wrapper {
+        width: 110px;
+        height: 110px;
+    }
+
+    .partners-section {
+        padding: 3rem 0;
+    }
+
+    .partners-title {
+        font-size: 1.75rem;
+    }
+
+    .partner-card {
+        width: 180px;
+        height: 180px;
+        padding: 1rem;
+    }
+
+    .page-title {
+        font-size: 2rem;
+    }
+
+    .page-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .cards-grid {
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    }
+}
+
+/* ============================================
+   SMALL PHONE BREAKPOINT (≤ 480px)
+   ============================================ */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    .hero-section {
+        padding: 2rem 0;
+    }
+
+    .hero-title {
+        font-size: 1.65rem;
+        line-height: 1.2;
+    }
+
+    .hero-desc {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .hero-gif {
+        max-width: 240px;
+    }
+
+    .info-section {
+        padding: 2rem 0;
+    }
+
+    .info-tag {
+        font-size: 1.75rem;
+        margin-bottom: 1rem;
+    }
+
+    .info-text {
+        font-size: 1rem;
+    }
+
+    .video-container {
+        border-radius: 1rem;
+    }
+
+    .cta-section {
+        padding: 2rem 0;
+    }
+
+    .mascot-container {
+        width: 200px;
+        height: 200px;
+        border-radius: 1.5rem;
+        border-width: 4px;
+    }
+
+    .cta-quote {
+        font-size: 1.1rem;
+    }
+
+    .btn-brand {
+        font-size: 0.95rem;
+        padding: 0.5rem 1.25rem;
+        box-shadow: 3px 3px 0px 0px var(--black-02);
+    }
+
+    .sisters-section {
+        padding: 2rem 0;
+    }
+
+    .sisters-title {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .sister-card {
+        padding: 1.5rem;
+    }
+
+    .sister-name {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .sister-desc {
+        font-size: 0.9rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .sister-btn {
+        font-size: 0.95rem;
+        padding: 0.4rem 1.25rem;
+    }
+
+    .organizers-section {
+        padding: 2rem 0;
+    }
+
+    .organizers-title {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .organizers-grid {
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+        gap: 1rem;
+    }
+
+    .organizer-card {
+        padding: 1rem 0.75rem;
+        max-width: 170px;
+    }
+
+    .organizer-image-wrapper {
+        width: 90px;
+        height: 90px;
+        margin-bottom: 0.75rem;
+    }
+
+    .organizer-name {
+        font-size: 0.95rem;
+    }
+
+    .organizer-role {
+        font-size: 0.8rem;
+    }
+
+    .organizer-link {
+        font-size: 0.8rem;
+    }
+
+    .partners-section {
+        padding: 2rem 0;
+    }
+
+    .partners-title {
+        font-size: 1.5rem;
+    }
+
+    .partner-card {
+        width: 140px;
+        height: 140px;
+        padding: 0.75rem;
+    }
+
+    .partners-grid {
+        gap: 1rem;
+    }
+
+    .page-title-section {
+        padding: 2rem 0;
+    }
+
+    .page-title {
+        font-size: 1.6rem;
+    }
+
+    .page-subtitle {
+        font-size: 0.85rem;
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .card-image-wrapper {
+        aspect-ratio: 1.8;
+    }
+
+    .site-footer {
+        padding: 2.5rem 0 1.5rem;
+    }
+
+    .footer-content {
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .footer-links-grid {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    .footer-socials {
+        flex-wrap: wrap;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 0.75rem;
+        text-align: center;
+        font-size: 0.75rem;
+    }
+
+    .modal-box {
+        padding: 1.25rem;
+        width: 95%;
+    }
+
+    .header-container {
+        height: 3.5rem;
+        gap: 0.75rem;
+    }
+
+    .logo-icon {
+        height: 2rem;
+    }
+
+    .logo-text-img.logo-line1 {
+        max-height: 0.9rem;
+    }
+
+    .logo-text-img.logo-line2 {
+        max-height: 0.65rem;
+    }
+
+    .btn-icon {
+        width: 2.25rem;
+        height: 2.25rem;
+        font-size: 0.85rem;
+    }
+
+    .header-controls {
+        gap: 0.5rem;
+    }
+}

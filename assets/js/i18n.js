@@ -142,7 +142,15 @@ const TRANSLATIONS = {
                     el.setAttribute('placeholder', translation);
                 } else {
                     if (translation.includes('\n')) {
-                        el.innerHTML = translation.replace(/\n/g, '<br>');
+                        // Safe newline-to-br: use DOM API instead of innerHTML
+                        el.textContent = '';
+                        const parts = translation.split('\n');
+                        parts.forEach((part, i) => {
+                            el.appendChild(document.createTextNode(part));
+                            if (i < parts.length - 1) {
+                                el.appendChild(document.createElement('br'));
+                            }
+                        });
                     } else {
                         el.textContent = translation;
                     }
