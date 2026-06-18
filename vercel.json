@@ -1,6 +1,13 @@
 {
   "cleanUrls": true,
   "rewrites": [
-    { "source": "/(.*)", "destination": "/gdgsite/$1" }
+    { "source": "/assets/:path*", "destination": "/gdgsite/assets/:path*" },
+    { "source": "/Logo_:num.svg", "destination": "/gdgsite/Logo_:num.svg" },
+    { "source": "/google_sticker_:num.gif", "destination": "/gdgsite/google_sticker_:num.gif" },
+    { "source": "/dash-big.svg", "destination": "/gdgsite/dash-big.svg" },
+    { "source": "/favicon.ico", "destination": "/gdgsite/favicon.ico" },
+    { "source": "/index.html", "destination": "/gdgsite/index.html" },
+    { "source": "/activity.html", "destination": "/gdgsite/activity.html" },
+    { "source": "/", "destination": "/gdgsite/index.html" }
   ]
 }
