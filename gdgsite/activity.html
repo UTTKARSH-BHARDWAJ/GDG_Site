@@ -81,61 +81,7 @@
         <!-- Main Content -->
         <main class="container">
             <!-- Filter Section -->
-            <div class="filter-bar">
-                <div class="search-container">
-                    <div class="search-input-wrapper">
-                        <span class="search-icon">🔍</span>
-                        <input type="text" id="search-keyword" class="filter-input search-bar"
-                            placeholder="Search activities..." />
-                    </div>
-                </div>
-                <div class="filter-grid">
-                    <!-- Technical Domain Filter -->
-                    <div class="filter-group">
-                        <label for="filter-city" class="filter-label" data-i18n="activitySection.filterCity">Technical
-                            Domain</label>
-                        <select id="filter-city" class="filter-select">
-                            <option value="all" data-i18n="activitySection.allCities">Any Domain</option>
-                            <option value="AI/ML">AI / ML</option>
-                            <option value="Android">Android</option>
-                            <option value="Web">Web Development</option>
-                            <option value="Cloud">Google Cloud</option>
-                            <option value="UI/UX">UI / UX Design</option>
-                            <option value="General">General</option>
-                        </select>
-                    </div>
-                    <!-- Campaign Filter -->
-                    <div class="filter-group">
-                        <label for="filter-type" class="filter-label"
-                            data-i18n="activitySection.filterType">Campaign</label>
-                        <select id="filter-type" class="filter-select">
-                            <option value="all" data-i18n="activitySection.allTypes">Any Campaign</option>
-                            <option value="ComposeCamp" data-i18n="navigation.devfest.title">Compose Camp</option>
-                            <option value="SolutionChallenge" data-i18n="navigation.googleIOExtended.title">Solution
-                                Challenge</option>
-                            <option value="CloudStudyJam" data-i18n="navigation.cloudStudyJam.title">Google Cloud
-                                Campaign</option>
-                            <option value="TechTalk">Speaker Session / Tech Talk</option>
-                            <option value="Hackathon">Hackathon</option>
-                        </select>
-                    </div>
-                    <!-- Participation Mode Filter -->
-                    <div class="filter-group">
-                        <label for="filter-campus" class="filter-label"
-                            data-i18n="activitySection.filterCampus">Participation</label>
-                        <select id="filter-campus" class="filter-select">
-                            <option value="all" data-i18n="activitySection.allParticipation">Any Participation</option>
-                            <option value="campus" data-i18n="activitySection.campusOnly">Members Only</option>
-                            <option value="non-campus" data-i18n="activitySection.nonCampusOnly">Open to All</option>
-                        </select>
-                    </div>
-                    <!-- Clear Filters -->
-                    <div>
-                        <button id="btn-clear-filters" class="btn-clear" data-i18n="activitySection.clearFilters">Clear
-                            All</button>
-                    </div>
-                </div>
-            </div>
+
 
             <!-- Results Counter -->
             <div style="margin-bottom: 1.5rem; font-weight: 500; font-size: 1.1rem; text-align: left;">
@@ -221,11 +167,6 @@
         const EVENTS_DATA = [];
 
         document.addEventListener('DOMContentLoaded', () => {
-            const citySelect = document.getElementById('filter-city');
-            const typeSelect = document.getElementById('filter-type');
-            const campusSelect = document.getElementById('filter-campus');
-            const searchKeyword = document.getElementById('search-keyword');
-            const clearBtn = document.getElementById('btn-clear-filters');
             const eventsGrid = document.getElementById('events-grid');
             const noEventsPlaceholder = document.getElementById('no-events-placeholder');
             const resultsText = document.getElementById('showing-results-text');
@@ -236,27 +177,7 @@
             // Re-render functions
             const renderEvents = () => {
                 const lang = window.i18n.getLang();
-                const cityFilter = citySelect.value; // Technical Domain
-                const typeFilter = typeSelect.value; // Campaign
-                const campusFilter = campusSelect.value;
-                const searchVal = searchKeyword.value.toLowerCase().trim();
-
-                const filtered = EVENTS_DATA.filter(evt => {
-                    // Domain match
-                    if (cityFilter !== 'all' && evt.city !== cityFilter) return false;
-                    // Type match
-                    if (typeFilter !== 'all' && evt.type !== typeFilter) return false;
-                    // Campus match
-                    if (campusFilter === 'campus' && !evt.isCampus) return false;
-                    if (campusFilter === 'non-campus' && evt.isCampus) return false;
-                    // Search match
-                    if (searchVal) {
-                        const title = (lang === 'en' ? evt.titleEn : evt.titleZh).toLowerCase();
-                        const desc = (lang === 'en' ? evt.descEn : evt.descZh).toLowerCase();
-                        if (!title.includes(searchVal) && !desc.includes(searchVal)) return false;
-                    }
-                    return true;
-                });
+                const filtered = [...EVENTS_DATA];
 
                 // Sort by date descending
                 filtered.sort((a, b) => new Date(b.date) - new Date(a.date));
@@ -317,19 +238,6 @@
             });
 
             // Listeners
-            citySelect.addEventListener('change', renderEvents);
-            typeSelect.addEventListener('change', renderEvents);
-            campusSelect.addEventListener('change', renderEvents);
-            searchKeyword.addEventListener('input', renderEvents);
-
-            clearBtn.addEventListener('click', () => {
-                citySelect.value = 'all';
-                typeSelect.value = 'all';
-                campusSelect.value = 'all';
-                searchKeyword.value = '';
-                renderEvents();
-            });
-
             window.addEventListener('language-changed', renderEvents);
 
             // Initial render
