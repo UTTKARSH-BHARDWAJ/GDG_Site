@@ -1,7 +1,7 @@
 {
   "cleanUrls": true,
   "rewrites": [
-    { "source": "/assets/(.*)", "destination": "/gdgsite/assets/$1" },
+    { "source": "/assets/:path*", "destination": "/gdgsite/assets/:path*" },
     { "source": "/Logo_1.svg", "destination": "/gdgsite/Logo_1.svg" },
     { "source": "/Logo_2.svg", "destination": "/gdgsite/Logo_2.svg" },
     { "source": "/Logo_3.svg", "destination": "/gdgsite/Logo_3.svg" },
