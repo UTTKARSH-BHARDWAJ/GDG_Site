@@ -1,9 +1,11 @@
 {
   "cleanUrls": true,
   "rewrites": [
-    { "source": "/assets/:path*", "destination": "/gdgsite/assets/:path*" },
-    { "source": "/Logo_:num.svg", "destination": "/gdgsite/Logo_:num.svg" },
-    { "source": "/google_sticker_:num.gif", "destination": "/gdgsite/google_sticker_:num.gif" },
+    { "source": "/assets/(.*)", "destination": "/gdgsite/assets/$1" },
+    { "source": "/Logo_1.svg", "destination": "/gdgsite/Logo_1.svg" },
+    { "source": "/Logo_2.svg", "destination": "/gdgsite/Logo_2.svg" },
+    { "source": "/Logo_3.svg", "destination": "/gdgsite/Logo_3.svg" },
+    { "source": "/google_sticker_3.gif", "destination": "/gdgsite/google_sticker_3.gif" },
     { "source": "/dash-big.svg", "destination": "/gdgsite/dash-big.svg" },
     { "source": "/favicon.ico", "destination": "/gdgsite/favicon.ico" },
     { "source": "/index.html", "destination": "/gdgsite/index.html" },

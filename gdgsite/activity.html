@@ -187,7 +187,8 @@
             <button class="modal-close" id="calendar-close-btn">&times;</button>
             <h3 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--google-blue);"
                 data-i18n="activitySection.calendar.title">Activity Calendar</h3>
-            <p style="margin-bottom: 1.5rem;" data-i18n="chapterCard.clickForQR">Add this event to your calendar to stay
+            <p style="margin-bottom: 1.5rem;"
+                data-i18n="activitySection.calendar.desc">Sync our events with your personal calendar to stay
                 updated</p>
             <div style="display: flex; flex-direction: column; gap: 0.75rem;">
                 <button class="btn-clear" onclick="alert('Added to Google Calendar!')"
@@ -266,7 +267,7 @@
 
                     filtered.forEach(evt => {
                         const isLive = new Date(evt.date).toDateString() === new Date().toDateString();
-                        const badgeText = isLive ? window.i18n.t('eventCard.live') : window.i18n.t(`navigation.${evt.type}.title`) || evt.type;
+                        const badgeText = isLive ? window.i18n.t('eventCard.live') : evt.type;
                         const audienceTranslated = window.i18n.t(`audienceTypeMap.${evt.audience}`);
 
                         const title = lang === 'en' ? evt.titleEn : evt.titleZh;

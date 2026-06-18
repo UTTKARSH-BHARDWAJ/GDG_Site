@@ -1,5 +1,9 @@
 const TRANSLATIONS = {
     en: {
+        metadata: {
+            home: { title: "GDG on Campus Dronacharya College of Engineering" },
+            activity: { title: "Recent Activities | GDG on Campus DCE" }
+        },
         navigation: {
             home: "Home",
             recentActivities: "Recent Activities",
@@ -149,21 +153,10 @@ const TRANSLATIONS = {
         const resultsEl = document.getElementById('showing-results-text');
         if (resultsEl) {
             const count = resultsEl.getAttribute('data-count') || '0';
-            let template = dict.activitySection.showingResults;
-            resultsEl.textContent = template.replace('{{count}}', count);
-        }
-
-        const qrDialogTitle = document.getElementById('qr-dialog-title');
-        if (qrDialogTitle) {
-            const chapterName = qrDialogTitle.getAttribute('data-chapter') || '';
-            let template = dict.chaptersSection.qrTitle;
-            qrDialogTitle.textContent = template.replace('{{chapterName}}', chapterName);
-        }
-        
-        const qrDialogDesc = document.getElementById('qr-dialog-desc');
-        if (qrDialogDesc) {
-            let template = dict.chaptersSection.qrDesc;
-            qrDialogDesc.textContent = template;
+            const showingTemplate = dict.activitySection ? dict.activitySection.showingResults : null;
+            if (showingTemplate) {
+                resultsEl.textContent = showingTemplate.replace('{{count}}', count);
+            }
         }
 
         const langItems = document.querySelectorAll('.lang-item');
