@@ -164,7 +164,34 @@
 
     <!-- Dynamic Content Engine -->
     <script>
-        const EVENTS_DATA = [];
+        const EVENTS_DATA = [
+            {
+                id: 1,
+                titleEn: "hack-0-Relay 5.0",
+                titleZh: "hack-0-Relay 5.0",
+                descEn: "A collaborative, fast-paced hackathon focusing on rapid prototyping and team relay coding challenges.",
+                descZh: "A collaborative, fast-paced hackathon focusing on rapid prototyping and team relay coding challenges.",
+                date: "2026-04-18",
+                city: "General",
+                type: "Hackathon",
+                isCampus: true,
+                audience: "In-person",
+                image: "/google_sticker_3.gif"
+            },
+            {
+                id: 2,
+                titleEn: "Code & Chaos",
+                titleZh: "Code & Chaos",
+                descEn: "Unleash your creativity in this chaotic coding marathon. Build innovative projects under unique constraints.",
+                descZh: "Unleash your creativity in this chaotic coding marathon. Build innovative projects under unique constraints.",
+                date: "2026-02-21",
+                city: "General",
+                type: "Hackathon",
+                isCampus: true,
+                audience: "In-person",
+                image: "/dash-big.svg"
+            }
+        ];
 
         document.addEventListener('DOMContentLoaded', () => {
             const eventsGrid = document.getElementById('events-grid');
