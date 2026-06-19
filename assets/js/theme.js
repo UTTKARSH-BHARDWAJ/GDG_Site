@@ -2,19 +2,13 @@
     // Theme switching logic
     const getTheme = () => {
         const storedTheme = localStorage.getItem('theme');
-        if (storedTheme) return storedTheme;
-        return 'system';
+        if (storedTheme === 'dark' || storedTheme === 'light') return storedTheme;
+        return 'light'; // Default to light mode when opened
     };
 
     const applyTheme = (theme) => {
         const root = document.documentElement;
-        let isDark = false;
-
-        if (theme === 'system') {
-            isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        } else {
-            isDark = theme === 'dark';
-        }
+        const isDark = theme === 'dark';
 
         if (isDark) {
             root.classList.add('dark');
@@ -25,7 +19,7 @@
         }
     };
 
-    // Apply immediately to avoid flash of light mode
+    // Apply immediately to avoid flash of light/dark mode
     const activeTheme = getTheme();
     applyTheme(activeTheme);
 
@@ -39,28 +33,17 @@
             if (theme === 'dark') {
                 themeToggleBtn.innerHTML = '☀️'; // Show sun to toggle to light
                 themeToggleBtn.setAttribute('title', 'Switch to Light Mode');
-            } else if (theme === 'light') {
+            } else {
                 themeToggleBtn.innerHTML = '🌙'; // Show moon to toggle to dark
                 themeToggleBtn.setAttribute('title', 'Switch to Dark Mode');
-            } else {
-                themeToggleBtn.innerHTML = '🌓'; // Show half-filled to toggle
-                themeToggleBtn.setAttribute('title', 'Switch to Light/Dark Mode (System)');
             }
         };
 
         updateToggleIcon(activeTheme);
 
         themeToggleBtn.addEventListener('click', () => {
-            const currentTheme = localStorage.getItem('theme') || 'system';
-            let nextTheme = 'light';
-
-            if (currentTheme === 'system') {
-                nextTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'light' : 'dark';
-            } else if (currentTheme === 'light') {
-                nextTheme = 'dark';
-            } else {
-                nextTheme = 'system';
-            }
+            const currentTheme = getTheme();
+            const nextTheme = currentTheme === 'light' ? 'dark' : 'light';
 
             localStorage.setItem('theme', nextTheme);
             applyTheme(nextTheme);
@@ -68,13 +51,6 @@
             
             // Dispatch custom event for pages to hook into if needed
             window.dispatchEvent(new CustomEvent('theme-changed', { detail: nextTheme }));
-        });
-
-        // Listen for system theme changes
-        window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
-            if (localStorage.getItem('theme') === 'system') {
-                applyTheme('system');
-            }
         });
     });
 })();
