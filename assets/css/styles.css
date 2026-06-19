@@ -1690,3 +1690,98 @@ img {
         gap: 0.5rem;
     }
 }
+
+/* Floating Navigation Menu */
+.floating-nav {
+    position: fixed;
+    right: 1rem;
+    top: 4.25rem; /* Positioned just below the sticky header on mobile */
+    z-index: 1001; /* Ensure it is above the header and other elements */
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .floating-nav {
+        display: block;
+    }
+    .menu-btn {
+        display: none !important;
+    }
+}
+
+.floating-nav-btn {
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 50%;
+    background-color: var(--card);
+    border: var(--border-width) solid var(--border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 0.9rem;
+    color: var(--foreground);
+    box-shadow: var(--shadow-md);
+    transition: transform 0.2s ease, background-color var(--transition-speed);
+}
+
+.floating-nav-btn:hover {
+    background-color: var(--accent);
+    transform: scale(1.05);
+}
+
+.floating-nav-btn.active {
+    transform: rotate(90deg);
+}
+
+.floating-nav-menu {
+    display: none;
+    position: absolute;
+    top: 2.75rem;
+    right: 0;
+    background-color: var(--card);
+    border: var(--border-width) solid var(--border);
+    border-radius: 0.75rem;
+    padding: 0.5rem;
+    min-width: 160px;
+    box-shadow: var(--shadow-lg);
+    flex-direction: column;
+    gap: 0.25rem;
+    animation: floatMenuIn 0.2s ease-out;
+}
+
+.floating-nav-menu.active {
+    display: flex;
+}
+
+@keyframes floatMenuIn {
+    from {
+        opacity: 0;
+        transform: translateY(-8px) scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+.floating-nav-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.6rem 0.8rem;
+    border-radius: 0.5rem;
+    color: var(--foreground);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background-color var(--transition-speed);
+}
+
+.floating-nav-item:hover {
+    background-color: var(--accent);
+}
+
+.floating-nav-item .icon {
+    font-size: 1.1rem;
+}
