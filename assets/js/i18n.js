@@ -75,7 +75,8 @@ const TRANSLATIONS = {
             "Hybrid": "Hybrid"
         },
         eventCard: {
-            live: "Live"
+            live: "Live",
+            hackathon: "Hackathon"
         },
         conductSection: {
             title: "Community Code of Conduct",
@@ -96,6 +97,16 @@ const TRANSLATIONS = {
             importanceDesc: "A safe community fosters learning. By outlining our guidelines, we ensure that every student at DCE, regardless of their background or coding experience, feels welcomed and encouraged to start their developer journey with us.",
             licenseTitle: "License and Release",
             licenseDesc: "This policy is adapted under the Creative Commons Zero license. It is based on the official Google Developer Groups Community Guidelines and the Dronacharya College of Engineering student code of conduct."
+        },
+        events: {
+            hack0: {
+                title: "hack-0-Relay 5.0",
+                description: "A collaborative, fast-paced hackathon focusing on rapid prototyping and team relay coding challenges."
+            },
+            codeChaos: {
+                title: "Code & Chaos",
+                description: "Unleash your creativity in this chaotic coding marathon. Build innovative projects under unique constraints."
+            }
         },
         footer: {
             disclaimer: "Disclaimer",
