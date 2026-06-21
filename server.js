@@ -101,8 +101,26 @@ const server = http.createServer((req, res) => {
 
     fs.stat(filePath, (err, stats) => {
         if (err || !stats.isFile()) {
-            // SPA fallback for extensionless routes
+            // Extensionless route resolution (clean URLs)
             if (safeUrl.indexOf('.') === -1) {
+                const htmlPath = filePath + '.html';
+                if (fs.existsSync(htmlPath)) {
+                    fs.readFile(htmlPath, (readErr, content) => {
+                        setSecurityHeaders(res);
+                        if (readErr) {
+                            res.statusCode = 500;
+                            res.setHeader('Content-Type', 'text/plain');
+                            res.end('Internal Server Error');
+                        } else {
+                            res.statusCode = 200;
+                            res.setHeader('Content-Type', 'text/html; charset=utf-8');
+                            res.end(content);
+                        }
+                    });
+                    return;
+                }
+
+                // SPA fallback for extensionless routes
                 console.log(`Fallback to /index.html for ${req.url}`);
                 const fallbackPath = path.join(__dirname, '/index.html');
                 fs.readFile(fallbackPath, (fallbackErr, content) => {
