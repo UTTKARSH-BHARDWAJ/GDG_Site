@@ -20,6 +20,9 @@
 
     <!-- Theme Initializer -->
     <script src="/assets/js/theme.js"></script>
+
+    <!-- View Transitions API support for seamless page routing -->
+    <meta name="view-transition" content="same-origin" />
     <style>
         .search-container {
             margin-bottom: 1rem;
@@ -372,7 +375,7 @@
             window.addEventListener('language-changed', renderEvents);
 
             // Initial render
-            setTimeout(renderEvents, 100);
+            renderEvents();
         });
     </script>
 </body>
