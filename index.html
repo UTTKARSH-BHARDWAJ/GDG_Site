@@ -10,21 +10,11 @@
     <meta name="description"
         content="GDG on Campus Dronacharya College of Engineering is a student developer community backed by Google Developers." />
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-
     <!-- Base Stylesheet -->
-    <link rel="stylesheet" href="/assets/css/styles.css?v=3" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
 
     <!-- Theme Initializer -->
-    <script src="/assets/js/theme.js?v=3"></script>
-
-    <!-- View Transitions API support for seamless page routing -->
-    <meta name="view-transition" content="same-origin" />
+    <script src="assets/js/theme.js"></script>
 </head>
 
 <body>
@@ -32,7 +22,7 @@
         <!-- Site Header -->
         <header class="site-header">
             <div class="container header-container">
-                <a href="/" class="logo-link">
+                <a href="/index.html" class="logo-link">
                     <img src="/Logo_1.svg" alt="GDG Logo Icon" class="logo-icon" />
                     <div class="logo-text-block">
                         <img src="/Logo_2.svg" alt="Google Developer Groups" class="logo-text-img logo-line1" />
@@ -44,10 +34,10 @@
                 <nav>
                     <ul class="nav-links" id="nav-links-menu">
                         <li>
-                            <a href="/" class="nav-link active" data-i18n="navigation.home">Home</a>
+                            <a href="/index.html" class="nav-link active" data-i18n="navigation.home">Home</a>
                         </li>
                         <li>
-                            <a href="/activity" class="nav-link" data-i18n="navigation.recentActivities">Recent
+                            <a href="/activity.html" class="nav-link" data-i18n="navigation.recentActivities">Recent
                                 Activities</a>
                         </li>
 
@@ -66,13 +56,13 @@
         <main>
             <!-- Hero Banner -->
             <section class="container hero-section">
-                <div class="hero-content animate-fade-in-up stagger-1">
+                <div class="hero-content">
                     <h1 class="hero-title" data-i18n="mainSection.title">Discover Google Technology at Dronacharya
                         College of Engineering Learn, Share, Grow!</h1>
                     <p class="hero-desc" data-i18n="mainSection.description">GDG on Campus Dronacharya College of
                         Engineering provides students with visibility, community, and resources in the tech field.</p>
                 </div>
-                <div class="hero-image-container animate-fade-in-up stagger-2">
+                <div class="hero-image-container">
                     <img src="/google_sticker_3.gif" alt="GDG Mascot Sticker" class="hero-gif" loading="lazy" />
                 </div>
             </section>
@@ -80,13 +70,13 @@
             <!-- Who We Are -->
             <section class="info-section">
                 <div class="container info-grid">
-                    <div class="info-content animate-fade-in-up stagger-1">
+                    <div class="info-content">
                         <h2 class="info-tag" data-i18n="mainSection.whoWeAre">Who We Are</h2>
                         <p class="info-text" data-i18n="mainSection.whoWeAreDescription">Google Developer Groups on
                             Campus (GDG on Campus) at Dronacharya College of Engineering is a student-led developer
                             community backed by Google Developers...</p>
                     </div>
-                    <div class="info-media animate-fade-in-up stagger-2">
+                    <div class="info-media">
                         <div class="video-container">
                             <iframe src="https://www.youtube.com/embed/V6s5kjSoqzw?rel=0" class="video-iframe"
                                 title="YouTube Video Player"
@@ -100,7 +90,7 @@
 
             <!-- Call For Speakers / Join Team -->
             <section class="container cta-section">
-                <div class="cta-box animate-fade-in-up stagger-1">
+                <div class="cta-box">
                     <div class="cta-image-wrapper">
                         <div class="mascot-container">
                             <img src="/dash-big.svg" alt="Google Dash Mascot" class="mascot-img" loading="lazy" />
@@ -109,35 +99,33 @@
                     <div class="cta-content">
                         <p class="cta-quote" data-i18n="mainSection.recruitmentQuote">"We are looking for campus friends
                             who are willing to share their expertise on Android, Kotlin, Firebase, Flutter..."</p>
-                        <a href="mailto:contact@dronacharya.info" target="_blank" rel="noopener noreferrer"
-                            class="btn-brand" data-i18n="mainSection.recruitmentButton">Submit Talk / Join Us</a>
+                        <a href="mailto:contact@dronacharya.info" target="_blank" rel="noopener noreferrer" class="btn-brand"
+                            data-i18n="mainSection.recruitmentButton">Submit Talk / Join Us</a>
                     </div>
                 </div>
             </section>
 
             <!-- Ecosystem Programs -->
             <section class="container sisters-section">
-                <h2 class="sisters-title animate-fade-in-up stagger-1" data-i18n="mainSection.sistersProjects.title">
-                    Google Developer Ecosystem</h2>
+                <h2 class="sisters-title" data-i18n="mainSection.sistersProjects.title">Google Developer Ecosystem</h2>
                 <div class="sisters-grid">
 
                     <!-- GDSC / Campus GDG -->
-                    <div class="sister-card animate-fade-in-up stagger-2">
+                    <div class="sister-card">
                         <h3 class="sister-name" data-i18n="mainSection.sistersProjects.gdsc.title">GDG on Campus
                             Chapters</h3>
                         <p class="sister-desc" data-i18n="mainSection.sistersProjects.gdsc.description">Connecting
                             student developers worldwide. Campus chapters help students learn Google technologies...</p>
-                        <a href="https://developers.google.com/community" target="_blank" rel="noopener noreferrer"
-                            class="sister-btn" data-i18n="mainSection.sistersProjects.learnMore">Learn More</a>
+                        <a href="https://developers.google.com/community" target="_blank" rel="noopener noreferrer" class="sister-btn"
+                            data-i18n="mainSection.sistersProjects.learnMore">Learn More</a>
                     </div>
                     <!-- GDE -->
-                    <div class="sister-card animate-fade-in-up stagger-3">
+                    <div class="sister-card">
                         <h3 class="sister-name" data-i18n="mainSection.sistersProjects.gde.title">Google Developers
                             Experts</h3>
                         <p class="sister-desc" data-i18n="mainSection.sistersProjects.gde.description">An official
                             Google network of certified technical professionals who share their expertise...</p>
-                        <a href="https://developers.google.com/community/experts" target="_blank"
-                            rel="noopener noreferrer" class="sister-btn"
+                        <a href="https://developers.google.com/community/experts" target="_blank" rel="noopener noreferrer" class="sister-btn"
                             data-i18n="mainSection.sistersProjects.learnMore">Learn More</a>
                     </div>
                 </div>
@@ -145,163 +133,161 @@
 
             <!-- Organizers Section -->
             <section class="container organizers-section">
-                <h2 class="organizers-title animate-fade-in-up stagger-1">Organizers</h2>
+                <h2 class="organizers-title">Organizers</h2>
                 <div class="organizers-grid">
                     <!-- Organizer 1 -->
-                    <div class="organizer-card animate-fade-in-up stagger-2">
+                    <div class="organizer-card">
                         <div class="organizer-image-wrapper">
-                            <img src="/assets/img/organizer_nishant.png" alt="Nishant Yadav" class="organizer-image" />
+                            <img src="assets/img/organizer_nishant.png" alt="Nishant Yadav" class="organizer-image" />
                         </div>
                         <h3 class="organizer-name">Nishant Yadav</h3>
                         <p class="organizer-role">GDGoC Lead</p>
-                        <a href="#" class="organizer-link">View profile</a>
+                        <a href="#" class="organizer-link" data-profile-id="nishant-yadav">View profile</a>
                     </div>
                     <!-- Organizer 2 -->
-                    <div class="organizer-card animate-fade-in-up stagger-3">
+                    <div class="organizer-card">
                         <div class="organizer-image-wrapper">
-                            <img src="/assets/img/organizer_manas.png" alt="Manas Thakur" class="organizer-image" />
+                            <img src="assets/img/organizer_manas.png" alt="Manas Thakur" class="organizer-image" />
                         </div>
                         <h3 class="organizer-name">Manas Thakur</h3>
                         <p class="organizer-role">Technical Lead</p>
-                        <a href="#" class="organizer-link">View profile</a>
+                        <a href="#" class="organizer-link" data-profile-id="manas-thakur">View profile</a>
                     </div>
                     <!-- Organizer 3 -->
-                    <div class="organizer-card animate-fade-in-up stagger-4">
+                    <div class="organizer-card">
                         <div class="organizer-image-wrapper">
-                            <img src="/assets/img/organizer_sohan.png" alt="SOHAN ROUT" class="organizer-image" />
+                            <img src="assets/img/organizer_sohan.png" alt="SOHAN ROUT" class="organizer-image" />
                         </div>
                         <h3 class="organizer-name">SOHAN ROUT</h3>
                         <p class="organizer-role">Technical Lead</p>
-                        <a href="#" class="organizer-link">View profile</a>
+                        <a href="#" class="organizer-link" data-profile-id="sohan-rout">View profile</a>
                     </div>
                     <!-- Organizer 4 -->
-                    <div class="organizer-card animate-fade-in-up stagger-5">
+                    <div class="organizer-card">
                         <div class="organizer-image-wrapper">
-                            <img src="/assets/img/organizer_uttkarsh.png" alt="UTTKARSH BHARDWAJ"
-                                class="organizer-image" />
+                            <img src="assets/img/organizer_uttkarsh.png" alt="UTTKARSH BHARDWAJ" class="organizer-image" />
                         </div>
                         <h3 class="organizer-name">UTTKARSH BHARDWAJ</h3>
                         <p class="organizer-role">Technical Volunteer</p>
-                        <a href="#" class="organizer-link">View profile</a>
+                        <a href="#" class="organizer-link" data-profile-id="uttkarsh-bhardwaj">View profile</a>
                     </div>
                     <!-- Organizer 5 -->
-                    <div class="organizer-card animate-fade-in-up stagger-2">
+                    <div class="organizer-card">
                         <div class="organizer-image-wrapper">
-                            <img src="/assets/img/organizer_ankit.png" alt="Ankit Yadav" class="organizer-image" />
+                            <img src="assets/img/organizer_ankit.png" alt="Ankit Yadav" class="organizer-image" />
                         </div>
                         <h3 class="organizer-name">Ankit Yadav</h3>
                         <p class="organizer-role">Technical Volunteer</p>
-                        <a href="#" class="organizer-link">View profile</a>
+                        <a href="#" class="organizer-link" data-profile-id="ankit-yadav">View profile</a>
                     </div>
                     <!-- Organizer 6 -->
-                    <div class="organizer-card animate-fade-in-up stagger-3">
+                    <div class="organizer-card">
                         <div class="organizer-image-wrapper">
-                            <img src="/assets/img/organizer_amol.png" alt="Amol Kumar" class="organizer-image" />
+                            <img src="assets/img/organizer_amol.png" alt="Amol Kumar" class="organizer-image" />
                         </div>
                         <h3 class="organizer-name">Amol Kumar</h3>
                         <p class="organizer-role">Technical Volunteer</p>
-                        <a href="#" class="organizer-link">View profile</a>
+                        <a href="#" class="organizer-link" data-profile-id="amol-kumar">View profile</a>
                     </div>
                     <!-- Organizer 7 -->
-                    <div class="organizer-card animate-fade-in-up stagger-4">
+                    <div class="organizer-card">
                         <div class="organizer-image-wrapper">
-                            <img src="/assets/img/organizer_megha.png" alt="Megha Yadav" class="organizer-image" />
+                            <img src="assets/img/organizer_megha.png" alt="Megha Yadav" class="organizer-image" />
                         </div>
                         <h3 class="organizer-name">Megha Yadav</h3>
                         <p class="organizer-role">Social & Outreach Team Lead</p>
-                        <a href="#" class="organizer-link">View profile</a>
+                        <a href="#" class="organizer-link" data-profile-id="megha-yadav">View profile</a>
                     </div>
                     <!-- Organizer 8 -->
-                    <div class="organizer-card animate-fade-in-up stagger-5">
+                    <div class="organizer-card">
                         <div class="organizer-image-wrapper">
-                            <img src="/assets/img/organizer_ariyan.png" alt="Ariyan Pal" class="organizer-image" />
+                            <img src="assets/img/organizer_ariyan.png" alt="Ariyan Pal" class="organizer-image" />
                         </div>
                         <h3 class="organizer-name">Ariyan Pal</h3>
                         <p class="organizer-role">Social & Outreach Team Lead</p>
-                        <a href="#" class="organizer-link">View profile</a>
+                        <a href="#" class="organizer-link" data-profile-id="ariyan-pal">View profile</a>
                     </div>
                     <!-- Organizer 9 -->
-                    <div class="organizer-card animate-fade-in-up stagger-2">
+                    <div class="organizer-card">
                         <div class="organizer-image-wrapper">
-                            <img src="/assets/img/organizer_savita.png" alt="Savita Kumari" class="organizer-image" />
+                            <img src="assets/img/organizer_savita.png" alt="Savita Kumari" class="organizer-image" />
                         </div>
                         <h3 class="organizer-name">Savita Kumari</h3>
                         <p class="organizer-role">Social & Outreach Volunteer</p>
-                        <a href="#" class="organizer-link">View profile</a>
+                        <a href="#" class="organizer-link" data-profile-id="savita-kumari">View profile</a>
                     </div>
                     <!-- Organizer 10 -->
-                    <div class="organizer-card animate-fade-in-up stagger-3">
+                    <div class="organizer-card">
                         <div class="organizer-image-wrapper">
-                            <img src="/assets/img/organizer_kartikey.png" alt="Kartikey" class="organizer-image" />
+                            <img src="assets/img/organizer_kartikey.png" alt="Kartikey" class="organizer-image" />
                         </div>
                         <h3 class="organizer-name">Kartikey</h3>
                         <p class="organizer-role">Social & Outreach Volunteer</p>
-                        <a href="#" class="organizer-link">View profile</a>
+                        <a href="#" class="organizer-link" data-profile-id="kartikey">View profile</a>
                     </div>
                     <!-- Organizer 11 -->
-                    <div class="organizer-card animate-fade-in-up stagger-4">
+                    <div class="organizer-card">
                         <div class="organizer-image-wrapper">
-                            <img src="/assets/img/organizer_sushant.png" alt="sushant Jha" class="organizer-image" />
+                            <img src="assets/img/organizer_sushant.png" alt="sushant Jha" class="organizer-image" />
                         </div>
                         <h3 class="organizer-name">sushant Jha</h3>
                         <p class="organizer-role">Socials & Outreach Volunteer</p>
-                        <a href="#" class="organizer-link">View profile</a>
+                        <a href="#" class="organizer-link" data-profile-id="sushant-jha">View profile</a>
                     </div>
                     <!-- Organizer 12 -->
-                    <div class="organizer-card animate-fade-in-up stagger-5">
+                    <div class="organizer-card">
                         <div class="organizer-image-wrapper">
-                            <img src="/assets/img/organizer_ujjwal.png" alt="UJJWAL VERMA" class="organizer-image" />
+                            <img src="assets/img/organizer_ujjwal.png" alt="UJJWAL VERMA" class="organizer-image" />
                         </div>
                         <h3 class="organizer-name">UJJWAL VERMA</h3>
                         <p class="organizer-role">Graphics & PR Lead</p>
-                        <a href="#" class="organizer-link">View profile</a>
+                        <a href="#" class="organizer-link" data-profile-id="ujjwal-verma">View profile</a>
                     </div>
                     <!-- Organizer 13 -->
-                    <div class="organizer-card animate-fade-in-up stagger-2">
+                    <div class="organizer-card">
                         <div class="organizer-image-wrapper">
-                            <img src="/assets/img/organizer_manav.png" alt="Manav Tuli" class="organizer-image" />
+                            <img src="assets/img/organizer_manav.png" alt="Manav Tuli" class="organizer-image" />
                         </div>
                         <h3 class="organizer-name">Manav Tuli</h3>
                         <p class="organizer-role">PR & Graphics Team Lead</p>
-                        <a href="#" class="organizer-link">View profile</a>
+                        <a href="#" class="organizer-link" data-profile-id="manav-tuli">View profile</a>
                     </div>
                     <!-- Organizer 14 -->
-                    <div class="organizer-card animate-fade-in-up stagger-3">
+                    <div class="organizer-card">
                         <div class="organizer-image-wrapper">
-                            <img src="/assets/img/organizer_rekha.png" alt="Rekha Rathore" class="organizer-image" />
+                            <img src="assets/img/organizer_rekha.png" alt="Rekha Rathore" class="organizer-image" />
                         </div>
                         <h3 class="organizer-name">Rekha Rathore</h3>
                         <p class="organizer-role">Graphics & PR Volunteer</p>
-                        <a href="#" class="organizer-link">View profile</a>
+                        <a href="#" class="organizer-link" data-profile-id="rekha-rathore">View profile</a>
                     </div>
                     <!-- Organizer 15 -->
-                    <div class="organizer-card animate-fade-in-up stagger-4">
+                    <div class="organizer-card">
                         <div class="organizer-image-wrapper">
-                            <img src="/assets/img/organizer_anamika.png" alt="Anamika Prajapati"
-                                class="organizer-image" />
+                            <img src="assets/img/organizer_anamika.png" alt="Anamika Prajapati" class="organizer-image" />
                         </div>
                         <h3 class="organizer-name">Anamika Prajapati</h3>
                         <p class="organizer-role">Graphics & PR Volunteer</p>
-                        <a href="#" class="organizer-link">View profile</a>
+                        <a href="#" class="organizer-link" data-profile-id="anamika-prajapati">View profile</a>
                     </div>
                     <!-- Organizer 16 -->
-                    <div class="organizer-card animate-fade-in-up stagger-5">
+                    <div class="organizer-card">
                         <div class="organizer-image-wrapper">
-                            <img src="/assets/img/organizer_aryan.png" alt="Aryan Rajput" class="organizer-image" />
+                            <img src="assets/img/organizer_aryan.png" alt="Aryan Rajput" class="organizer-image" />
                         </div>
                         <h3 class="organizer-name">Aryan Rajput</h3>
                         <p class="organizer-role">Graphics & PR Volunteer</p>
-                        <a href="#" class="organizer-link">View profile</a>
+                        <a href="#" class="organizer-link" data-profile-id="aryan-rajput">View profile</a>
                     </div>
                 </div>
             </section>
 
             <!-- Partners Section -->
             <section class="container partners-section">
-                <h2 class="partners-title animate-fade-in-up stagger-1">Partners</h2>
+                <h2 class="partners-title">Partners</h2>
                 <div class="partners-grid">
-                    <div class="partner-card animate-fade-in-up stagger-2">
-                        <img src="/assets/img/partner_coding_ninjas.png" alt="Coding Ninjas" class="partner-logo" />
+                    <div class="partner-card">
+                        <img src="assets/img/partner_coding_ninjas.png" alt="Coding Ninjas" class="partner-logo" />
                     </div>
                 </div>
             </section>
@@ -311,15 +297,15 @@
         <footer class="site-footer">
             <div class="container footer-content">
                 <div class="footer-brand">
-                    <div class="footer-logo-wrap">
-                        <a href="/" class="logo-link">
-                            <img src="/Logo_1.svg" alt="GDG Logo Icon" class="logo-icon" />
-                            <div class="logo-text-block">
-                                <img src="/Logo_2.svg" alt="Google Developer Groups" class="logo-text-img logo-line1" />
-                                <img src="/Logo_3.svg" alt="on Campus DCE" class="logo-text-img logo-line2" />
-                            </div>
-                        </a>
-                    </div>
+                <div class="footer-logo-wrap">
+                    <a href="/index.html" class="logo-link">
+                        <img src="/Logo_1.svg" alt="GDG Logo Icon" class="logo-icon" />
+                        <div class="logo-text-block">
+                            <img src="/Logo_2.svg" alt="Google Developer Groups" class="logo-text-img logo-line1" />
+                            <img src="/Logo_3.svg" alt="on Campus DCE" class="logo-text-img logo-line2" />
+                        </div>
+                    </a>
+                </div>
                     <div class="footer-disclaimer-title" data-i18n="footer.disclaimer">Disclaimer</div>
                     <p class="footer-disclaimer-text">
                         <span data-i18n="footer.disclaimerText">GDG on Campus Dronacharya College of Engineering is an
@@ -332,62 +318,48 @@
                 <div class="footer-links-grid">
                     <div class="footer-links-col">
                         <div class="footer-links-title">Community</div>
-                        <a href="https://gdg.community.dev" target="_blank" rel="noopener noreferrer"
-                            class="footer-link">Google Developer
+                        <a href="https://gdg.community.dev" target="_blank" rel="noopener noreferrer" class="footer-link">Google Developer
                             Groups</a>
-                        <a href="https://developers.google.com" target="_blank" rel="noopener noreferrer"
-                            class="footer-link">Google
+                        <a href="https://developers.google.com" target="_blank" rel="noopener noreferrer" class="footer-link">Google
                             Developers</a>
                     </div>
                     <div class="footer-links-col">
                         <div class="footer-links-title">Socials</div>
                         <div class="footer-socials">
                             <!-- Linktree -->
-                            <a href="https://linktr.ee" target="_blank" rel="noopener noreferrer"
-                                class="footer-social-icon" title="Linktree" aria-label="Linktree">
+                            <a href="https://linktr.ee" target="_blank" rel="noopener noreferrer" class="footer-social-icon" title="Linktree" aria-label="Linktree">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                    <path
-                                        d="M13.51 21.98h-3.02v-4.64H6.85l5.15-5.15v-3.1H8.68l4.89-4.89L12.16 2.8l-6.8 6.8h5.32v3.1H7.04L1.89 17.85h8.6v4.13h3.02v-4.13h8.6l-5.15-5.15h-3.64v-3.1h5.32l-6.8-6.8-1.41 1.41 4.89 4.89h-4.32v3.1l5.15 5.15h-3.64v4.64z" />
+                                    <path d="M13.51 21.98h-3.02v-4.64H6.85l5.15-5.15v-3.1H8.68l4.89-4.89L12.16 2.8l-6.8 6.8h5.32v3.1H7.04L1.89 17.85h8.6v4.13h3.02v-4.13h8.6l-5.15-5.15h-3.64v-3.1h5.32l-6.8-6.8-1.41 1.41 4.89 4.89h-4.32v3.1l5.15 5.15h-3.64v4.64z"/>
                                 </svg>
                             </a>
                             <!-- Twitter (X) -->
-                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"
-                                class="footer-social-icon" title="Twitter / X" aria-label="Twitter">
+                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" title="Twitter / X" aria-label="Twitter">
                                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
-                                    <path
-                                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
                                 </svg>
                             </a>
                             <!-- LinkedIn -->
-                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
-                                class="footer-social-icon" title="LinkedIn" aria-label="LinkedIn">
+                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" title="LinkedIn" aria-label="LinkedIn">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                    <path
-                                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.779-1.75-1.75s.784-1.75 1.75-1.75 1.75.779 1.75 1.75-.784 1.75-1.75 1.75zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
                                 </svg>
                             </a>
                             <!-- Instagram -->
-                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"
-                                class="footer-social-icon" title="Instagram" aria-label="Instagram">
+                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" title="Instagram" aria-label="Instagram">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                    <path
-                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                                 </svg>
                             </a>
                             <!-- YouTube -->
-                            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer"
-                                class="footer-social-icon" title="YouTube" aria-label="YouTube">
+                            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" title="YouTube" aria-label="YouTube">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                    <path
-                                        d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.108C19.53 3.5 12 3.5 12 3.5s-7.53 0-9.388.555A3.002 3.002 0 0 0 .502 6.163C0 8.07 0 12 0 12s0 3.93.502 5.837a3.003 3.003 0 0 0 2.11 2.108C4.47 20.5 12 20.5 12 20.5s7.53 0 9.388-.555a3.002 3.002 0 0 0 2.11-2.108C24 15.93 24 12 24 12s0-3.93-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z" />
+                                    <path d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.108C19.53 3.5 12 3.5 12 3.5s-7.53 0-9.388.555A3.002 3.002 0 0 0 .502 6.163C0 8.07 0 12 0 12s0 3.93.502 5.837a3.003 3.003 0 0 0 2.11 2.108C4.47 20.5 12 20.5 12 20.5s7.53 0 9.388-.555a3.002 3.002 0 0 0 2.11-2.108C24 15.93 24 12 24 12s0-3.93-.502-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
                                 </svg>
                             </a>
                             <!-- Discord -->
-                            <a href="https://discord.com" target="_blank" rel="noopener noreferrer"
-                                class="footer-social-icon" title="Discord" aria-label="Discord">
+                            <a href="https://discord.com" target="_blank" rel="noopener noreferrer" class="footer-social-icon" title="Discord" aria-label="Discord">
                                 <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                                    <path
-                                        d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.094 13.094 0 0 1-1.873-.894.077.077 0 0 1-.008-.128c.126-.093.252-.19.372-.287a.075.075 0 0 1 .077-.011c3.92 1.793 8.18 1.793 12.061 0a.073.073 0 0 1 .078.009c.12.099.246.196.373.289a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.156-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.955 2.418-2.156 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.156-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.156 2.418z" />
+                                    <path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994.021-.041.001-.09-.041-.106a13.094 13.094 0 0 1-1.873-.894.077.077 0 0 1-.008-.128c.126-.093.252-.19.372-.287a.075.075 0 0 1 .077-.011c3.92 1.793 8.18 1.793 12.061 0a.073.073 0 0 1 .078.009c.12.099.246.196.373.289a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.894.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.156-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.955 2.418-2.156 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.156-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.156 2.418z"/>
                                 </svg>
                             </a>
                         </div>
@@ -405,19 +377,59 @@
     <div class="floating-nav" id="floating-nav-container">
         <button class="floating-nav-btn" id="floating-nav-trigger" aria-label="Open Navigation">🧭</button>
         <div class="floating-nav-menu" id="floating-nav-menu">
-            <a href="/" class="floating-nav-item">
+            <a href="/index.html" class="floating-nav-item">
                 <span class="icon">🏠</span>
                 <span data-i18n="navigation.home">Home</span>
             </a>
-            <a href="/activity" class="floating-nav-item">
+            <a href="/activity.html" class="floating-nav-item">
                 <span class="icon">📅</span>
                 <span data-i18n="navigation.recentActivities">Recent Activities</span>
             </a>
         </div>
     </div>
 
+    <div class="profile-modal-overlay" id="profileModalOverlay" aria-hidden="true">
+        <div class="profile-modal" role="dialog" aria-modal="true" aria-labelledby="profileModalName">
+            <button class="profile-modal-close" id="profileModalClose" aria-label="Close profile">&times;</button>
+            <div class="profile-modal-grid">
+                <div class="profile-modal-sidebar">
+                    <div class="profile-modal-card">
+                        <div class="profile-photo-wrap">
+                            <img id="profileModalPhoto" src="" alt="" class="profile-modal-photo" />
+                            <span class="profile-verified-badge" title="Verified Organizer">✓</span>
+                        </div>
+                        <h2 class="profile-modal-name" id="profileModalName"></h2>
+                        <p class="profile-modal-role" id="profileModalRole"></p>
+                        <div class="profile-modal-divider"></div>
+                        <div class="profile-modal-socials" id="profileModalSocials"></div>
+                    </div>
+                    <div class="profile-achievements-card">
+                        <h3 class="profile-achievements-title">🏆 Achievements</h3>
+                        <div id="profileModalAchievements"></div>
+                    </div>
+                </div>
+                <div class="profile-modal-main">
+                    <section class="profile-about-section">
+                        <h2>About</h2>
+                        <p id="profileModalAbout"></p>
+                    </section>
+                    <section class="profile-skills-section">
+                        <h2>Skills &amp; Technologies</h2>
+                        <div class="profile-skills-list" id="profileModalSkills"></div>
+                    </section>
+                    <section class="profile-activity-section">
+                        <h2>Recent Activity</h2>
+                        <div class="profile-timeline" id="profileModalActivity"></div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Localization Script -->
-    <script src="/assets/js/i18n.js?v=3"></script>
+    <script src="assets/js/i18n.js"></script>
+
+    <script src="assets/js/profile-modal.js"></script>
 </body>
 
 </html>
