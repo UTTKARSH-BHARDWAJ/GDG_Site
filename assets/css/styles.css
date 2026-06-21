@@ -110,6 +110,7 @@ html {
     text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
     scrollbar-gutter: stable;
+    overflow-y: scroll;
 }
 
 html,
@@ -204,7 +205,6 @@ main {
 
 /* Site Header */
 .site-header {
-    view-transition-name: site-header;
     background-color: rgba(250, 250, 250, 0.75);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
