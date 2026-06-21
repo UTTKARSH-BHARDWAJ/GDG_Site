@@ -10,6 +10,11 @@
     <meta name="description"
         content="Recent activities of Google Developer Groups on Campus Dronacharya College of Engineering" />
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <!-- Base Stylesheet -->
     <link rel="stylesheet" href="/assets/css/styles.css" />
 
@@ -72,7 +77,7 @@
 
         <!-- Page Header -->
         <section class="page-title-section">
-            <div class="container">
+            <div class="container animate-fade-in-up stagger-1">
                 <h1 class="page-title" data-i18n="activitySection.title">Recent Activities</h1>
                 <p class="page-subtitle" data-i18n="mainSection.description">GDG on Campus Dronacharya College of
                     Engineering activities catalog</p>
@@ -281,16 +286,17 @@
                     const template = window.i18n.t('activitySection.showingResults');
                     resultsText.textContent = template.replace('{{count}}', filtered.length);
 
-                    filtered.forEach(evt => {
+                    filtered.forEach((evt, idx) => {
                         const isLive = new Date(evt.date).toDateString() === new Date().toDateString();
                         const badgeText = isLive ? window.i18n.t('eventCard.live') : evt.type;
                         const audienceTranslated = window.i18n.t(`audienceTypeMap.${evt.audience}`);
-
+ 
                         const title = lang === 'en' ? evt.titleEn : evt.titleZh;
                         const desc = lang === 'en' ? evt.descEn : evt.descZh;
-
+ 
                         const card = document.createElement('div');
-                        card.className = 'content-card';
+                        const staggerIdx = (idx % 4) + 1;
+                        card.className = `content-card animate-fade-in-up stagger-${staggerIdx}`;
 
                         // Image wrapper (safe DOM construction)
                         const imageWrapper = document.createElement('div');
