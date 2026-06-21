@@ -112,7 +112,7 @@ html, body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
-    min-height: 100vh;
+    min-height: 101vh;
 }
 
 /* Custom Scrollbar for cross-platform visual consistency */
@@ -152,6 +152,14 @@ a {
     transition: color var(--transition-speed);
 }
 
+::view-transition-new(root) {
+    animation-duration: var(--transition-speed);
+}
+
+html:active-view-transition {
+    background-color: var(--background);
+}
+
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
@@ -185,6 +193,7 @@ main {
     top: 0;
     z-index: 100;
     transition: background-color var(--transition-speed), border-color var(--transition-speed);
+    view-transition-name: site-header;
 }
 
 .dark .site-header {
