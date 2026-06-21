@@ -113,6 +113,12 @@ html {
     overflow-y: scroll;
 }
 
+/* Prevent layout shift during View Transitions when browser forces overflow: hidden */
+html:active-view-transition,
+html::view-transition {
+    overflow-y: scroll !important;
+}
+
 html,
 body {
     font-family: var(--font-sans);
