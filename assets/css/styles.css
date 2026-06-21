@@ -101,6 +101,7 @@ html {
     scroll-behavior: smooth;
     text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%;
+    overflow-y: scroll; /* Force vertical scrollbar to prevent layout shift */
 }
 
 html, body {
@@ -112,7 +113,6 @@ html, body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizeLegibility;
-    min-height: 101vh;
 }
 
 /* Custom Scrollbar for cross-platform visual consistency */
@@ -2122,3 +2122,25 @@ img {
         padding: 1.5rem 1.125rem;
     }
 }
+/* Page Entry Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(24px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-fade-in-up {
+    opacity: 0;
+    animation: fadeInUp 0.9s cubic-bezier(0.34, 1.56, 0.64, 1) both;
+}
+
+.stagger-1 { animation-delay: 0.08s; }
+.stagger-2 { animation-delay: 0.16s; }
+.stagger-3 { animation-delay: 0.24s; }
+.stagger-4 { animation-delay: 0.32s; }
+.stagger-5 { animation-delay: 0.40s; }
