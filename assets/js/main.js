@@ -98,4 +98,30 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+
+    const codeChaosOverlay = document.getElementById('codeChaosModalOverlay');
+    if (codeChaosOverlay) {
+        codeChaosOverlay.addEventListener('click', (e) => {
+            if (e.target === codeChaosOverlay) {
+                window.closeCodeChaosModal();
+            }
+        });
+    }
 });
+
+// Code & Chaos Modal Logic
+window.openCodeChaosModal = function() {
+    const modal = document.getElementById('codeChaosModalOverlay');
+    if (modal) {
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+};
+
+window.closeCodeChaosModal = function() {
+    const modal = document.getElementById('codeChaosModalOverlay');
+    if (modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+};
