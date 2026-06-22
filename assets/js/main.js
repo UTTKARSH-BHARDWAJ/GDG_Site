@@ -26,5 +26,47 @@
                 }
             });
         }
+
+        // Timeline Scroll Logic
+        const timeline = document.getElementById('events-grid');
+        const timelineProgress = document.getElementById('timeline-progress');
+        const timelineItems = document.querySelectorAll('.timeline-item');
+
+        if (timeline && timelineProgress && timelineItems.length > 0) {
+            const updateTimeline = () => {
+                const scrollY = window.scrollY;
+                const windowHeight = window.innerHeight;
+                const timelineRect = timeline.getBoundingClientRect();
+                const timelineTop = timelineRect.top + scrollY;
+                const timelineHeight = timelineRect.height;
+
+                let progress = 0;
+                // Trigger earlier (85% down the viewport instead of 60%)
+                const activationLine = scrollY + (windowHeight * 0.85);
+
+                if (activationLine > timelineTop) {
+                    progress = ((activationLine - timelineTop) / timelineHeight) * 100;
+                }
+
+                progress = Math.max(0, Math.min(100, progress));
+                timelineProgress.style.height = progress + '%';
+
+                timelineItems.forEach((item, index) => {
+                    const itemRect = item.getBoundingClientRect();
+                    const itemTop = itemRect.top + scrollY;
+                    const markerOffset = itemRect.height / 2; 
+                    
+                    // Always activate the first card, and activate others when reached
+                    if (index === 0 || activationLine > (itemTop + markerOffset)) {
+                        item.classList.add('active');
+                    } else {
+                        item.classList.remove('active');
+                    }
+                });
+            };
+
+            updateTimeline();
+            window.addEventListener('scroll', updateTimeline, { passive: true });
+        }
     });
 })();
