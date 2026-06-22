@@ -380,6 +380,18 @@ main {
     background-color: var(--accent);
 }
 
+.theme-icon-dark {
+    display: none;
+}
+
+.dark .theme-icon-dark {
+    display: inline;
+}
+
+.dark .theme-icon-light {
+    display: none;
+}
+
 /* Language selector dropdown */
 .lang-dropdown {
     position: relative;

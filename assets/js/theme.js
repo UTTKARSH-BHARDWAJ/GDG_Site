@@ -31,10 +31,8 @@
         // Update UI icon based on theme
         const updateToggleIcon = (theme) => {
             if (theme === 'dark') {
-                themeToggleBtn.innerHTML = '☀️'; // Show sun to toggle to light
                 themeToggleBtn.setAttribute('title', 'Switch to Light Mode');
             } else {
-                themeToggleBtn.innerHTML = '🌙'; // Show moon to toggle to dark
                 themeToggleBtn.setAttribute('title', 'Switch to Dark Mode');
             }
         };
