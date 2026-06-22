@@ -219,7 +219,7 @@
                             <p class="card-desc">Unleash your creativity in this chaotic coding marathon. Build innovative projects under unique constraints.</p>
                             <div class="card-meta">
                                 <div class="card-meta-item">🛠️ General (In-person)</div>
-                                <button class="btn-card" onclick="openCalendarDialog()">Subscribe to Calendar</button>
+                                <button class="btn-card" onclick="openCodeChaosModal()">View Details</button>
                             </div>
                         </div>
                     </div>
@@ -308,6 +308,206 @@
                             <section style="margin-bottom: 2rem;">
                                 <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Conclusion</h2>
                                 <p style="color: var(--text-secondary); line-height: 1.6;">The Web Workshop 2025 successfully provided students with valuable knowledge and practical experience. The collaboration between GDG On Campus DCE and MagicAPI created an engaging learning environment and inspired students to continue their journey in web development.</p>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Code & Chaos Modal -->
+            <div class="profile-modal-overlay" id="codeChaosModalOverlay" aria-hidden="true">
+                <div class="profile-modal" role="dialog" aria-modal="true" aria-labelledby="codeChaosModalName">
+                    <button class="profile-modal-close" onclick="closeCodeChaosModal()" aria-label="Close details">&times;</button>
+                    <div class="profile-modal-grid">
+                        <div class="profile-modal-sidebar">
+                            <div class="profile-modal-card">
+                                <img src="/dash-big.svg" alt="Code & Chaos Banner" class="profile-modal-photo" style="border-radius: var(--radius); width: 100%; object-fit: cover; aspect-ratio: 1; background: var(--card);" />
+                                <h2 class="profile-modal-name" id="codeChaosModalName" style="margin-top: 1.5rem; font-size: 1.25rem;">Code & Chaos</h2>
+                                <p class="profile-modal-role" style="font-size: 1rem; color: var(--text-secondary); margin-bottom: 1.5rem;">24-Hour Offline Hackathon</p>
+                                <div class="profile-modal-divider"></div>
+                                <div style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem;">
+                                    <div style="display: flex; align-items: center; gap: 0.75rem; font-size: 0.95rem; color: var(--text-secondary);">
+                                        <span style="font-size: 1.2rem;">📅</span> 20–21 February, 2026
+                                    </div>
+                                    <div style="display: flex; align-items: center; gap: 0.75rem; font-size: 0.95rem; color: var(--text-secondary);">
+                                        <span style="font-size: 1.2rem;">📍</span> Offline (DCE Campus)
+                                    </div>
+                                    <div style="display: flex; align-items: center; gap: 0.75rem; font-size: 0.95rem; color: var(--text-secondary);">
+                                        <span style="font-size: 1.2rem;">⏱️</span> 24 Hours
+                                    </div>
+                                    <div style="display: flex; align-items: center; gap: 0.75rem; font-size: 0.95rem; color: var(--text-secondary);">
+                                        <span style="font-size: 1.2rem;">🎯</span> Think It. Code It. Deploy It.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-modal-main">
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Event Overview</h2>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">GDG On Campus – Dronacharya College of Engineering successfully organized Code & Chaos, a flagship 24-hour offline hackathon held on 20–21 February. Built around the theme "Think It. Code It. Deploy It.", the event brought together some of the brightest student innovators to collaborate, experiment, and build impactful solutions under strict time constraints.</p>
+                                <p style="color: var(--text-secondary); line-height: 1.6;">The hackathon served as a platform for aspiring developers to transform ideas into fully functional prototypes while competing across multiple tracks supported by industry sponsors. With participants working through the night, the event fostered creativity, teamwork, and problem-solving while simulating real-world product development environments.</p>
+                                <img src="/assets/code-chaos-team.jpg" alt="Code & Chaos Organizing Team" style="width: 100%; border-radius: var(--radius); box-shadow: var(--shadow-sm); display: block; margin-top: 1.5rem;" />
+                            </section>
+                            
+                            <hr style="border: 0; border-top: 2px solid var(--border); margin: 2rem 0;">
+
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Day 1: Kickoff and Round 1 Evaluation</h2>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">The event commenced with registrations and an energetic inauguration, followed by the official start of the 24-hour coding marathon. Teams quickly transitioned from brainstorming to implementation, with whiteboards filled with architectures and laptops buzzing with activity.</p>
+                                <p style="color: var(--text-secondary); line-height: 1.6;">During the first phase of evaluation, participants presented their problem statements, technical designs, and execution roadmaps. The Round 1 jury provided constructive feedback and helped teams refine their approaches.</p>
+                                <h3 style="font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: 0.5rem; color: var(--text-primary);">Round 1 Judges</h3>
+                                <ul style="color: var(--text-secondary); line-height: 1.6; padding-left: 1.2rem; margin-bottom: 1rem;">
+                                    <li>Sandhya Yadav</li>
+                                    <li>Vinayak Saubhri</li>
+                                    <li>Pravneet Singh</li>
+                                    <li>Anmol Sachan</li>
+                                    <li>Harshita Abrol</li>
+                                </ul>
+                                <p style="color: var(--text-secondary); line-height: 1.6;">Their technical insights and thought-provoking questions enabled participants to strengthen their projects and focus on scalability and practical implementation.</p>
+                            </section>
+
+                            <hr style="border: 0; border-top: 2px solid var(--border); margin: 2rem 0;">
+
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Mentorship and Hacking Sprints</h2>
+                                <p style="color: var(--text-secondary); line-height: 1.6;">As the night progressed and challenges became more complex, mentorship sessions played a vital role in maintaining momentum. Teams received valuable guidance on debugging, backend architecture, and strategies for aligning their projects with sponsor tracks.</p>
+                                <h3 style="font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: 0.5rem; color: var(--text-primary);">Mentors</h3>
+                                <ul style="color: var(--text-secondary); line-height: 1.6; padding-left: 1.2rem; margin-bottom: 1rem;">
+                                    <li>Pravneet Singh</li>
+                                    <li>Vinayak Saubhri</li>
+                                </ul>
+                                <p style="color: var(--text-secondary); line-height: 1.6;">Their support throughout the midnight and daytime hacking sessions significantly enhanced the quality of the final submissions and enriched the learning experience of participants.</p>
+                            </section>
+
+                            <hr style="border: 0; border-top: 2px solid var(--border); margin: 2rem 0;">
+
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Sponsor Tracks and Partnerships</h2>
+                                <p style="color: var(--text-secondary); line-height: 1.6;">Code & Chaos featured multiple sponsor-backed tracks that encouraged participants to explore innovative technologies and create real-world solutions.</p>
+                                <h3 style="font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: 0.5rem; color: var(--text-primary);">Special Tracks</h3>
+                                <ul style="color: var(--text-secondary); line-height: 1.6; padding-left: 1.2rem; margin-bottom: 1rem;">
+                                    <li>API.Market Track – ₹10,000 prize for the Best Business Ready Project.</li>
+                                    <li>Backternity Track – ₹2,000 prize for projects utilizing Backternity infrastructure.</li>
+                                    <li>MiniMax Track – $20 credits awarded to participants actively using MiniMax tools.</li>
+                                    <li>Women in Tech Track – Special recognition and goodies for outstanding women-led teams.</li>
+                                </ul>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 0.5rem;">The event was supported by several sponsors and partners, including:</p>
+                                <ul style="color: var(--text-secondary); line-height: 1.6; padding-left: 1.2rem; margin-bottom: 1rem;">
+                                    <li>Unstop</li>
+                                    <li>API.Market</li>
+                                    <li>Backternity</li>
+                                    <li>Paradize.space</li>
+                                    <li>DSA Visualizer</li>
+                                    <li>Commudle</li>
+                                    <li>MiniMax.io</li>
+                                    <li>Sharp Economy</li>
+                                    <li>Wingman</li>
+                                    <li>CipherSchools</li>
+                                </ul>
+                                <p style="color: var(--text-secondary); line-height: 1.6;">Their contributions helped provide prizes, resources, and opportunities that enhanced the overall hackathon experience.</p>
+                            </section>
+
+                            <hr style="border: 0; border-top: 2px solid var(--border); margin: 2rem 0;">
+
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Final Evaluation</h2>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">After 24 hours of continuous coding, teams presented their deployed solutions before the Final Evaluation Jury.</p>
+                                
+                                <h3 style="font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: 0.5rem; color: var(--text-primary);">Final Jury</h3>
+                                <ul style="color: var(--text-secondary); line-height: 1.6; padding-left: 1.2rem; margin-bottom: 1rem;">
+                                    <li>Divya Sharma</li>
+                                    <li>Deepanshu Pant</li>
+                                </ul>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">The judges assessed projects based on innovation, technical implementation, scalability, and presentation quality. The final round showcased exceptional creativity and demonstrated the participants' ability to transform ideas into working products within limited time.</p>
+                            </section>
+
+                            <hr style="border: 0; border-top: 2px solid var(--border); margin: 2rem 0;">
+
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Winners</h2>
+                                
+                                <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--text-primary);">🥇 Overall Winner – Team INFRA</h3>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 0.5rem;">Prize: ₹10,000</p>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 0.5rem;">Team Members:</p>
+                                <ul style="color: var(--text-secondary); line-height: 1.6; padding-left: 1.2rem; margin-bottom: 1rem;">
+                                    <li>Abhay Yadav</li>
+                                    <li>Tushar Sengar</li>
+                                    <li>Jaiveer Singh</li>
+                                    <li>Vivek Rawat</li>
+                                </ul>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">The team impressed the judges with their technical execution, teamwork, and ability to deliver a complete solution under pressure.</p>
+                                <img src="/assets/code-chaos-winner.png" alt="Overall Winner – Team INFRA" style="width: 100%; border-radius: var(--radius); box-shadow: var(--shadow-sm); display: block; margin-bottom: 2rem;" />
+
+                                <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--text-primary);">🥈 First Runner-Up – Team SAPPHIRE</h3>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 0.5rem;">Prize: ₹5,000</p>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 0.5rem;">Team Members:</p>
+                                <ul style="color: var(--text-secondary); line-height: 1.6; padding-left: 1.2rem; margin-bottom: 1rem;">
+                                    <li>Krish Jindal</li>
+                                    <li>Himanshu Kaushik</li>
+                                    <li>Pankaj Yadav</li>
+                                </ul>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">Their project demonstrated excellent implementation and stood out as one of the strongest contenders throughout the hackathon.</p>
+                                <img src="/assets/code-chaos-sapphire.png" alt="First Runner-Up – Team SAPPHIRE" style="width: 100%; border-radius: var(--radius); box-shadow: var(--shadow-sm); display: block; margin-bottom: 2rem;" />
+
+                                <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--text-primary);">🥉 Second Runner-Up – Team LOGIC SMITHS</h3>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 0.5rem;">Prize: ₹3,000</p>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 0.5rem;">Team Members:</p>
+                                <ul style="color: var(--text-secondary); line-height: 1.6; padding-left: 1.2rem; margin-bottom: 1rem;">
+                                    <li>Sumit Bisht</li>
+                                    <li>Anant Satsangi</li>
+                                    <li>Kartik Pandey</li>
+                                    <li>Vanshit Chauhan</li>
+                                </ul>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">The team showcased remarkable problem-solving skills and delivered an impressive solution despite the demanding timeline.</p>
+                                <img src="/assets/code-chaos-logic-smith.png" alt="Second Runner-Up – Team LOGIC SMITHS" style="width: 100%; border-radius: var(--radius); box-shadow: var(--shadow-sm); display: block; margin-bottom: 2rem;" />
+                            </section>
+
+                            <hr style="border: 0; border-top: 2px solid var(--border); margin: 2rem 0;">
+
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Special Track Winners</h2>
+                                
+                                <h3 style="font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: 0.5rem; color: var(--text-primary);">API.Market Track Winner</h3>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 0.5rem;">Team INCEPTION</p>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 0.5rem;">Prize: ₹10,000</p>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">Their project effectively demonstrated how APIs can be leveraged to solve real-world business challenges.</p>
+                                <img src="/assets/code-chaos-api-market.png" alt="API.Market Track Winner – Team INCEPTION" style="width: 100%; border-radius: var(--radius); box-shadow: var(--shadow-sm); display: block; margin-bottom: 2rem;" />
+
+                                <h3 style="font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: 0.5rem; color: var(--text-primary);">Women in Tech Track Winners</h3>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 0.5rem;">Team BirthGuard Intelligence</p>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 0.5rem;">Members:</p>
+                                <ul style="color: var(--text-secondary); line-height: 1.6; padding-left: 1.2rem; margin-bottom: 1rem;">
+                                    <li>Navya Sharma</li>
+                                    <li>Khushi Garg</li>
+                                </ul>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">Sponsored by Commudle, this track celebrated women innovators and encouraged greater participation of women in technology.</p>
+                                <img src="/assets/code-chaos-women-in-tech.png" alt="Women in Tech Track Winners – Team BirthGuard Intelligence" style="width: 100%; border-radius: var(--radius); box-shadow: var(--shadow-sm); display: block; margin-bottom: 2rem;" />
+
+                                <h3 style="font-size: 1.1rem; margin-top: 1.5rem; margin-bottom: 0.5rem; color: var(--text-primary);">Women in Tech Track by CipherSchools</h3>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 0.5rem;">Team NEXUS</p>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">The team received exclusive goodies from CipherSchools in recognition of their outstanding project and presentation.</p>
+                                <img src="/assets/code-chaos-nexus.png" alt="Women in Tech Track by CipherSchools – Team NEXUS" style="width: 100%; border-radius: var(--radius); box-shadow: var(--shadow-sm); display: block; margin-bottom: 2rem;" />
+                            </section>
+
+                            <hr style="border: 0; border-top: 2px solid var(--border); margin: 2rem 0;">
+
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Leadership and Support</h2>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">The successful execution of Code & Chaos was made possible through the constant encouragement and support of:</p>
+                                <h3 style="font-size: 1.1rem; margin-top: 1rem; margin-bottom: 0.5rem; color: var(--text-primary);">Faculty Lead</h3>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">Dr. Ashima Mehta</p>
+                                <h3 style="font-size: 1.1rem; margin-top: 1rem; margin-bottom: 0.5rem; color: var(--text-primary);">Principal</h3>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">Dr. Isha Malhotra</p>
+                                <p style="color: var(--text-secondary); line-height: 1.6;">Their guidance and commitment played a significant role in enabling the event and fostering a culture of innovation at Dronacharya College of Engineering.</p>
+                            </section>
+
+                            <hr style="border: 0; border-top: 2px solid var(--border); margin: 2rem 0;">
+
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Conclusion</h2>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">Code & Chaos was more than a hackathon—it was a celebration of creativity, collaboration, and perseverance. Over the course of 24 intense hours, participants transformed ideas into deployed solutions, overcame technical challenges, and learned the importance of teamwork and rapid execution.</p>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">The event witnessed outstanding enthusiasm from participants, mentors, judges, volunteers, and sponsors, making it one of the most successful initiatives organized by GDG On Campus – DCE. By providing a platform for innovation and hands-on learning, Code & Chaos reinforced the community's mission of empowering the next generation of developers and builders.</p>
+                                <p style="color: var(--text-primary); font-weight: 600; font-style: normal; margin-top: 1rem;">Think It. Code It. Deploy It.</p>
                             </section>
                         </div>
                     </div>
