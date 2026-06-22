@@ -70,3 +70,32 @@
         }
     });
 })();
+
+// Event Modal Logic
+window.openEventModal = function() {
+    const modal = document.getElementById('eventModalOverlay');
+    if (modal) {
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+};
+
+window.closeEventModal = function() {
+    const modal = document.getElementById('eventModalOverlay');
+    if (modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+};
+
+// Close modal when clicking outside of the content
+document.addEventListener('DOMContentLoaded', () => {
+    const modalOverlay = document.getElementById('eventModalOverlay');
+    if (modalOverlay) {
+        modalOverlay.addEventListener('click', (e) => {
+            if (e.target === modalOverlay) {
+                window.closeEventModal();
+            }
+        });
+    }
+});

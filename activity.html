@@ -239,7 +239,7 @@
                             <p class="card-desc">Web Workshop by GDG On Campus</p>
                             <div class="card-meta">
                                 <div class="card-meta-item">🛠️ General (In-person)</div>
-                                <button class="btn-card" onclick="openCalendarDialog()">Subscribe to Calendar</button>
+                                <button class="btn-card" onclick="openEventModal()">View Details</button>
                             </div>
                         </div>
                     </div>
@@ -250,6 +250,68 @@
             <div id="no-events-placeholder" style="display:none; text-align:center; padding: 4rem 1rem;"
                 class="coc-section">
                 <p style="font-size: 1.5rem; font-weight: 600; color: var(--muted-foreground);">No events found matching the criteria</p>
+            </div>
+            <!-- Event Details Modal -->
+            <div class="profile-modal-overlay" id="eventModalOverlay" aria-hidden="true">
+                <div class="profile-modal" role="dialog" aria-modal="true" aria-labelledby="eventModalName">
+                    <button class="profile-modal-close" onclick="closeEventModal()" aria-label="Close details">&times;</button>
+                    <div class="profile-modal-grid">
+                        <div class="profile-modal-sidebar">
+                            <div class="profile-modal-card">
+                                <img src="/dash-big.svg" alt="Event Banner" class="profile-modal-photo" style="border-radius: var(--radius); width: 100%; object-fit: cover; aspect-ratio: 1; background: var(--card);" />
+                                <h2 class="profile-modal-name" id="eventModalName" style="margin-top: 1.5rem; font-size: 1.25rem;">Code, Create, Innovate: Web Workshop 2025</h2>
+                                <p class="profile-modal-role" style="font-size: 1rem; color: var(--text-secondary); margin-bottom: 1.5rem;">Web Workshop by GDG On Campus</p>
+                                <div class="profile-modal-divider"></div>
+                                <div style="margin-top: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem;">
+                                    <div style="display: flex; align-items: center; gap: 0.75rem; font-size: 0.95rem; color: var(--text-secondary);">
+                                        <span style="font-size: 1.2rem;">📅</span> 1st November 2025
+                                    </div>
+                                    <div style="display: flex; align-items: center; gap: 0.75rem; font-size: 0.95rem; color: var(--text-secondary);">
+                                        <span style="font-size: 1.2rem;">⏰</span> 11:00 AM onwards
+                                    </div>
+                                    <div style="display: flex; align-items: center; gap: 0.75rem; font-size: 0.95rem; color: var(--text-secondary);">
+                                        <span style="font-size: 1.2rem;">📍</span> Online (Google Meet)
+                                    </div>
+                                    <div style="display: flex; align-items: center; gap: 0.75rem; font-size: 0.95rem; color: var(--text-secondary);">
+                                        <span style="font-size: 1.2rem;">⏱️</span> Two hours
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="profile-modal-main">
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Event Overview</h2>
+                                <p style="color: var(--text-secondary); line-height: 1.6;">On 1st November 2025, Google Developer Groups (GDG) On Campus Dronacharya College of Engineering organized an online Web Workshop 2025 in collaboration with MagicAPI. The two-hour session started at 11:00 AM and was conducted by Pulkit, a Web Developer at MagicAPI. The workshop focused on web development concepts, practical coding, and industry insights.</p>
+                            </section>
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Event Format</h2>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">The event was conducted in online mode through Google Meet and lasted for approximately two hours. Participants attended the live coding session, observed project demonstrations, and interacted with the speaker through discussions and Q&A sessions.</p>
+                                <img src="/assets/web-workshop-meet.png" alt="Google Meet session with Pulkit and attendees" style="width: 100%; border-radius: var(--radius); box-shadow: var(--shadow-sm); display: block;" />
+                            </section>
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Key Highlights</h2>
+                                <ul style="color: var(--text-secondary); line-height: 1.6; padding-left: 1.2rem;">
+                                    <li style="margin-bottom: 0.5rem;">Organized by GDG On Campus Dronacharya College of Engineering.</li>
+                                    <li style="margin-bottom: 0.5rem;">Collaboration with MagicAPI.</li>
+                                    <li style="margin-bottom: 0.5rem;">Speaker: Pulkit (Web Developer, MagicAPI).</li>
+                                    <li style="margin-bottom: 0.5rem;">Date: 1st November 2025.</li>
+                                    <li style="margin-bottom: 0.5rem;">Time: 11:00 AM onwards.</li>
+                                    <li style="margin-bottom: 0.5rem;">Mode: Online (Google Meet).</li>
+                                    <li style="margin-bottom: 0.5rem;">Duration: Two hours.</li>
+                                    <li style="margin-bottom: 0.5rem;">Live coding and practical web development demonstrations.</li>
+                                </ul>
+                            </section>
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Learning and Impact</h2>
+                                <p style="color: var(--text-secondary); line-height: 1.6;">Participants learned fundamental web development concepts, practical implementation techniques, and gained exposure to real-world development practices. The session enhanced coding skills and encouraged students to explore modern web technologies.</p>
+                            </section>
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Conclusion</h2>
+                                <p style="color: var(--text-secondary); line-height: 1.6;">The Web Workshop 2025 successfully provided students with valuable knowledge and practical experience. The collaboration between GDG On Campus DCE and MagicAPI created an engaging learning environment and inspired students to continue their journey in web development.</p>
+                            </section>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
 

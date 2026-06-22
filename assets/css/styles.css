@@ -1963,9 +1963,13 @@ img {
 }
 
 .profile-modal-close {
-    position: absolute;
+    position: sticky;
     top: 1.125rem;
-    right: 1.125rem;
+    float: right;
+    margin-top: -1.125rem;
+    margin-right: -1.125rem;
+    margin-bottom: -2.25rem;
+    z-index: 50;
     width: 2.25rem;
     height: 2.25rem;
     border-radius: 50%;
