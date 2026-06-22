@@ -142,3 +142,20 @@ window.closeDevthonModal = function() {
         document.body.style.overflow = '';
     }
 };
+
+// Gateway to GSoC Modal Logic
+window.openGsocModal = function() {
+    const modal = document.getElementById('gsocModalOverlay');
+    if (modal) {
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+};
+
+window.closeGsocModal = function() {
+    const modal = document.getElementById('gsocModalOverlay');
+    if (modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+};

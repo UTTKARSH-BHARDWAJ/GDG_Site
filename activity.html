@@ -179,7 +179,7 @@
                             <p class="card-desc">Open-Source Mentorship Series by GDG On Campus – DCE</p>
                             <div class="card-meta">
                                 <div class="card-meta-item">🛠️ General (Virtual)</div>
-                                <button class="btn-card" onclick="openCalendarDialog()">Subscribe to Calendar</button>
+                                <button class="btn-card" onclick="openGsocModal()">View Details</button>
                             </div>
                         </div>
                     </div>
@@ -513,6 +513,92 @@
                     </div>
                 </div>
             </div>
+            <!-- Gateway to GSoC Modal -->
+            <div class="profile-modal-overlay" id="gsocModalOverlay" aria-hidden="true">
+                <div class="profile-modal" role="dialog" aria-modal="true" aria-labelledby="gsoc-modal-title">
+                    <button class="profile-modal-close" onclick="closeGsocModal()" aria-label="Close modal">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                    
+                    <div class="profile-modal-header" style="flex-direction: column; align-items: flex-start; text-align: left; padding-bottom: 0;">
+                        <h2 id="gsoc-modal-title" style="font-size: 2.5rem; margin-bottom: 0.5rem; color: var(--text-primary);">Gateway to GSoC 2026</h2>
+                        <p style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 2rem; font-weight: 500;">Open-Source Mentorship Series by GDG On Campus – DCE</p>
+                    </div>
+
+                    <div class="profile-modal-body" style="padding-top: 0;">
+                        <div class="profile-modal-main">
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Event Overview</h2>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">GDG On Campus – Dronacharya College of Engineering successfully organized <strong>Gateway to GSoC 2026</strong>, an online mentorship series aimed at empowering students with the knowledge and guidance required to begin their journey in open source and prepare for Google Summer of Code (GSoC). Conducted on <strong>18 March 2026</strong> via Google Meet, the event featured interactive sessions led by experienced GSoC contributors and mentors who shared valuable insights from their open-source journeys.</p>
+                                <p style="color: var(--text-secondary); line-height: 1.6;">The initiative was designed to bridge the gap between aspiring contributors and the open-source ecosystem by providing practical guidance on project selection, proposal building, contribution workflows, and community engagement.</p>
+                            </section>
+
+                            <hr style="border: 0; border-top: 2px solid var(--border); margin: 2rem 0;">
+
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Learning from Experienced Contributors</h2>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">The event featured two distinguished speakers from the Google Summer of Code community:</p>
+                                
+                                <h3 style="font-size: 1.2rem; margin-top: 1.5rem; margin-bottom: 0.5rem; color: var(--text-primary);">Krish Malik – GSoC 2025 Contributor</h3>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">Krish Malik shared his experiences as a GSoC contributor and provided participants with practical strategies for navigating the open-source landscape. His session focused on:</p>
+                                <ul style="color: var(--text-secondary); line-height: 1.6; padding-left: 1.2rem; margin-bottom: 1rem;">
+                                    <li>Identifying suitable organizations and projects.</li>
+                                    <li>Understanding contribution workflows.</li>
+                                    <li>Strengthening GSoC proposals.</li>
+                                    <li>Building consistency through meaningful contributions.</li>
+                                    <li>Participating effectively in community discussions.</li>
+                                </ul>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">His insights emphasized that real learning begins when students move beyond tutorials and actively engage with communities and real-world projects.</p>
+
+                                <h3 style="font-size: 1.2rem; margin-top: 1.5rem; margin-bottom: 0.5rem; color: var(--text-primary);">Chirag Gupta – GSoC 2026 Mentor</h3>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">Chirag Gupta offered a mentor's perspective on what distinguishes successful applications and sustainable contributions. Through examples and interactive discussions, participants gained an understanding of:</p>
+                                <ul style="color: var(--text-secondary); line-height: 1.6; padding-left: 1.2rem; margin-bottom: 1rem;">
+                                    <li>Criteria used by mentors during proposal evaluation.</li>
+                                    <li>Importance of project scope and feasibility.</li>
+                                    <li>Best practices for writing impactful proposals.</li>
+                                    <li>Breaking down contributions into manageable milestones.</li>
+                                    <li>Long-term involvement in open-source communities.</li>
+                                </ul>
+                                <p style="color: var(--text-secondary); line-height: 1.6;">The session concluded with an open Q&A where students received personalized advice regarding preparation strategies and common challenges faced by first-time contributors.</p>
+                            </section>
+
+                            <hr style="border: 0; border-top: 2px solid var(--border); margin: 2rem 0;">
+
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Key Highlights</h2>
+                                <ul style="color: var(--text-secondary); line-height: 1.6; padding-left: 1.2rem; margin-bottom: 1rem;">
+                                    <li>Live demonstrations of open-source contribution workflows.</li>
+                                    <li>Guidance on selecting the right organizations and projects.</li>
+                                    <li>Insights into proposal writing and mentor expectations.</li>
+                                    <li>Practical tips for making effective contributions.</li>
+                                    <li>Interactive discussions and question-and-answer sessions.</li>
+                                    <li>Exposure to the collaborative culture of open source.</li>
+                                </ul>
+                            </section>
+
+                            <hr style="border: 0; border-top: 2px solid var(--border); margin: 2rem 0;">
+
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Impact and Outcomes</h2>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">Gateway to GSoC 2026 witnessed enthusiastic participation from students eager to explore open source and contribute to global communities. The sessions provided participants with a clearer understanding of the GSoC application process and equipped them with actionable strategies to begin their contribution journey.</p>
+                                <p style="color: var(--text-secondary); line-height: 1.6;">By bringing together both a GSoC contributor and a mentor, the event offered attendees a comprehensive perspective—from the contributor experience to the evaluation process followed by mentors. The interaction encouraged students to view open source not merely as a program, but as a platform for continuous learning, collaboration, and community building.</p>
+                            </section>
+
+                            <hr style="border: 0; border-top: 2px solid var(--border); margin: 2rem 0;">
+
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Conclusion</h2>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">Gateway to GSoC 2026 successfully fostered awareness and enthusiasm for open-source development among students. Through expert guidance, practical advice, and engaging discussions, the event inspired participants to take their first steps toward becoming active contributors to the global developer ecosystem.</p>
+                                <p style="color: var(--text-secondary); line-height: 1.6;">Through initiatives like these, <strong>GDG On Campus – DCE</strong> continues to cultivate a culture of collaboration, innovation, and lifelong learning while empowering students to contribute meaningfully to the world of open source.</p>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
             <!-- Devthon Modal -->
             <div class="profile-modal-overlay" id="devthonModalOverlay" aria-hidden="true">
                 <div class="profile-modal" role="dialog" aria-modal="true" aria-labelledby="devthon-modal-title">
@@ -706,7 +792,7 @@
     </div>
 
     <!-- Localization Script -->
-    <script src="/assets/js/main.js?v=5"></script>
+    <script src="/assets/js/main.js?v=6"></script>
 
     <!-- Calendar Modal Toggle Logic -->
     <script>
