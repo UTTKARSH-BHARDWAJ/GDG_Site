@@ -159,3 +159,20 @@ window.closeGsocModal = function() {
         document.body.style.overflow = '';
     }
 };
+
+// Smash Karts Modal Logic
+window.openSmashKartsModal = function() {
+    const modal = document.getElementById('smashKartsModalOverlay');
+    if (modal) {
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+};
+
+window.closeSmashKartsModal = function() {
+    const modal = document.getElementById('smashKartsModalOverlay');
+    if (modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+};

@@ -159,7 +159,7 @@
                             <p class="card-desc">Virtual Gaming Event by GDG On Campus – DCE</p>
                             <div class="card-meta">
                                 <div class="card-meta-item">🛠️ General (Virtual)</div>
-                                <button class="btn-card" onclick="openCalendarDialog()">Subscribe to Calendar</button>
+                                <button class="btn-card" onclick="openSmashKartsModal()">View Details</button>
                             </div>
                         </div>
                     </div>
@@ -513,6 +513,77 @@
                     </div>
                 </div>
             </div>
+            <!-- Smash Karts Modal -->
+            <div class="profile-modal-overlay" id="smashKartsModalOverlay" aria-hidden="true">
+                <div class="profile-modal" role="dialog" aria-modal="true" aria-labelledby="smash-karts-modal-title">
+                    <button class="profile-modal-close" onclick="closeSmashKartsModal()" aria-label="Close modal">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                    
+                    <div class="profile-modal-header" style="flex-direction: column; align-items: flex-start; text-align: left; padding-bottom: 0;">
+                        <h2 id="smash-karts-modal-title" style="font-size: 2.5rem; margin-bottom: 0.5rem; color: var(--text-primary);">Smash Karts Tournament</h2>
+                        <p style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 2rem; font-weight: 500;">Virtual Gaming Event by GDG On Campus – DCE</p>
+                    </div>
+
+                    <div class="profile-modal-body" style="padding-top: 0;">
+                        <div class="profile-modal-main">
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Event Overview</h2>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">GDG On Campus – Dronacharya College of Engineering successfully organized the <strong>Smash Karts Tournament</strong>, a virtual gaming event aimed at fostering community engagement, friendly competition, and teamwork among students. Held on <strong>22 March</strong>, the event brought together gaming enthusiasts for an action-packed experience filled with high-speed races, strategic gameplay, and exciting challenges.</p>
+                                <p style="color: var(--text-secondary); line-height: 1.6;">Designed to provide students with a refreshing break from academics and technical activities, the tournament encouraged participants to connect with peers, showcase their gaming skills, and enjoy an interactive competitive environment from the comfort of their homes.</p>
+                            </section>
+
+                            <hr style="border: 0; border-top: 2px solid var(--border); margin: 2rem 0;">
+
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Tournament Experience</h2>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">The event featured <strong>Smash Karts</strong>, a multiplayer battle-racing game that combines fast-paced driving with exciting power-ups and combat mechanics. Participants competed in thrilling matches where success depended on quick reflexes, strategic decision-making, and adaptability.</p>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">To facilitate smooth coordination and communication, participants joined a dedicated Discord community, which served as a platform for announcements, match scheduling, and interaction throughout the tournament.</p>
+                                <p style="color: var(--text-secondary); line-height: 1.6;">The competition witnessed enthusiastic participation, with players engaging in intense battles and demonstrating exceptional gaming skills.</p>
+                            </section>
+
+                            <hr style="border: 0; border-top: 2px solid var(--border); margin: 2rem 0;">
+
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Winners</h2>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">After several exciting rounds of competition, the following participants emerged as the top performers:</p>
+                                
+                                <p style="color: var(--text-primary); font-size: 1.1rem; margin-bottom: 1rem; font-weight: 500;">🥇 <strong>Undertaker</strong> – First Place</p>
+                                <p style="color: var(--text-primary); font-size: 1.1rem; margin-bottom: 1rem; font-weight: 500;">🥈 <strong>Sunar001</strong> – Second Place</p>
+                                <p style="color: var(--text-primary); font-size: 1.1rem; margin-bottom: 1.5rem; font-weight: 500;">🥉 <strong>GamingDada</strong> – Third Place</p>
+                                
+                                <p style="color: var(--text-secondary); line-height: 1.6;">The winners were recognized for their outstanding performance and competitive spirit, earning exciting rewards and appreciation from the community.</p>
+                            </section>
+
+                            <hr style="border: 0; border-top: 2px solid var(--border); margin: 2rem 0;">
+
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Key Highlights</h2>
+                                <ul style="color: var(--text-secondary); line-height: 1.6; padding-left: 1.2rem; margin-bottom: 1rem;">
+                                    <li>Engaging virtual gaming experience open to students.</li>
+                                    <li>Fast-paced multiplayer races featuring unique power-ups and combat elements.</li>
+                                    <li>Real-time interaction and coordination through Discord.</li>
+                                    <li>Friendly competition that promoted teamwork and community building.</li>
+                                    <li>Exciting rewards and recognition for top performers.</li>
+                                    <li>Opportunity for students to connect beyond academics and technical activities.</li>
+                                </ul>
+                            </section>
+
+                            <hr style="border: 0; border-top: 2px solid var(--border); margin: 2rem 0;">
+
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Impact and Conclusion</h2>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">The Smash Karts Tournament successfully created a vibrant and entertaining atmosphere that strengthened bonds within the student community. By blending competition with recreation, the event highlighted the importance of maintaining a healthy balance between learning and leisure.</p>
+                                <p style="color: var(--text-secondary); line-height: 1.6;">The tournament witnessed enthusiastic participation and showcased the spirit of sportsmanship, collaboration, and fun among students. Through initiatives like these, <strong>GDG On Campus – DCE</strong> continues to cultivate an inclusive and engaging community that extends beyond technology and encourages holistic student development.</p>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
             <!-- Gateway to GSoC Modal -->
             <div class="profile-modal-overlay" id="gsocModalOverlay" aria-hidden="true">
                 <div class="profile-modal" role="dialog" aria-modal="true" aria-labelledby="gsoc-modal-title">
@@ -792,7 +863,7 @@
     </div>
 
     <!-- Localization Script -->
-    <script src="/assets/js/main.js?v=6"></script>
+    <script src="/assets/js/main.js?v=7"></script>
 
     <!-- Calendar Modal Toggle Logic -->
     <script>
