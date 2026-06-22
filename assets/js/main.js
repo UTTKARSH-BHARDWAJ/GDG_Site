@@ -125,3 +125,20 @@ window.closeCodeChaosModal = function() {
         document.body.style.overflow = '';
     }
 };
+
+// Devthon Modal Logic
+window.openDevthonModal = function() {
+    const modal = document.getElementById('devthonModalOverlay');
+    if (modal) {
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+};
+
+window.closeDevthonModal = function() {
+    const modal = document.getElementById('devthonModalOverlay');
+    if (modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+};

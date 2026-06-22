@@ -198,8 +198,8 @@
                             <h3 class="card-title">Devthon</h3>
                             <p class="card-desc">Competitive Coding Challenge by GDG On Campus – DCE in Collaboration with GeeksforGeeks</p>
                             <div class="card-meta">
-                                <div class="card-meta-item">🛠️ General (In-person)</div>
-                                <button class="btn-card" onclick="openCalendarDialog()">Subscribe to Calendar</button>
+                                <div class="card-meta-item">🛠️ General (Virtual)</div>
+                                <button class="btn-card" onclick="openDevthonModal()">View Details</button>
                             </div>
                         </div>
                     </div>
@@ -513,6 +513,71 @@
                     </div>
                 </div>
             </div>
+            <!-- Devthon Modal -->
+            <div class="profile-modal-overlay" id="devthonModalOverlay" aria-hidden="true">
+                <div class="profile-modal" role="dialog" aria-modal="true" aria-labelledby="devthon-modal-title">
+                    <button class="profile-modal-close" onclick="closeDevthonModal()" aria-label="Close modal">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                    
+                    <div class="profile-modal-header" style="flex-direction: column; align-items: flex-start; text-align: left; padding-bottom: 0;">
+                        <h2 id="devthon-modal-title" style="font-size: 2.5rem; margin-bottom: 0.5rem; color: var(--text-primary);">Devthon</h2>
+                        <p style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 2rem; font-weight: 500;">Competitive Coding Challenge by GDG On Campus – DCE in Collaboration with GeeksforGeeks</p>
+                    </div>
+
+                    <div class="profile-modal-body" style="padding-top: 0;">
+                        <div class="profile-modal-main">
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Event Overview</h2>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">GDG On Campus – Dronacharya College of Engineering, in collaboration with GeeksforGeeks, successfully organized <strong>Devthon</strong>, an exciting competitive coding challenge designed to test participants' problem-solving abilities, coding proficiency, and analytical thinking under pressure.</p>
+                                <p style="color: var(--text-secondary); line-height: 1.6;">The event brought together enthusiastic programmers and aspiring developers for an intense one-hour coding battle that emphasized speed, accuracy, and logical reasoning. With a structured format and real-time competition environment, Devthon provided participants with an opportunity to showcase their technical skills and compete for a place among the top performers.</p>
+                            </section>
+
+                            <hr style="border: 0; border-top: 2px solid var(--border); margin: 2rem 0;">
+
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Event Format</h2>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">The competition followed a carefully planned timeline to ensure a seamless experience for all participants. The portal was opened prior to the contest to facilitate smooth logins and avoid last-minute technical issues.</p>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">Participants were required to log in before the strict deadline, following which the coding challenge commenced. During the 60-minute contest, competitors tackled four carefully curated problems with a cumulative score of 100 points.</p>
+                                <p style="color: var(--text-secondary); line-height: 1.6;">The event encouraged participants to apply algorithmic thinking, optimize solutions, and demonstrate efficiency while competing against their peers in a dynamic and challenging environment.</p>
+                            </section>
+
+                            <hr style="border: 0; border-top: 2px solid var(--border); margin: 2rem 0;">
+
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Key Highlights</h2>
+                                <ul style="color: var(--text-secondary); line-height: 1.6; padding-left: 1.2rem; margin-bottom: 1rem;">
+                                    <li>Collaboration between <strong>GDG On Campus – DCE</strong> and <strong>GeeksforGeeks</strong>.</li>
+                                    <li>A one-hour coding competition designed to evaluate speed and problem-solving capabilities.</li>
+                                    <li>Four coding challenges with a total score of 100 points.</li>
+                                    <li>Real-time leaderboard and competitive environment.</li>
+                                    <li>Opportunity for participants to benchmark their performance against fellow coders.</li>
+                                    <li>A platform to strengthen programming fundamentals and enhance coding confidence.</li>
+                                </ul>
+                            </section>
+
+                            <hr style="border: 0; border-top: 2px solid var(--border); margin: 2rem 0;">
+
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Learning and Impact</h2>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">Devthon served as more than just a competition; it provided students with valuable exposure to time-constrained problem solving and reinforced the importance of writing efficient and optimized solutions. Participants experienced the thrill of competitive programming while developing essential skills required for technical interviews, coding contests, and software development careers.</p>
+                                <p style="color: var(--text-secondary); line-height: 1.6;">The event witnessed enthusiastic participation and fostered a spirit of healthy competition, collaboration, and continuous learning among the student community.</p>
+                            </section>
+
+                            <hr style="border: 0; border-top: 2px solid var(--border); margin: 2rem 0;">
+
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Conclusion</h2>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">Devthon successfully brought together the coding culture of <strong>GDG On Campus – DCE</strong> and the learning ecosystem of <strong>GeeksforGeeks</strong>, creating an engaging platform for students to challenge themselves and refine their programming skills.</p>
+                                <p style="color: var(--text-secondary); line-height: 1.6;">By encouraging analytical thinking and problem-solving under pressure, the event reinforced the commitment of <strong>GDG On Campus – DCE</strong> to nurturing technical excellence and empowering students to become confident and capable developers.</p>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
 
         <!-- Footer -->
@@ -641,7 +706,7 @@
     </div>
 
     <!-- Localization Script -->
-    <script src="/assets/js/main.js?v=4"></script>
+    <script src="/assets/js/main.js?v=5"></script>
 
     <!-- Calendar Modal Toggle Logic -->
     <script>
