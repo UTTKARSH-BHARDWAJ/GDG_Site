@@ -139,7 +139,7 @@
                             <p class="card-desc">A collaborative, fast-paced hackathon focusing on rapid prototyping and team relay coding challenges.</p>
                             <div class="card-meta">
                                 <div class="card-meta-item">🛠️ General (In-person)</div>
-                                <button class="btn-card" onclick="openCalendarDialog()">Subscribe to Calendar</button>
+                                <button class="btn-card" onclick="openHackORelayModal()">View Details</button>
                             </div>
                         </div>
                     </div>
@@ -513,6 +513,109 @@
                     </div>
                 </div>
             </div>
+            <!-- Hack-O-Relay Modal -->
+            <div class="profile-modal-overlay" id="hackORelayModalOverlay" aria-hidden="true">
+                <div class="profile-modal" role="dialog" aria-modal="true" aria-labelledby="hack-o-relay-modal-title">
+                    <button class="profile-modal-close" onclick="closeHackORelayModal()" aria-label="Close modal">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                    
+                    <div class="profile-modal-header" style="flex-direction: column; align-items: flex-start; text-align: left; padding-bottom: 0;">
+                        <h2 id="hack-o-relay-modal-title" style="font-size: 2.5rem; margin-bottom: 0.5rem; color: var(--text-primary);">Hack-O-Relay 5.0</h2>
+                        <p style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 2rem; font-weight: 500;">Flagship Intra-College Hackathon by GDG On Campus – DCE</p>
+                    </div>
+
+                    <div class="profile-modal-body" style="padding-top: 0;">
+                        <div class="profile-modal-main">
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Event Overview</h2>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">Hack-O-Relay 5.0, the flagship intra-college hackathon organized by GDG On Campus – Dronacharya College of Engineering, successfully concluded after an exciting 48-hour journey of innovation, collaboration, and technical excellence. Designed to foster problem-solving and hands-on development, the event brought together enthusiastic student developers to transform ideas into impactful solutions across domains such as Agentic AI, Cyber Security, and Full-Stack Development.</p>
+                                <p style="color: var(--text-secondary); line-height: 1.6;">The two-day hackathon served as a platform for participants to challenge themselves, explore emerging technologies, and gain practical experience through mentorship and rigorous evaluation. The event witnessed remarkable creativity, dedication, and countless hours of coding as teams worked tirelessly to build functional prototypes capable of addressing real-world challenges.</p>
+                            </section>
+
+                            <hr style="border: 0; border-top: 2px solid var(--border); margin: 2rem 0;">
+
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Day 1: Preliminary Evaluation and Mentorship</h2>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">The first day of Hack-O-Relay 5.0 marked the beginning of an intense 48-hour sprint. Teams presented their vision decks, technical architectures, and early-stage prototypes before an expert evaluation panel. The day emphasized learning and refinement, allowing participants to receive constructive feedback aimed at strengthening their solutions.</p>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">The mentorship and evaluation sessions focused on improving system design, optimizing technology stacks, and enhancing scalability. Participants showcased innovative approaches and demonstrated exceptional enthusiasm in solving complex problem statements.</p>
+                                
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">The Round 1 evaluation was conducted by:</p>
+                                <ul style="color: var(--text-secondary); line-height: 1.6; padding-left: 1.2rem; margin-bottom: 1rem;">
+                                    <li><strong>Prof. Renu Narwal</strong></li>
+                                    <li><strong>Prof. Ankit Agarwal, Ph.D.</strong></li>
+                                </ul>
+                                
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">Their technical insights and guidance encouraged participants to think beyond implementation and focus on practical applicability and long-term impact.</p>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">Following the evaluation sessions, the "Overnight Relay" phase commenced. Teams continued their development remotely, actively maintaining GitHub commit streaks, implementing mentor feedback, and refining features in preparation for the final presentations.</p>
+                                <img src="/assets/hack-o-relay-presentation-1.jpg" alt="Day 1: Preliminary Evaluation and Mentorship" style="width: 100%; border-radius: var(--radius); box-shadow: var(--shadow-sm); display: block;" />
+                            </section>
+
+                            <hr style="border: 0; border-top: 2px solid var(--border); margin: 2rem 0;">
+
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Day 2: Final Presentations and Conclusion</h2>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">The second day witnessed the culmination of the hackathon with the Final Evaluation and Live Demonstrations. Teams presented their completed solutions, highlighting deployment readiness, functionality, user experience, and innovation.</p>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">The final round showcased the technical capabilities and perseverance of the participants. From concept ideation to functional prototypes, the quality of projects established a new benchmark of excellence at Dronacharya College of Engineering.</p>
+                                
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">The final jury comprised:</p>
+                                <ul style="color: var(--text-secondary); line-height: 1.6; padding-left: 1.2rem; margin-bottom: 1rem;">
+                                    <li><strong>Prof. Renu Narwal</strong></li>
+                                    <li><strong>Prof. Ankit Agarwal, Ph.D.</strong></li>
+                                </ul>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">Their rigorous assessment and valuable recommendations challenged the finalists to consider scalability, real-world implementation, and sustainability of their solutions.</p>
+                                <img src="/assets/hack-o-relay-presentation-2.png" alt="Day 2: Final Presentations and Conclusion" style="width: 100%; border-radius: var(--radius); box-shadow: var(--shadow-sm); display: block;" />
+                            </section>
+
+                            <hr style="border: 0; border-top: 2px solid var(--border); margin: 2rem 0;">
+
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Leadership and Support</h2>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">Hack-O-Relay 5.0 was made possible through the constant support and guidance of the faculty members and institutional leadership.</p>
+                                
+                                <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--text-primary);">Event Head</h3>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1.5rem;">Dr. Ashima Mehta</p>
+
+                                <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--text-primary);">Faculty Coordinators</h3>
+                                <ul style="color: var(--text-secondary); line-height: 1.6; padding-left: 1.2rem; margin-bottom: 1.5rem;">
+                                    <li><strong>Prof. Vimmi Malhotra</strong></li>
+                                    <li><strong>Prof. Aditi Arya</strong></li>
+                                </ul>
+
+                                <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem; color: var(--text-primary);">Special Recognition</h3>
+                                <p style="color: var(--text-secondary); line-height: 1.6;">GDG On Campus – DCE extends heartfelt gratitude to <strong>Prof. Ramanand Kumar</strong> for his unwavering support and guidance throughout the planning and execution of the event. His encouragement played a crucial role in ensuring the smooth conduct of Hack-O-Relay 5.0.</p>
+                            </section>
+
+                            <hr style="border: 0; border-top: 2px solid var(--border); margin: 2rem 0;">
+
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Student Coordination Team</h2>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">The seamless execution of the event was made possible by the dedicated efforts of the student coordinators:</p>
+                                <ul style="color: var(--text-secondary); line-height: 1.6; padding-left: 1.2rem; margin-bottom: 1rem;">
+                                    <li><strong>Nishant Yadav</strong></li>
+                                    <li><strong>Ujjwal Verma</strong></li>
+                                    <li><strong>Megha Y.</strong></li>
+                                    <li><strong>Savita K.</strong></li>
+                                </ul>
+                                <p style="color: var(--text-secondary); line-height: 1.6;">Their commitment and teamwork ensured a rewarding and memorable experience for all participants.</p>
+                            </section>
+
+                            <hr style="border: 0; border-top: 2px solid var(--border); margin: 2rem 0;">
+
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Conclusion</h2>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">Hack-O-Relay 5.0 celebrated innovation, perseverance, and collaborative learning. More than just a competition, the event provided students with an opportunity to strengthen their technical expertise, experience real-world development practices, and engage with mentors and peers in a dynamic environment.</p>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">GDG On Campus – DCE extends sincere appreciation to all participants, mentors, judges, faculty members, and volunteers who contributed to the success of the event. Whether through winning projects or invaluable learning experiences, every participant emerged with enhanced skills and a deeper appreciation for the process of building technology that creates meaningful impact.</p>
+                                <p style="color: var(--text-secondary); line-height: 1.6;">Hack-O-Relay 5.0 concluded with resounding success, leaving behind a legacy of innovation and setting the stage for even greater achievements in the future.</p>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
             <!-- Smash Karts Modal -->
             <div class="profile-modal-overlay" id="smashKartsModalOverlay" aria-hidden="true">
                 <div class="profile-modal" role="dialog" aria-modal="true" aria-labelledby="smash-karts-modal-title">
@@ -863,7 +966,7 @@
     </div>
 
     <!-- Localization Script -->
-    <script src="/assets/js/main.js?v=7"></script>
+    <script src="/assets/js/main.js?v=8"></script>
 
     <!-- Calendar Modal Toggle Logic -->
     <script>

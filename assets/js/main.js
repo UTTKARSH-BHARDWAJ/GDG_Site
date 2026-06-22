@@ -176,3 +176,20 @@ window.closeSmashKartsModal = function() {
         document.body.style.overflow = '';
     }
 };
+
+// Hack-O-Relay Modal Logic
+window.openHackORelayModal = function() {
+    const modal = document.getElementById('hackORelayModalOverlay');
+    if (modal) {
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+};
+
+window.closeHackORelayModal = function() {
+    const modal = document.getElementById('hackORelayModalOverlay');
+    if (modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+};
