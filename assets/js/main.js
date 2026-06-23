@@ -92,23 +92,28 @@ window.closeEventModal = function() {
 
 // Close modal when clicking outside of the content
 document.addEventListener('DOMContentLoaded', () => {
-    const modalOverlay = document.getElementById('eventModalOverlay');
-    if (modalOverlay) {
-        modalOverlay.addEventListener('click', (e) => {
-            if (e.target === modalOverlay) {
-                window.closeEventModal();
-            }
-        });
-    }
+    const overlays = [
+        { id: 'eventModalOverlay', closeFn: window.closeEventModal },
+        { id: 'codeChaosModalOverlay', closeFn: window.closeCodeChaosModal },
+        { id: 'devthonModalOverlay', closeFn: window.closeDevthonModal },
+        { id: 'gsocModalOverlay', closeFn: window.closeGsocModal },
+        { id: 'smashKartsModalOverlay', closeFn: window.closeSmashKartsModal },
+        { id: 'hackORelayModalOverlay', closeFn: window.closeHackORelayModal },
+        { id: 'geminiModalOverlay', closeFn: window.closeGeminiModal }
+    ];
 
-    const codeChaosOverlay = document.getElementById('codeChaosModalOverlay');
-    if (codeChaosOverlay) {
-        codeChaosOverlay.addEventListener('click', (e) => {
-            if (e.target === codeChaosOverlay) {
-                window.closeCodeChaosModal();
-            }
-        });
-    }
+    overlays.forEach(overlayData => {
+        const modalOverlay = document.getElementById(overlayData.id);
+        if (modalOverlay) {
+            modalOverlay.addEventListener('click', (e) => {
+                if (e.target === modalOverlay) {
+                    if (typeof overlayData.closeFn === 'function') {
+                        overlayData.closeFn();
+                    }
+                }
+            });
+        }
+    });
 });
 
 // Code & Chaos Modal Logic

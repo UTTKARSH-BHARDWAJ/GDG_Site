@@ -1411,6 +1411,11 @@ main {
     text-decoration: none;
     font-weight: 500;
     transition: color var(--transition-speed);
+    background: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-family: inherit;
 }
 
 .organizer-link:hover {
