@@ -193,3 +193,20 @@ window.closeHackORelayModal = function() {
         document.body.style.overflow = '';
     }
 };
+
+// Google Gemini Fun Night Modal Logic
+window.openGeminiModal = function() {
+    const modal = document.getElementById('geminiModalOverlay');
+    if (modal) {
+        modal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+};
+
+window.closeGeminiModal = function() {
+    const modal = document.getElementById('geminiModalOverlay');
+    if (modal) {
+        modal.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+};

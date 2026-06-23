@@ -119,7 +119,7 @@
                             <p class="card-desc">Virtual AI Workshop by GDG On Campus – DCE</p>
                             <div class="card-meta">
                                 <div class="card-meta-item">🛠️ General (Virtual)</div>
-                                <button class="btn-card" onclick="openCalendarDialog()">Subscribe to Calendar</button>
+                                <button class="btn-card" onclick="openGeminiModal()">View Details</button>
                             </div>
                         </div>
                     </div>
@@ -513,6 +513,76 @@
                     </div>
                 </div>
             </div>
+            <!-- Google Gemini Fun Night Modal -->
+            <div class="profile-modal-overlay" id="geminiModalOverlay" aria-hidden="true">
+                <div class="profile-modal" role="dialog" aria-modal="true" aria-labelledby="gemini-modal-title">
+                    <button class="profile-modal-close" onclick="closeGeminiModal()" aria-label="Close modal">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                    
+                    <div class="profile-modal-header" style="flex-direction: column; align-items: flex-start; text-align: left; padding-bottom: 0;">
+                        <h2 id="gemini-modal-title" style="font-size: 2.5rem; margin-bottom: 0.5rem; color: var(--text-primary);">Google Gemini Fun Night – Career Glow-Up Edition</h2>
+                        <p style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 2rem; font-weight: 500;">Virtual AI Workshop by GDG On Campus – DCE</p>
+                    </div>
+
+                    <div class="profile-modal-body" style="padding-top: 0;">
+                        <div class="profile-modal-main">
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Event Overview</h2>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">GDG On Campus – Dronacharya College of Engineering successfully organized <strong>Google Gemini Fun Night – Career Glow-Up Edition</strong>, an engaging and interactive virtual workshop aimed at introducing students to the creative possibilities of Generative AI. Conducted on <strong>28 May 2026</strong> through Google Meet, the event brought together students from diverse backgrounds to explore AI-powered creativity in a fun and accessible format.</p>
+                                <p style="color: var(--text-secondary); line-height: 1.6;">The workshop was designed to encourage participants to think beyond conventional applications of AI and experience how tools like <strong>Google Gemini</strong> and <strong>Nano Banana</strong> can be used for personal branding, creative storytelling, and idea visualization. Open to students from all disciplines, the session emphasized innovation, imagination, and practical experimentation without requiring any prior coding or design experience.</p>
+                            </section>
+
+                            <hr style="border: 0; border-top: 2px solid var(--border); margin: 2rem 0;">
+
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Interactive Learning Experience</h2>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">The session revolved around a unique theme—"<strong>What if you were a product?</strong>" Participants were guided through an exciting hands-on activity where they transformed themselves into brands using AI tools. Through interactive demonstrations and creative exercises, attendees learned how to:</p>
+                                <ul style="color: var(--text-secondary); line-height: 1.6; padding-left: 1.2rem; margin-bottom: 1rem;">
+                                    <li>Leverage Google Gemini for ideation and content generation.</li>
+                                    <li>Create AI-powered packaging and branding concepts using Nano Banana.</li>
+                                    <li>Develop a unique personal identity as a product.</li>
+                                    <li>Deliver concise and impactful 60-second pitches, simulating real-world brand presentations.</li>
+                                    <li>Explore the role of Generative AI in creativity, marketing, and communication.</li>
+                                </ul>
+                                <p style="color: var(--text-secondary); line-height: 1.6;">The workshop fostered a highly engaging environment where participants were encouraged to think innovatively and showcase their creativity in unconventional ways.</p>
+                            </section>
+
+                            <hr style="border: 0; border-top: 2px solid var(--border); margin: 2rem 0;">
+
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Participation and Recognition</h2>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">To ensure active engagement and meaningful participation, certificates were awarded to attendees who fulfilled the participation criteria, including full-session attendance, active camera presence, and submission of feedback forms.</p>
+                                <p style="color: var(--text-secondary); line-height: 1.6;">The event also featured opportunities for outstanding entries to receive official recognition, while one exceptional participant at the national level stood a chance to win a <strong>Google Pixel smartphone</strong>, adding an exciting competitive dimension to the workshop.</p>
+                            </section>
+
+                            <hr style="border: 0; border-top: 2px solid var(--border); margin: 2rem 0;">
+
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Event Host</h2>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">The session was successfully hosted by:</p>
+                                <p style="color: var(--text-primary); font-size: 1.1rem; margin-bottom: 0.2rem; font-weight: 500;">Lokesh Soni</p>
+                                <p style="color: var(--text-secondary); line-height: 1.4; margin-bottom: 0.2rem; font-style: italic;">Google Student Ambassador 2026</p>
+                                <p style="color: var(--text-secondary); line-height: 1.4; margin-bottom: 0.2rem; font-style: italic;">Dronacharya College of Engineering</p>
+                                <p style="color: var(--text-secondary); line-height: 1.4; margin-bottom: 1rem; font-style: italic;">GID: 2848</p>
+                                <p style="color: var(--text-secondary); line-height: 1.6;">His guidance and interactive approach created an enjoyable learning atmosphere and enabled participants to experience the practical and creative potential of modern AI technologies.</p>
+                            </section>
+
+                            <hr style="border: 0; border-top: 2px solid var(--border); margin: 2rem 0;">
+
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Impact and Conclusion</h2>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">Google Gemini Fun Night – Career Glow-Up Edition highlighted the growing significance of Generative AI as a tool for creativity and self-expression. By combining learning with fun, the workshop inspired students to explore emerging technologies and understand how AI can empower innovation beyond traditional programming applications.</p>
+                                <p style="color: var(--text-secondary); line-height: 1.6;">The event witnessed enthusiastic participation and successfully cultivated curiosity, creativity, and confidence among students. Through initiatives like these, <strong>GDG On Campus – DCE</strong> continues to promote a culture of innovation and provide students with opportunities to stay at the forefront of evolving technologies.</p>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
             <!-- Hack-O-Relay Modal -->
             <div class="profile-modal-overlay" id="hackORelayModalOverlay" aria-hidden="true">
                 <div class="profile-modal" role="dialog" aria-modal="true" aria-labelledby="hack-o-relay-modal-title">
@@ -966,7 +1036,7 @@
     </div>
 
     <!-- Localization Script -->
-    <script src="/assets/js/main.js?v=8"></script>
+    <script src="/assets/js/main.js?v=9"></script>
 
     <!-- Calendar Modal Toggle Logic -->
     <script>
