@@ -1492,7 +1492,7 @@ main {
    GLOBAL OVERFLOW & IMAGE SAFETY
    ============================================ */
 html, body {
-    overflow-x: hidden;
+    overflow-x: clip;
 }
 
 img {

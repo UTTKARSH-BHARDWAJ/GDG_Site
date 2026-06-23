@@ -334,6 +334,7 @@
         lastFocusedEl = document.activeElement;
         overlay.classList.add("active");
         overlay.setAttribute("aria-hidden", "false");
+        document.documentElement.style.overflow = "hidden";
         document.body.style.overflow = "hidden";
         closeBtn.focus();
     }
@@ -341,6 +342,7 @@
     function closeProfile() {
         overlay.classList.remove("active");
         overlay.setAttribute("aria-hidden", "true");
+        document.documentElement.style.overflow = "";
         document.body.style.overflow = "";
         if (lastFocusedEl) lastFocusedEl.focus();
     }

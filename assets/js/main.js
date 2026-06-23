@@ -76,6 +76,7 @@ window.openEventModal = function() {
     const modal = document.getElementById('eventModalOverlay');
     if (modal) {
         modal.classList.add('active');
+        document.documentElement.style.overflow = 'hidden';
         document.body.style.overflow = 'hidden';
     }
 };
@@ -84,6 +85,7 @@ window.closeEventModal = function() {
     const modal = document.getElementById('eventModalOverlay');
     if (modal) {
         modal.classList.remove('active');
+        document.documentElement.style.overflow = '';
         document.body.style.overflow = '';
     }
 };
@@ -114,6 +116,7 @@ window.openCodeChaosModal = function() {
     const modal = document.getElementById('codeChaosModalOverlay');
     if (modal) {
         modal.classList.add('active');
+        document.documentElement.style.overflow = 'hidden';
         document.body.style.overflow = 'hidden';
     }
 };
@@ -122,6 +125,7 @@ window.closeCodeChaosModal = function() {
     const modal = document.getElementById('codeChaosModalOverlay');
     if (modal) {
         modal.classList.remove('active');
+        document.documentElement.style.overflow = '';
         document.body.style.overflow = '';
     }
 };
@@ -131,6 +135,7 @@ window.openDevthonModal = function() {
     const modal = document.getElementById('devthonModalOverlay');
     if (modal) {
         modal.classList.add('active');
+        document.documentElement.style.overflow = 'hidden';
         document.body.style.overflow = 'hidden';
     }
 };
@@ -139,6 +144,7 @@ window.closeDevthonModal = function() {
     const modal = document.getElementById('devthonModalOverlay');
     if (modal) {
         modal.classList.remove('active');
+        document.documentElement.style.overflow = '';
         document.body.style.overflow = '';
     }
 };
@@ -148,6 +154,7 @@ window.openGsocModal = function() {
     const modal = document.getElementById('gsocModalOverlay');
     if (modal) {
         modal.classList.add('active');
+        document.documentElement.style.overflow = 'hidden';
         document.body.style.overflow = 'hidden';
     }
 };
@@ -156,6 +163,7 @@ window.closeGsocModal = function() {
     const modal = document.getElementById('gsocModalOverlay');
     if (modal) {
         modal.classList.remove('active');
+        document.documentElement.style.overflow = '';
         document.body.style.overflow = '';
     }
 };
@@ -165,6 +173,7 @@ window.openSmashKartsModal = function() {
     const modal = document.getElementById('smashKartsModalOverlay');
     if (modal) {
         modal.classList.add('active');
+        document.documentElement.style.overflow = 'hidden';
         document.body.style.overflow = 'hidden';
     }
 };
@@ -173,6 +182,7 @@ window.closeSmashKartsModal = function() {
     const modal = document.getElementById('smashKartsModalOverlay');
     if (modal) {
         modal.classList.remove('active');
+        document.documentElement.style.overflow = '';
         document.body.style.overflow = '';
     }
 };
@@ -182,6 +192,7 @@ window.openHackORelayModal = function() {
     const modal = document.getElementById('hackORelayModalOverlay');
     if (modal) {
         modal.classList.add('active');
+        document.documentElement.style.overflow = 'hidden';
         document.body.style.overflow = 'hidden';
     }
 };
@@ -190,6 +201,7 @@ window.closeHackORelayModal = function() {
     const modal = document.getElementById('hackORelayModalOverlay');
     if (modal) {
         modal.classList.remove('active');
+        document.documentElement.style.overflow = '';
         document.body.style.overflow = '';
     }
 };
@@ -199,6 +211,7 @@ window.openGeminiModal = function() {
     const modal = document.getElementById('geminiModalOverlay');
     if (modal) {
         modal.classList.add('active');
+        document.documentElement.style.overflow = 'hidden';
         document.body.style.overflow = 'hidden';
     }
 };
@@ -207,6 +220,7 @@ window.closeGeminiModal = function() {
     const modal = document.getElementById('geminiModalOverlay');
     if (modal) {
         modal.classList.remove('active');
+        document.documentElement.style.overflow = '';
         document.body.style.overflow = '';
     }
 };
