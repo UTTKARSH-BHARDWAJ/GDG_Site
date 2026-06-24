@@ -1959,6 +1959,7 @@ img {
     max-width: 61rem;
     max-height: 88vh;
     overflow-y: auto;
+    overscroll-behavior: contain;
     background-color: var(--card);
     color: var(--card-foreground);
     border: var(--border-width) solid var(--border);
