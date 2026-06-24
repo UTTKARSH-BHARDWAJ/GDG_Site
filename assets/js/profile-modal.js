@@ -150,7 +150,7 @@
         "kartikey": {
             name: "Kartikey",
             role: "Social & Outreach Volunteer",
-            img: "assets/img/organizer_kartikey.png",
+            img: "assets/img/IMG_20251210_082535.jpg",
             socials: { linkedin: "https://www.linkedin.com/in/kartikey-5a063a313", github:"https://github.com/kartikey-0326" },
             about: "I am Kartikey, a Computer Science Engineering student passionate about Software Development, Problem Solving, and building impactful tech solutions. I am exploring Web Development, Data Structures & Algorithms, and emerging technologies while continuously improving my technical skills.",
             skills: ["HTML ", "CSS", "JavaScript", "React.js" , "MySQL" , "Git", "GitHub", "Data Structures & Algorithms", "Object-Oriented Programming (OOP)", "Problem Solving","Many More"],
