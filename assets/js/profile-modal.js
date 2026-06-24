@@ -253,7 +253,7 @@
             name: "Aryan Rajput",
             role: "Graphics & PR Volunteer",
             img: "assets/img/organizer_aryan.png",
-            socials: { linkedin: "https://www.linkedin.com/in/aryan-kumar-rajput-13b308343?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app", instagram: "Insta - https://www.instagram.com/aryan12.22?igsh=MTBuYTB2N2lmdTFxNQ%3D%3D&utm_source=ig_contact_invite" , github:"https://github.com/aryank2212", twitter:"https://x.com/aryan22_12?s=21" },
+            socials: { linkedin: "https://www.linkedin.com/in/aryan-kumar-rajput-13b308343?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app", instagram: "https://www.instagram.com/aryan12.22?igsh=MTBuYTB2N2lmdTFxNQ%3D%3D&utm_source=ig_contact_invite" , github:"https://github.com/aryank2212", twitter:"https://x.com/aryan22_12?s=21" },
             about: "I'm Aryan Kumar, a CSE student interested in AI, software development, LLMs, Agentic AI, self-hosted infrastructure and whatever I find interesting to try on internet. ",
             skills: ["AfterFX","Premier pro","Cinematography","Motion Graphics","C/C++","Python","Numpy","pandas","Matplotlib","PyTorch","RAG","LLMs","Many More"],
             achievements: [
