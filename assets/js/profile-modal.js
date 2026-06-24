@@ -8,7 +8,7 @@
             about: "Passionate developer and community leader dedicated to fostering technical growth among peers. As the GDG on Campus Lead, I orchestrate workshops, hackathons, and study jams that bridge the gap between academic theory and industry practice. Specializing in Python ecosystems and modern frontend frameworks, I aim to build inclusive tech environments.",
             skills: ["HTML5","CSS3","JavaScript","React.js","Responsive Design","UI/UX","Node.js","Express.js","REST APIs","JWT Authentication","Databases","MongoDB","MySQL","Many More"],
             achievements: [
-                { icon: "-->",title: "Research Paper(ICT4SD conference - AI in Fake News Detection)", desc: "Consistently solved 200+ problems on Leetcode, showcasing strong problem-solving skills." },
+                { icon: "-->",title: "Research Paper(ICT4SD conference - AI in Fake News Detection)", desc: "" },
                 { icon: "-->", title: "GDG on Campus Lead", desc: "Led the GDG on Campus chapter, organizing events and mentoring aspiring developers." }
             ],
             activity: [
