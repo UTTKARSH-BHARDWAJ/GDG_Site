@@ -217,7 +217,7 @@
             name: "Rekha Rathore",
             role: "Graphics & PR Volunteer",
             img: "assets/img/organizer_rekha.png",
-            socials: { linkedin: "https://www.linkedin.com/in/rekha-h-rathore/",github: "https://github.com/Rekha1150",portfolio: "https://rekha-portfolio-1bww.vercel.app/" },
+            socials: { linkedin: "https://www.linkedin.com/in/rekha-h-rathore/",github: "https://github.com/Rekha115",portfolio: "https://rekha-portfolio-1bww.vercel.app/" },
             about: "Hi, I’m Rekha, an aspiring UI/UX Designer and Frontend Developer passionate about creating user-friendly and visually appealing digital experiences. I enjoy designing intuitive interfaces, building responsive websites, and continuously learning new technologies to enhance my skills. I believe in combining creativity with problem-solving to deliver impactful solutions.",
             skills: ["Figma", "HTML5", "CSS3", "JavaScript", "React.js", "Bootstrap" , "Git & Github" , "Python" , "Django","Many More"],
             achievements: [
