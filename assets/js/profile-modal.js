@@ -209,8 +209,8 @@
                 { icon: "-->", title: "Certification", desc: "CS50’s Introduction to Programming with Python– Harvard University (edX platform)" }
             ],
             activity: [
-                { icon: ">", title: "A#", time: "2 weeks ago", desc: "Published the aftermovie for the latest hackathon." },
-                { icon: ">", title: "#", time: "1 month ago", desc: "Edited a teaser video for the upcoming flagship event." }
+                { icon: ">", title: "Hackathon", time: "2 weeks ago", desc: "Published the aftermovie for the latest hackathon." },
+                { icon: ">", title: "Video editing", time: "1 month ago", desc: "Edited a teaser video for the upcoming flagship event." }
             ]
         },
         "rekha-rathore": {
