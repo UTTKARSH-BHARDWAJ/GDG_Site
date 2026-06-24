@@ -44,7 +44,7 @@
                 { icon: "-->", title: " DSA visualiser", desc: "DSA learning platform where the user can learn DSA visually and track their progress." },
                 { icon: "-->", title: " StreamUI", desc: " Developed a Next.js UI library for SaaS startups.Developed an NPM package with all the required dependencies." }],
             activity: [
-                {  icon: ">", title: "", time: "4 days ago", desc: "" },
+                {  icon: ">", title: "Project", time: "4 days ago", desc: "Building agentic workflows using n8n and zapier" },
                 {  icon: ">", title: "Full Stack Engineer Intern @ Thumbpin", time: "2 months ago", desc: "Contributing across multiple layers of the product. Responsible for building and managing efficient data pipelines, optimizing frontend performance for better user experience, and designing intuitive UI/UX interfaces. Working on improving application scalability, reducing load times, and ensuring seamless integration between backend systems and frontend components." }
             ]
         },
