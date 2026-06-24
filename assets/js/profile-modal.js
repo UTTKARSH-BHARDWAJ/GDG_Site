@@ -161,7 +161,7 @@
             ],
             activity: [
                 { icon: ">", title: "Summer Classes", time: "1 week ago", desc: "Currently attending Summer Classes on Full Stack Web Development at Dronacharya College of Engineering, enhancing practical development skills through hands-on learning and projects" },
-                {  icon: ">", title: "Reinventing the Future 2025", time: "1 month ago", desc: "4. Participated in “Reinventing the Future 2025” event presented by Aditya Birla Group." },
+                {  icon: ">", title: "Reinventing the Future 2025", time: "1 month ago", desc: " Participated in “Reinventing the Future 2025” event presented by Aditya Birla Group." },
                 {  icon: ">", title: "Projects", time: "1.5 months ago", desc: "Built projects including Buyoh – Retail Platform Landing Page and Netflix Clone using modern web technologies." }
             ]
         },
