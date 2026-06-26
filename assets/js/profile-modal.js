@@ -4,8 +4,8 @@
             name: "Dr. Ashima Mehta",
             role: "Faculty Lead",
             img: "assets/img/Ashima-Mehta.avif",
-            socials: { linkedin: "https://www.linkedin.com/in/dr-ashima-mehta-71216177/", googleScholar: "https://scholar.google.com/citations?user=kI14h4EAAAAJ&hl=en", researchGate: "https://www.researchgate.net/scientific-contributions/Dr-Ashima-Mehta-2250190485" },
-            about: "Faculty Lead for GDG on Campus Dronacharya College of Engineering.",
+            socials: { linkedin: "https://www.linkedin.com/in/dr-ashima-mehta-71216177/", googleScholar: "https://scholar.google.com/citations?user=kI14h4EAAAAJ&hl=en", researchGate: "https://www.researchgate.net/scientific-contributions/Dr-Ashima-Mehta-2250190485", email: "mailto:ashima.mehta@ggnindia.dronacharya.info" },
+            about: "I am a passionate educator, researcher, and technology mentor with a deep-rooted expertise in Java, Software Testing, DBMS, and Cloud Computing. Throughout my academic career, my driving force has been bridging the gap between theoretical concepts and practical, industry-ready skills. As the Faculty Lead of GDG on Campus at Dronacharya College of Engineering, I have the incredible opportunity to inspire students through continuous innovation, technical excellence, and hands-on learning experiences. I am deeply committed to building a strong, inclusive developer community and empowering the next generation of technology leaders to realize their full potential.",
             skills: ["Java", "Software Testing (QA)", "Database Management Systems (DBMS)", "Cloud Computing", "Cloud Security", "Software Engineering", "Data Structures & Algorithms", "Computer Networks", "Operating Systems", "Web Technologies", "Artificial Intelligence (AI)", "Research & Innovation", "Technical Leadership & Mentoring"],
             achievements: [
                 { icon: "-->", title: "Session Chair at an International Scopus Conference (Dubai, UAE) – 2023", desc: "Invited as a Session Chair at an international Scopus-indexed conference held in Dubai, UAE (March 2023)." },
