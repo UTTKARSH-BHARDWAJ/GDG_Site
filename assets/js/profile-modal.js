@@ -6,9 +6,16 @@
             img: "assets/img/Ashima-Mehta.avif",
             socials: { linkedin: "https://www.linkedin.com/in/dr-ashima-mehta-71216177/", googleScholar: "https://scholar.google.com/citations?user=kI14h4EAAAAJ&hl=en", researchGate: "https://www.researchgate.net/scientific-contributions/Dr-Ashima-Mehta-2250190485" },
             about: "Faculty Lead for GDG on Campus Dronacharya College of Engineering.",
-            skills: ["Leadership", "Mentoring", "Education"],
-            achievements: [],
-            activity: []
+            skills: ["Java", "Software Testing (QA)", "Database Management Systems (DBMS)", "Cloud Computing", "Cloud Security", "Software Engineering", "Data Structures & Algorithms", "Computer Networks", "Operating Systems", "Web Technologies", "Artificial Intelligence (AI)", "Research & Innovation", "Technical Leadership & Mentoring"],
+            achievements: [
+                { icon: "-->", title: "Session Chair at an International Scopus Conference (Dubai, UAE) – 2023", desc: "Invited as a Session Chair at an international Scopus-indexed conference held in Dubai, UAE (March 2023)." },
+                { icon: "-->", title: "Best Paper Award – International Conference on Communication and Computing Systems (CRC Press – Taylor & Francis) – 2018", desc: "Received the Best Paper Award at an international conference published by CRC Press – Taylor & Francis." },
+                { icon: "-->", title: "Google Cloud Ready Facilitator Program", desc: "Led the Google Cloud Learning Program at the college and helped a large number of students earn Google Cloud certifications." }
+            ],
+            activity: [
+                { icon: ">", title: "Vice Principal of DCE", time: "Present", desc: "Currently serving as the Vice Principal of Dronacharya College of Engineering, providing strategic leadership, academic guidance, and fostering an environment of innovation and excellence across the campus." },
+                { icon: ">", title: "HOD (CSE)", time: "Present", desc: "Serving as the Head of the Computer Science and Engineering Department, overseeing curriculum development, faculty coordination, and ensuring top-tier technical education for students." }
+            ]
         },
         "nishant-yadav": {
             name: "Nishant Yadav",
