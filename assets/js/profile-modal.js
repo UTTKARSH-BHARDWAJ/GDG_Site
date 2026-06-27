@@ -20,7 +20,7 @@
         "nishant-yadav": {
             name: "Nishant Yadav",
             role: "GDGoC Lead",
-            img: "assets/img/organizer_nishant.png",
+            img: "https://res.cloudinary.com/startup-grind/image/upload/c_fill,w_250,h_250,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/avatars/nishant_yadav_iy6BG0I.jpg",
             socials: { linkedin:"https://www.linkedin.com/in/nishant-yadav-914684289", leetcode:  "https://leetcode.com/u/nishantyadav_tech/", github: "https://github.com/nishantyadav-tech", portfolio:"https://nishant-tech.vercel.app/" , email: "nishantyadav.tech@gmail.com", instagram: "https://www.instagram.com/nishant__ydvvv?igsh=dzMzeXZpNXA0NGcx" },
             about: "Passionate developer and community leader dedicated to fostering technical growth among peers. As the GDG on Campus Lead, I orchestrate workshops, hackathons, and study jams that bridge the gap between academic theory and industry practice. Specializing in Python ecosystems and modern frontend frameworks, I aim to build inclusive tech environments.",
             skills: ["HTML5","CSS3","JavaScript","React.js","Responsive Design","UI/UX","Node.js","Express.js","REST APIs","JWT Authentication","Databases","MongoDB","MySQL","Many More"],
@@ -36,7 +36,7 @@
         "manas-thakur": {
             name: "Manas Thakur",
             role: "Technical Lead",
-            img: "assets/img/organizer_manas.png",
+            img: "https://res.cloudinary.com/startup-grind/image/upload/c_fill,w_250,h_250,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/avatars/manas_thakur.jpeg",
             socials: { linkedin: "https://www.linkedin.com/in/manasthakur30/", twitter: "https://x.com/menace_thakur" },
             about: "My work spans LLMs, MCP-style workflows, RAG, and modern model stacks like OpenAI, Anthropic, Hugging Face, and vLLM for practical agentic systems.",
             skills: ["Agentic AI","Tool use", "RAG", "LLMs","Many More"],
@@ -52,7 +52,7 @@
         "sohan-rout": {
             name: "Sohan Rout",
             role: "Technical Lead",
-            img: "assets/img/organizer_sohan.png",
+            img: "https://res.cloudinary.com/startup-grind/image/upload/c_fill,w_250,h_250,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/avatars/sohan_rout_JaQWqtA.jpg",
             socials: { linkedin: " https://www.linkedin.com/in/sohan-rout/", twitter: " https://x.com/SohanRout06", github: " https://github.com/Sohan-Rout"},
             about: "Product-focused developer building scalable web applications with strong fundamentals in performance, UX, and system design. Experienced in Next.js, Supabase, and modern frontend architecture.",
             skills: ["JavaScript", "TypeScript", "SQL", "Python", "HTML", "CSS", "Tailwind CSS", "Next.js", "PostgreSQL", "MySql", "ChatGpt", "Claude", "DeepSeek", "Kimi", "Manus", "GLM", "Git", "GitHub", "Figma", "Supabase", "C++", "C", "Java","Many More"],
@@ -68,7 +68,7 @@
         "uttkarsh-bhardwaj": {
             name: "Uttkarsh Bhardwaj",
             role: "Technical Volunteer",
-            img: "assets/img/organizer_uttkarsh.png",
+            img: "https://res.cloudinary.com/startup-grind/image/upload/c_fill,w_250,h_250,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/avatars/uttkarsh_bhardwaj_Gf0qv1m.png",
             socials: { linkedin: "https://www.linkedin.com/in/uttkarsh-bhardwaj-58aa03337/", twitter: "https://x.com/UTTKARSH911", github: "https://github.com/UTTKARSH-BHARDWAJ" },
             about: "Analytical AI/ML undergraduate with expertise in predictive analytics, time-series forecasting, and NLP algorithms. Proficient in Python, Scikit-learn, and PyTorch, passionate about translating complex data sets into highly accurate, automated machine learning pipelines that solve real-world challenges.",
             skills: ["Python", "SQL", "C", "Java", "JavaScript", "HTML/CSS", "Prompt Engineering", "XGBoost", "Facebook Prophet", "Numpy", "Pandas", "Scikit-learn", "NLP", "PyTorch","Many More"],
@@ -84,7 +84,7 @@
         "ankit-yadav": {
             name: "Ankit Yadav",
             role: "Technical Volunteer",
-            img: "assets/img/organizer_ankit.png",
+            img: "https://res.cloudinary.com/startup-grind/image/upload/c_fill,w_250,h_250,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/avatars/workwithankit_yadav_7SCuBb4.jpg",
             socials: { linkedin: "https://www.linkedin.com/in/ankit-yadav-60b4aa331/", twitter: "https://x.com/Workwithan28579", github: "https://github.com/ankit230506", instagram: "https://www.instagram.com/ankit_007_.y?igsh=MXYzdDI0cGZ3d3Vydw==" },
             about: "Hello everyone, I am Ankit Yadav, a passionate Computer Science student with a keen interest in Machine Learning and Data Science. I enjoy exploring the vast world of AI and its applications in solving real-world problems. With a strong foundation in programming and data analysis, I am eager to contribute to innovative projects and collaborate with like-minded individuals in the tech community.",
             skills: ["Python", "Pandas", "scikit-learn", "Data Visualization", "Jupyter","Git", "GitHub","Many More"],
@@ -100,7 +100,7 @@
         "amol-kumar": {
             name: "Amol Kumar",
             role: "Technical Volunteer",
-            img: "assets/img/organizer_amol.png",
+            img: "https://res.cloudinary.com/startup-grind/image/upload/c_fill,w_250,h_250,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/avatars/amol_kumar_tyOyM0W.jpg",
             socials: { linkedin: "https://www.linkedin.com/in/amol-kumar-865a2237a", twitter: "https://x.com/AmolKumar430722", github: "https://github.com/amolkumar4003-cmyk", instagram: "https://www.instagram.com/terimummykadamaadhunywar_?igsh=MXFubGdzYnY1bHlheg==" ,  leetcode: " https://leetcode.com/u/amolkr_4003/"},
             about: "​Aspiring Machine Learning Engineer and dedicated CSIT student with a strong foundation in algorithmic problem-solving, data analysis, and C/Python programming. Passionate about applying AI and machine learning models to solve real-world engineering challenges, specifically in cognitive systems and autonomous logistics.",
             skills: ["Python", "C", "NumPy", "Pandas", "Git", "GitHub", "Data Structures & Algorithms","Many More"],
@@ -117,7 +117,7 @@
         "megha-yadav": {
             name: "Megha Yadav",
             role: "Social & Outreach Team Lead",
-            img: "assets/img/organizer_megha.png",
+            img: "https://res.cloudinary.com/startup-grind/image/upload/c_fill,w_250,h_250,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/avatars/megha_yadav_sv6izOv.jpg",
             socials: { linkedin: "https://www.linkedin.com/in/jehmegh/", github:"https://github.com/meghayay"},
             about: "UI/UX Designer with a strong focus on UX research, user behavior analysis, and human-centered design. Passionate about translating research insights into intuitive interfaces through wireframing, prototyping, usability testing, and scalable design systems.",
             skills: ["Figma", "Framer", "Adobe XD", "FigJam", "Miro", "Photoshop", "Illustrator", "Wireframing", "Interactive Prototyping", "Usability Testing","Many More"],
@@ -134,7 +134,7 @@
         "ariyan-pal": {
             name: "Ariyan Pal",
             role: "Social & Outreach Team Lead",
-            img: "assets/img/organizer_ariyan.png",
+            img: "https://res.cloudinary.com/startup-grind/image/upload/c_fill,w_250,h_250,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/avatars/ariyan_pal.jpg",
             socials: { linkedin: "https://www.linkedin.com/in/ariyan-pal/",github: "https://github.com/AriyanPal08", instagram: " https://www.instagram.com/__a__maniac__?igsh=MXBscWJnNGRzemx6cw==" },
             about: "Sophomore with a strong interest in Python programming, including its libraries and frameworks. Enthusiastic about contributing to open-source projects and eager to gain hands-on experience as an intern to broaden my technical horizons. ",
             skills: ["HTML", "CSS", "JavaScript", "Python", " OpenCV" , "STL" , "Matplotlib" , "Numpy", " GitHub", "VS Code", "Figma", "Postman", "Sublime Text","Rasberry Pi 4", "Pi3" , "Arduino UNO", "MEGA" , "esp 32" , "Pixhawk"," Team collaboration" , "Communication Skills" , "Problem Solving" ,"Many More"],
@@ -150,7 +150,7 @@
         "savita-kumari": {
             name: "Savita Kumari",
             role: "Social & Outreach Volunteer",
-            img: "assets/img/organizer_savita.png",
+            img: "https://res.cloudinary.com/startup-grind/image/upload/c_fill,w_250,h_250,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/avatars/savita_kumari.png",
             socials: { linkedin: "https://www.linkedin.com/in/savisavi", github:" https://github.com/savitaa.0712" },
             about: "Frontend Developer passionate about building scalable, responsive, and user-centric web applications with modern technologies and clean design principles.",
             skills: ["React.js", "Next.js", "TypeScript", "JavaScript", "Tailwind CSS", "Redux Toolkit", "REST APIs", "Git", "GitHub","Many More"],
@@ -201,7 +201,7 @@
         "ujjwal-verma": {
             name: "Ujjwal Verma",
             role: "Graphics & PR Lead",
-            img: "assets/img/organizer_ujjwal.png",
+            img: "https://res.cloudinary.com/startup-grind/image/upload/c_fill,w_250,h_250,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/avatars/ujjwal_verma.png",
             socials: { linkedin: "https://www.linkedin.com/in/ujjwalverma3115/", twitter: "https://x.com/Ujjwal3115"},
             about: "I am an Agentic AI Engineer & Technical Partner specializing in Multi-Agent Workflows, Distributed GenAI, and Full-Stack Development. As a Computer Science (AIML) student at Dronacharya College of Engineering, I craft innovative solutions at the intersection of enterprise architecture and cutting-edge artificial intelligence.",
             skills: ["Tailwind CSS", "Figma", "Canva", "LLMs (OpenAI, Gemini)", "RAG", "Agentic AI (CrewAI, LangGraph)", "ComfyUI", "Higgsfield AI", "Prompt Engineering", "Vector DBs (ChromaDB, Pinecone)", "PyTorch", "Deep Learning", "OpenCV", "Scikit-Learn", "TensorFlow", "YOLO", "Many More"],
@@ -217,7 +217,7 @@
         "manav-tuli": {
             name: "Manav Tuli",
             role: "PR & Graphics Team Lead",
-            img: "assets/img/organizer_manav.png",
+            img: "https://res.cloudinary.com/startup-grind/image/upload/c_fill,w_250,h_250,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/avatars/manav_tuli_1WlTHbc.jpg",
             socials: { linkedin: "https://www.linkedin.com/in/manav-tuli-422322326?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app", instagram: " https://www.instagram.com/_manav.mt_?igsh=N3ZyaWkwZThncmd1", github: "https://github.com/manavtulimt", twitter: "https://x.com/Manav07747923" },
             about: "Computer Science undergraduate pursuing a B.Tech with demonstrated expertise in the MERN Stack, Python backend development, and scalable workflow automation using tools like n8n. Experienced in engineering full-stack architectures and intelligent software systems including ESG analytics engines and AI-driven computer vision solutions. A proven community leader with strong problem-solving capacities, cross-functional collaboration skills, and event execution management.",
             skills: ["Python", "JavaScript", "HTML", "CSS", "SQL","YOLOv8", "Express.js", "React", "Node.js", "Git", "GitHub", "VS Code", "Jupyter Notebook", "Google Colab", "n8n", "Figma", "Adobe Photoshop", "After Effects", "Canva","Many More"],
@@ -233,7 +233,7 @@
         "rekha-rathore": {
             name: "Rekha Rathore",
             role: "Graphics & PR Volunteer",
-            img: "assets/img/organizer_rekha.png",
+            img: "https://res.cloudinary.com/startup-grind/image/upload/c_fill,w_250,h_250,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/avatars/rekha_rathore.jpg",
             socials: { linkedin: "https://www.linkedin.com/in/rekha-h-rathore/",github: "https://github.com/Rekha115",portfolio: "https://rekha-portfolio-1bww.vercel.app/" },
             about: "Hi, I’m Rekha, an aspiring UI/UX Designer and Frontend Developer passionate about creating user-friendly and visually appealing digital experiences. I enjoy designing intuitive interfaces, building responsive websites, and continuously learning new technologies to enhance my skills. I believe in combining creativity with problem-solving to deliver impactful solutions.",
             skills: ["Figma", "HTML5", "CSS3", "JavaScript", "React.js", "Bootstrap" , "Git & Github" , "Python" , "Django","Many More"],
@@ -251,7 +251,7 @@
         "anamika-prajapati": {
             name: "Anamika Prajapati",
             role: "Graphics & PR Volunteer",
-            img: "assets/img/organizer_anamika.png",
+            img: "https://res.cloudinary.com/startup-grind/image/upload/c_fill,w_250,h_250,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/avatars/anamika_prajapati_epyoiez.jpg",
             socials: { linkedin: "https://www.linkedin.com/in/anamika-prajapati-0a420a383", github: "https://github.com/anamikaprajapati8076-source" },
             about: "Hi, I'm Anamika Prajapati, a B.Tech student in Electronics and Computer Science with an interest in technology, design, and creative problem-solving. I enjoy combining creativity with technical skills to create meaningful digital experiences. I am passionate about learning new technologies, contributing to projects, and continuously improving my skills in both development and design",
             skills: ["C", "Python", "Figma", "HTML", "CSS", "Canva", "Git & Github", "VSCode","Many More"],
@@ -269,7 +269,7 @@
         "aryan-rajput": {
             name: "Aryan Rajput",
             role: "Graphics & PR Volunteer",
-            img: "assets/img/organizer_aryan.png",
+            img: "https://res.cloudinary.com/startup-grind/image/upload/c_fill,w_250,h_250,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/avatars/aryan_rajput.JPG",
             socials: { linkedin: "https://www.linkedin.com/in/aryan-kumar-rajput-13b308343?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app", instagram: "https://www.instagram.com/aryan12.22?igsh=MTBuYTB2N2lmdTFxNQ%3D%3D&utm_source=ig_contact_invite" , github:"https://github.com/aryank2212", twitter:"https://x.com/aryan22_12?s=21" },
             about: "I'm Aryan Kumar, a CSE student interested in AI, software development, LLMs, Agentic AI, self-hosted infrastructure and whatever I find interesting to try on internet. ",
             skills: ["AfterFX","Premier pro","Cinematography","Motion Graphics","C/C++","Python","Numpy","pandas","Matplotlib","PyTorch","RAG","LLMs","Many More"],
