@@ -1453,14 +1453,15 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ffffff;
-    border: 1px solid #eaeaea;
+    background-color: var(--card, #ffffff);
+    border: 1px solid var(--border, #eaeaea);
     border-radius: 16px;
     padding: 1.5rem;
     width: 200px;
     height: 180px;
     transition: transform var(--transition-speed), box-shadow var(--transition-speed);
     box-shadow: var(--shadow-sm);
+    color: var(--foreground, #000000); /* For SVGs using currentColor */
 }
 
 .partner-card:hover {
@@ -1471,7 +1472,7 @@ main {
 
 .partner-name {
     font-size: 0.9rem;
-    color: #777;
+    color: var(--foreground, #333333);
     font-weight: 500;
 }
 
@@ -1479,14 +1480,43 @@ main {
     max-width: 80%;
     max-height: 80%;
     object-fit: contain;
-    /* Convert logos to grayscale and invert them. 
-       This turns white text to black, and black backgrounds to white (blending with the card). */
-    filter: grayscale(1) invert(1) contrast(1.2) opacity(0.85);
-    transition: filter var(--transition-speed);
+    /* Preserve original colors, just slightly fade when not hovered */
+    opacity: 0.85;
+    transition: opacity var(--transition-speed), filter var(--transition-speed);
+}
+
+.partner-logo.invert-logo {
+    filter: brightness(0); /* Converts pure white logos to pure black so they are visible on light cards */
+}
+
+.partner-logo.darken-logo {
+    /* Inverts lightness and rotates hue by 180deg to darken light logos */
+    filter: invert(1) hue-rotate(180deg) contrast(1.2);
 }
 
 .partner-card:hover .partner-logo {
-    filter: grayscale(1) invert(1) contrast(1.2) opacity(1);
+    opacity: 1;
+}
+
+/* Dark Mode Overrides for Logos */
+.dark .partner-card:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    border-color: #555;
+}
+
+/* In dark mode, white logos (which were inverted to black) should revert to their natural white color */
+.dark .partner-logo.invert-logo {
+    filter: none;
+}
+
+/* In dark mode, naturally light logos (which were darkened) should revert to their natural light color */
+.dark .partner-logo.darken-logo {
+    filter: none;
+}
+
+/* In dark mode, naturally dark logos need to become light! */
+.dark .partner-logo.dark-to-light {
+    filter: invert(1) hue-rotate(180deg) brightness(1.2);
 }
 
 /* Footer Social Icons Styling */

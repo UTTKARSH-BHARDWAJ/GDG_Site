@@ -185,7 +185,7 @@
         "sushant-jha": {
             name: "Sushant Jha",
             role: "Socials & Outreach Volunteer",
-            img: "assets/img/organizer_sushant.png",
+            img: "assets/img/organizer_sushant_new.jpeg",
             socials: { linkedin: "https://www.linkedin.com/in/sushant-jha-4aa7541bb?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"},
             about: "Robotics & Drone Engineer with a strong focus on UAV development, autonomous systems, embedded electronics, and AI-powered robotics. Passionate about building innovative solutions for disaster management, surveillance, and real-world automation challenges. Experienced in drone design, flight control systems, computer vision integration, sensor interfacing, and robotic system development.",
             skills: ["UAV Systems & Multirotor Dynamics", "Flight Control & PID Tuning", "Autonomous Navigation", "Human-Aware & Safety-Oriented Robotics","Arduino (Uno, Mega)", "STM32 ", "ESP32", "NVIDIA Jetson", "Sensor Integration (IMU, GPS, LiDAR/Ultrasonic, Environmental Sensors) ","Many More"],
