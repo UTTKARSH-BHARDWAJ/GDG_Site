@@ -94,7 +94,7 @@
             ],
             activity: [
                 {  icon: ">", title: "Internship", time: "1 week ago", desc: "AIML Intern @ Airport Authority of India" },
-                {  icon: ">", title: "Working On", time: "1 month ago", desc: "Climate_Change_Storuteller under Liquid Galaxy" }
+                {  icon: ">", title: "Working On", time: "1 month ago", desc: "Climate_Change_Storyteller under Liquid Galaxy" }
             ]
         },
         "amol-kumar": {
