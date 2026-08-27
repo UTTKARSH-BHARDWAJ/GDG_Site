@@ -21,7 +21,7 @@
             name: "Nishant Yadav",
             role: "GDGoC Lead",
             img: "https://res.cloudinary.com/startup-grind/image/upload/c_fill,w_250,h_250,g_center/c_fill,dpr_2.0,f_auto,g_center,q_auto:good/v1/gcs/platform-data-goog/avatars/nishant_yadav_iy6BG0I.jpg",
-            socials: { linkedin:"https://www.linkedin.com/in/nishant-yadav-914684289", leetcode:  "https://leetcode.com/u/nishantyadav_tech/", github: "https://github.com/nishantyadav-tech", portfolio:"https://nishant-tech.vercel.app/" , email: "nishantyadav.tech@gmail.com", instagram: "https://www.instagram.com/nishant__ydvvv?igsh=dzMzeXZpNXA0NGcx" },
+            socials: { linkedin:"https://www.linkedin.com/in/nishant-yadav-914684289", leetcode:  "https://leetcode.com/u/nishantyadav_tech/", github: "https://github.com/nishantyadav-tech", portfolio:"https://nishant-tech.vercel.app/" , email: "mailto:nishantyadav.tech@gmail.com", instagram: "https://www.instagram.com/nishant__ydvvv?igsh=dzMzeXZpNXA0NGcx" },
             about: "Passionate developer and community leader dedicated to fostering technical growth among peers. As the GDG on Campus Lead, I orchestrate workshops, hackathons, and study jams that bridge the gap between academic theory and industry practice. Specializing in Python ecosystems and modern frontend frameworks, I aim to build inclusive tech environments.",
             skills: ["HTML5","CSS3","JavaScript","React.js","Responsive Design","UI/UX","Node.js","Express.js","REST APIs","JWT Authentication","Databases","MongoDB","MySQL","Many More"],
             achievements: [
