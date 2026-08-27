@@ -99,12 +99,31 @@
 
             <!-- Results Counter -->
             <div style="margin-bottom: 1.5rem; font-weight: 500; font-size: 1.1rem; text-align: left;">
-                <span id="showing-results-text" data-count="8">Showing 8 event results</span>
+                <span id="showing-results-text" data-count="9">Showing 9 event results</span>
             </div>
 
             <!-- Event Cards Grid -->
             <div class="timeline" id="events-grid">
                 <div class="timeline-progress" id="timeline-progress"></div>
+                <!-- Event Card 1 -->
+                <div class="timeline-item animate-fade-in-up stagger-1">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content content-card">
+                        <div class="card-image-wrapper">
+                            <img src="/gdg_logo.svg" alt="iOS Ignite: Beginner Workshop on Swift Programming" class="card-image" loading="lazy" />
+                            <span class="card-badge">iOS Workshop</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-date">📅 14 AUGUST, 2026</div>
+                            <h3 class="card-title">iOS Ignite: Beginner Workshop on Swift Programming</h3>
+                            <p class="card-desc">The iOS Ignite: Beginner Workshop on Swift Programming, held on August 14, 2026, at Dronacharya College of Engineering, introduces students to core Swift programming and iOS app development. Led by a former iOS Developer Intern at Swiggy, attendees learn Swift syntax and development tools, gaining valuable industry insights and a strong foundation in mobile app creation for the Apple platform.</p>
+                            <div class="card-meta">
+                                <div class="card-meta-item">🛠️ Mobile / Workshop</div>
+                                <button class="btn-card" onclick="openIosIgniteModal()">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <!-- Event Card 1 -->
                 <div class="timeline-item animate-fade-in-up stagger-1">
                     <div class="timeline-marker"></div>
@@ -272,6 +291,46 @@
                 <p style="font-size: 1.5rem; font-weight: 600; color: var(--muted-foreground);">No events found matching the criteria</p>
             </div>
 
+            <!-- iOS Ignite Modal -->
+            <div class="profile-modal-overlay" id="iosIgniteModalOverlay" aria-hidden="true">
+                <div class="profile-modal" role="dialog" aria-modal="true" aria-labelledby="ios-ignite-modal-title">
+                    <button class="profile-modal-close" onclick="closeIosIgniteModal()" aria-label="Close modal">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                    
+                    <div class="profile-modal-header" style="flex-direction: column; align-items: flex-start; text-align: left; padding-bottom: 0;">
+                        <h2 id="ios-ignite-modal-title" style="font-size: 2.5rem; margin-bottom: 0.5rem; color: var(--text-primary);">iOS Ignite: Beginner Workshop on Swift Programming</h2>
+                        <p style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 2rem; font-weight: 500;">Beginner Workshop on Swift Programming by GDG On Campus – DCE</p>
+                    </div>
+
+                    <div class="profile-modal-body" style="padding-top: 0;">
+                        <div class="profile-modal-main">
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">About This Event</h2>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">The <strong>iOS Ignite: Beginner Workshop on Swift Programming</strong>, held on <strong>14 August 2026</strong> at Dronacharya College of Engineering, introduced students to the core fundamentals of Swift programming and iOS app development.</p>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">The session was conducted by an experienced former iOS Developer Intern at Swiggy, providing valuable industry-oriented guidance, real-world development workflows, and hands-on demonstrations. The workshop helped strengthen students' understanding of mobile application development and encouraged them to build scalable applications for the Apple platform.</p>
+                            </section>
+
+                            <hr style="border: 0; border-top: 2px solid var(--border); margin: 2rem 0;">
+
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Key Highlights &amp; Takeaways</h2>
+                                <ul style="color: var(--text-secondary); line-height: 1.6; padding-left: 1.2rem; margin-bottom: 1rem;">
+                                    <li style="margin-bottom: 0.5rem;">Introduction to <strong>Swift programming syntax</strong>, modern language features, and core mobile development concepts.</li>
+                                    <li style="margin-bottom: 0.5rem;">Foundations of building intuitive and responsive applications for the <strong>Apple ecosystem</strong>.</li>
+                                    <li style="margin-bottom: 0.5rem;">Practical insights into the end-to-end <strong>iOS development workflow</strong> and professional developer tooling.</li>
+                                    <li style="margin-bottom: 0.5rem;">Industry-level mentoring and tips from a former <strong>iOS Developer Intern at Swiggy</strong>.</li>
+                                    <li style="margin-bottom: 0.5rem;">Interactive guidance to spark continuous exploration of Swift, SwiftUI, and mobile engineering careers.</li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- Google Cloud Study Jams Modal -->
             <div class="profile-modal-overlay" id="cloudStudyJamsModalOverlay" aria-hidden="true">
                 <div class="profile-modal" role="dialog" aria-modal="true" aria-labelledby="cloud-study-jams-modal-title">
@@ -290,6 +349,7 @@
                     <div class="profile-modal-body" style="padding-top: 0;">
                         <div class="profile-modal-main">
                             <section style="margin-bottom: 2rem;">
+                                <img src="/assets/google-cloud-study-jams.png" alt="Google Cloud Study Jams 2025–26 Banner" style="width: 100%; border-radius: var(--radius); box-shadow: var(--shadow-sm); display: block; margin-bottom: 2rem;" />
                                 <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">About This Event</h2>
                                 <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">The <strong>Google Cloud Study Jams 2025–26</strong>, organized by Google Developer Groups (GDG) On Campus at Dronacharya College of Engineering, kicked off on <strong>1 October 2025</strong>. The program provided a comprehensive, practical introduction to cloud computing and Google Cloud technologies, empowering students to dive deep into cloud infrastructure and real-world architectures.</p>
                                 <p style="color: var(--text-secondary); line-height: 1.6;">Through hands-on cloud labs and guided learning activities, attendees explored core Google Cloud services, gained practical exposure to deploying and managing cloud-based resources, and strengthened their problem-solving skills through hands-on experimentation.</p>

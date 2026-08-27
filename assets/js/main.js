@@ -100,7 +100,8 @@ document.addEventListener('DOMContentLoaded', () => {
         { id: 'smashKartsModalOverlay', closeFn: window.closeSmashKartsModal },
         { id: 'hackORelayModalOverlay', closeFn: window.closeHackORelayModal },
         { id: 'geminiModalOverlay', closeFn: window.closeGeminiModal },
-        { id: 'cloudStudyJamsModalOverlay', closeFn: window.closeCloudStudyJamsModal }
+        { id: 'cloudStudyJamsModalOverlay', closeFn: window.closeCloudStudyJamsModal },
+        { id: 'iosIgniteModalOverlay', closeFn: window.closeIosIgniteModal }
     ];
 
     overlays.forEach(overlayData => {
@@ -249,4 +250,24 @@ window.closeCloudStudyJamsModal = function() {
         document.body.style.overflow = '';
     }
 };
+
+// iOS Ignite Modal Logic
+window.openIosIgniteModal = function() {
+    const modal = document.getElementById('iosIgniteModalOverlay');
+    if (modal) {
+        modal.classList.add('active');
+        document.documentElement.style.overflow = 'hidden';
+        document.body.style.overflow = 'hidden';
+    }
+};
+
+window.closeIosIgniteModal = function() {
+    const modal = document.getElementById('iosIgniteModalOverlay');
+    if (modal) {
+        modal.classList.remove('active');
+        document.documentElement.style.overflow = '';
+        document.body.style.overflow = '';
+    }
+};
+
 
