@@ -99,7 +99,8 @@ document.addEventListener('DOMContentLoaded', () => {
         { id: 'gsocModalOverlay', closeFn: window.closeGsocModal },
         { id: 'smashKartsModalOverlay', closeFn: window.closeSmashKartsModal },
         { id: 'hackORelayModalOverlay', closeFn: window.closeHackORelayModal },
-        { id: 'geminiModalOverlay', closeFn: window.closeGeminiModal }
+        { id: 'geminiModalOverlay', closeFn: window.closeGeminiModal },
+        { id: 'cloudStudyJamsModalOverlay', closeFn: window.closeCloudStudyJamsModal }
     ];
 
     overlays.forEach(overlayData => {
@@ -229,3 +230,23 @@ window.closeGeminiModal = function() {
         document.body.style.overflow = '';
     }
 };
+
+// Google Cloud Study Jams Modal Logic
+window.openCloudStudyJamsModal = function() {
+    const modal = document.getElementById('cloudStudyJamsModalOverlay');
+    if (modal) {
+        modal.classList.add('active');
+        document.documentElement.style.overflow = 'hidden';
+        document.body.style.overflow = 'hidden';
+    }
+};
+
+window.closeCloudStudyJamsModal = function() {
+    const modal = document.getElementById('cloudStudyJamsModalOverlay');
+    if (modal) {
+        modal.classList.remove('active');
+        document.documentElement.style.overflow = '';
+        document.body.style.overflow = '';
+    }
+};
+

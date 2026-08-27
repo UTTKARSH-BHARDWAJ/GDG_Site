@@ -99,7 +99,7 @@
 
             <!-- Results Counter -->
             <div style="margin-bottom: 1.5rem; font-weight: 500; font-size: 1.1rem; text-align: left;">
-                <span id="showing-results-text" data-count="7">Showing 7 event results</span>
+                <span id="showing-results-text" data-count="8">Showing 8 event results</span>
             </div>
 
             <!-- Event Cards Grid -->
@@ -244,6 +244,26 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Event Card 8 -->
+                <div class="timeline-item animate-fade-in-up stagger-2">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content content-card">
+                        <div class="card-image-wrapper">
+                            <img src="/gdg_logo.svg" alt="Google Cloud Study Jams" class="card-image" loading="lazy" />
+                            <span class="card-badge">Cloud Study Jam</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-date">📅 30 SEP TO 1ST OCT, 2025</div>
+                            <h3 class="card-title">Google Cloud Study Jams</h3>
+                            <p class="card-desc">The Google Cloud Study Jams 2025–26, hosted by GDG On Campus at Dronacharya College of Engineering, begins on 1 October 2025. Participants dive into Google Cloud Platform fundamentals through hands-on labs and guided activities.</p>
+                            <div class="card-meta">
+                                <div class="card-meta-item">🛠️ Cloud / Workshop</div>
+                                <button class="btn-card" onclick="openCloudStudyJamsModal()">View Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <!-- No Events Placeholder -->
@@ -251,6 +271,46 @@
                 class="coc-section">
                 <p style="font-size: 1.5rem; font-weight: 600; color: var(--muted-foreground);">No events found matching the criteria</p>
             </div>
+
+            <!-- Google Cloud Study Jams Modal -->
+            <div class="profile-modal-overlay" id="cloudStudyJamsModalOverlay" aria-hidden="true">
+                <div class="profile-modal" role="dialog" aria-modal="true" aria-labelledby="cloud-study-jams-modal-title">
+                    <button class="profile-modal-close" onclick="closeCloudStudyJamsModal()" aria-label="Close modal">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                    
+                    <div class="profile-modal-header" style="flex-direction: column; align-items: flex-start; text-align: left; padding-bottom: 0;">
+                        <h2 id="cloud-study-jams-modal-title" style="font-size: 2.5rem; margin-bottom: 0.5rem; color: var(--text-primary);">Google Cloud Study Jams</h2>
+                        <p style="font-size: 1.1rem; color: var(--text-secondary); margin-bottom: 2rem; font-weight: 500;">Google Cloud Study Jams 2025–26 by GDG On Campus – DCE</p>
+                    </div>
+
+                    <div class="profile-modal-body" style="padding-top: 0;">
+                        <div class="profile-modal-main">
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Event Overview</h2>
+                                <p style="color: var(--text-secondary); line-height: 1.6; margin-bottom: 1rem;">The Google Cloud Study Jams 2025–26, hosted by GDG On Campus at Dronacharya College of Engineering, begins on 1 October 2025. Participants dive into Google Cloud Platform fundamentals through hands-on labs and guided activities. Ideal for students eager to explore cloud services, improve technical skills, and understand cloud infrastructure and real-world workflows.</p>
+                            </section>
+
+                            <hr style="border: 0; border-top: 2px solid var(--border); margin: 2rem 0;">
+
+                            <section style="margin-bottom: 2rem;">
+                                <h2 style="font-size: 1.5rem; margin-bottom: 1rem; color: var(--text-primary);">Key Highlights</h2>
+                                <ul style="color: var(--text-secondary); line-height: 1.6; padding-left: 1.2rem; margin-bottom: 1rem;">
+                                    <li>Hands-on experience with Google Cloud Platform (GCP) and cloud architecture.</li>
+                                    <li>Guided labs and interactive skill badges via Google Cloud Skills Boost.</li>
+                                    <li>Practical understanding of cloud infrastructure, networking, storage, and computing services.</li>
+                                    <li>Comprehensive mentorship and support from GDG On Campus DCE leads and facilitators.</li>
+                                    <li>Opportunity to learn real-world cloud workflows and develop career-ready technical skills.</li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- Event Details Modal -->
             <div class="profile-modal-overlay" id="eventModalOverlay" aria-hidden="true">
                 <div class="profile-modal" role="dialog" aria-modal="true" aria-labelledby="eventModalName">
