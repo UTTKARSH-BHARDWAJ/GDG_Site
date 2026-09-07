@@ -29,8 +29,8 @@
                 { icon: "-->", title: "GDG on Campus Lead", desc: "Led the GDG on Campus chapter, organizing events and mentoring aspiring developers." }
             ],
             activity: [
-                {  icon: ">", title: "Project", time: "1 week ago", desc: "Smart Study Planner" },
-                { icon: ">", title: "Data Structures & Algorithms", time: "2 weeks ago", desc: "Successfully Solved 200+ Problems on LeetCode" }
+                {  icon: ">", title: "Project", time: "", desc: "Smart Study Planner" },
+                { icon: ">", title: "Data Structures & Algorithms", time: "", desc: "Successfully Solved 200+ Problems on LeetCode" }
             ]
         },
         "manas-thakur": {
