@@ -194,8 +194,8 @@
                 {  icon: "-->", title: "VOLUNTEER", desc: "GOOGLE GENERATIVE AI WORKSHOP " }
             ],
             activity: [
-                {  icon: ">", title: "Research Internship", time: "1 week ago", desc: "Pursuing a research Internship at Drdo,Dqrs *Agentic Al for Heterogeneous Swarm Coordination of Amphibious Multi-Modal Robots in GPS-Denied Environments*" },
-                {  icon: ">", title: "Drone Development", time: "3 weeks ago", desc: "Participated in India's biggest Drone development competition, Nidar we developed two disaster management drones, integrating mavlink for drone communication and worked on different tech stacks for example Ros, Mavlink etc" }
+                {  icon: ">", title: "Research Internship", time: "", desc: "Pursuing a research Internship at Drdo,Dqrs *Agentic Al for Heterogeneous Swarm Coordination of Amphibious Multi-Modal Robots in GPS-Denied Environments*" },
+                {  icon: ">", title: "Drone Development", time: "", desc: "Participated in India's biggest Drone development competition, Nidar we developed two disaster management drones, integrating mavlink for drone communication and worked on different tech stacks for example Ros, Mavlink etc" }
             ]
         },
         "ujjwal-verma": {
