@@ -210,8 +210,8 @@
                 { icon: "-->", title: "HarkerRank", desc: "Problem Solving & SQL 5 Star Badge" }
             ],
             activity: [
-                { icon: ">", title: "Agentic AI Developer Intern", time: "1 week ago", desc: "Currently an Agentic AI Developer Intern at JK Papers, building enterprise workflows" },
-                { icon: ">", title: "Technical Partner & CTO", time: "1 month ago", desc: "Technical Partner & CTO at Veldon Lab, where I architect distributed sub-services and custom video pipelines." }
+                { icon: ">", title: "Agentic AI Developer Intern", time: "", desc: "Currently an Agentic AI Developer Intern at JK Papers, building enterprise workflows" },
+                { icon: ">", title: "Technical Partner & CTO", time: "", desc: "Technical Partner & CTO at Veldon Lab, where I architect distributed sub-services and custom video pipelines." }
             ]
         },
         "manav-tuli": {
