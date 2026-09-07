@@ -45,8 +45,8 @@
                 {  icon: "-->", title: "Engineers Day Idea Competition (DCE)", desc: ": 2nd place for designing a fire-resistant system for car accidents" }
             ],
             activity: [
-                {  icon: ">", title: "Article", time: "1 week ago", desc: "Is TensorFlow Dying? The Truth Behind AI's Most Debated Framework" },
-                { icon: ">", title: "Research Internship", time: "1 month ago", desc: "Daegu, South Korea– Onsite Worked on advanced computer vision and anomaly detection architectures including YOLO, ResNet, CNN-based models,and Amazon PatchCore for industrial inspection systems." }
+                {  icon: ">", title: "Article", time: "", desc: "Is TensorFlow Dying? The Truth Behind AI's Most Debated Framework" },
+                { icon: ">", title: "Research Internship", time: "", desc: "Daegu, South Korea– Onsite Worked on advanced computer vision and anomaly detection architectures including YOLO, ResNet, CNN-based models,and Amazon PatchCore for industrial inspection systems." }
             ]
         },
         "sohan-rout": {
