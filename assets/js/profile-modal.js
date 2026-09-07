@@ -110,9 +110,9 @@
                 {  icon: "-->", title: "TOP 50 FINISH", desc: "Led team Logic Leap in the Code & Chaos Hackathon, managing fast-paced development and technical implementation."}
             ],
             activity: [
-                {  icon: ">", title: "Optimization", time: "2 days ago", desc: "Exploring advanced data structure optimization to improve the computational efficiency of ML algorithms. " },
-                {  icon: ">", title: "Innovation Engagement", time: "3 weeks ago", desc: "​Engaging with the broader innovation ecosystem through events like India Innovates 2026 and the National Social Summit 2026." },
-                {  icon: ">", title: "Strategic Prompt Engineering", time:"4 week ago", desc: "Refined advanced prompting techniques during the Google Student Ambassador Pitch Night, focusing on optimizing AI-driven outputs for complex problem-solving and engineering workflows."}  ]
+                {  icon: ">", title: "Optimization", time: "", desc: "Exploring advanced data structure optimization to improve the computational efficiency of ML algorithms. " },
+                {  icon: ">", title: "Innovation Engagement", time: "", desc: "​Engaging with the broader innovation ecosystem through events like India Innovates 2026 and the National Social Summit 2026." },
+                {  icon: ">", title: "Strategic Prompt Engineering", time:"", desc: "Refined advanced prompting techniques during the Google Student Ambassador Pitch Night, focusing on optimizing AI-driven outputs for complex problem-solving and engineering workflows."}  ]
         },
         "megha-yadav": {
             name: "Megha Yadav",
