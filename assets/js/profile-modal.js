@@ -278,9 +278,9 @@
                 { icon: "-->", title: "Built Infer", desc: "A Python-based multi-agent AI framework capable of task planning, agent allocation, execution, and output verification for LLM-driven workflows" }
             ],
             activity: [
-                { icon: ">", title: "Building", time: "Now", desc: "I was actively developing Infer, a modular multi-agent AI framework" },
-                { icon: ">", title: "Research", time: "2 weeks ago", desc: "Researching LLM architectures, reasoning systems, and Agentic AI workflows." },
-                { icon: ">", title: "Optimizing", time: "1 month ago", desc: "Expanding and optimizing a self-hosted homelab environment for AI and infrastructure projects." }
+                { icon: ">", title: "Building", time: "", desc: "I was actively developing Infer, a modular multi-agent AI framework" },
+                { icon: ">", title: "Research", time: "", desc: "Researching LLM architectures, reasoning systems, and Agentic AI workflows." },
+                { icon: ">", title: "Optimizing", time: "", desc: "Expanding and optimizing a self-hosted homelab environment for AI and infrastructure projects." }
             ]
         }
     };
