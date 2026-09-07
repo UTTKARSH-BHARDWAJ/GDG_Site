@@ -77,8 +77,8 @@
                 {  icon: "-->", title: "LeetCode ", desc: "Successfully solved 200+ problems on LeetCode." }
             ],
             activity: [
-                {  icon: ">", title: "Internship", time: "2 weeks ago", desc: "Selected as an SWE &ML Intern at LensKart." },
-                {  icon: ">", title: "Open Source Contribution", time: "3 weeks ago", desc: "Contribution to an open Source Computer Vision Project" }
+                {  icon: ">", title: "Internship", time: "", desc: "Selected as an SWE &ML Intern at LensKart." },
+                {  icon: ">", title: "Open Source Contribution", time: "", desc: "Contribution to an open Source Computer Vision Project" }
             ]
         },
         "ankit-yadav": {
