@@ -143,8 +143,8 @@
                 {  icon: "-->", title: "FINALIST IN SMART INDIA HACKATHON", desc: "Developed a real-time navigation system for underground SIMBA Drills using ARuco marker detection and IMU sensors for precise position tracking in GPS-denied conditions. Tech Stack: Python, Frontend Development, 3D Printing, Sensor Detection using Arduino UNO" }
                 ],
             activity: [
-                {  icon: ">", title: "Research Internship", time: "4 days ago", desc: "Currently pursuing Research Internship at IIT Delhi at the Department of Energy  Science and Engineering as working on the project of Evaluation Fuel Requirement" },
-                {  icon: ">", title: "Developing", time: "1 month ago", desc: "I am currently bridging the gap between dynamic software algorithms and physical hardware systems. By developing an automated, Python-based different  engines for different projects" }
+                {  icon: ">", title: "Research Internship", time: "", desc: "Currently pursuing Research Internship at IIT Delhi at the Department of Energy  Science and Engineering as working on the project of Evaluation Fuel Requirement" },
+                {  icon: ">", title: "Developing", time: "", desc: "I am currently bridging the gap between dynamic software algorithms and physical hardware systems. By developing an automated, Python-based different  engines for different projects" }
             ]
         },
         "savita-kumari": {
