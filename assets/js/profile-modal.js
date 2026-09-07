@@ -177,9 +177,9 @@
                 {  icon: "-->", title: "NSS", desc: "Participated in the National Integration Camp (NSS) 2025 organized by Maharshi Dayanand University." }
             ],
             activity: [
-                { icon: ">", title: "Summer Classes", time: "1 week ago", desc: "Currently attending Summer Classes on Full Stack Web Development at Dronacharya College of Engineering, enhancing practical development skills through hands-on learning and projects" },
-                {  icon: ">", title: "Reinventing the Future 2025", time: "1 month ago", desc: " Participated in “Reinventing the Future 2025” event presented by Aditya Birla Group." },
-                {  icon: ">", title: "Projects", time: "1.5 months ago", desc: "Built projects including Buyoh – Retail Platform Landing Page and Netflix Clone using modern web technologies." }
+                { icon: ">", title: "Summer Classes", time: "", desc: "Currently attending Summer Classes on Full Stack Web Development at Dronacharya College of Engineering, enhancing practical development skills through hands-on learning and projects" },
+                {  icon: ">", title: "Reinventing the Future 2025", time: "", desc: " Participated in “Reinventing the Future 2025” event presented by Aditya Birla Group." },
+                {  icon: ">", title: "Projects", time: "", desc: "Built projects including Buyoh – Retail Platform Landing Page and Netflix Clone using modern web technologies." }
             ]
         },
         "sushant-jha": {
