@@ -243,9 +243,9 @@
                 { icon: "-->", title: "Web Development Project", desc: "Designed and developed multiple responsive web projects using modern frontend technologies." }
             ],
             activity: [
-                { icon: ">", title: "UI/UX Design Projects", time: "Goning On", desc: "Working on UI/UX design projects and interactive prototypes using Figma." },
-                { icon: ">", title: "Internship", time: "1 week ago", desc: "Participated in the Uno Minda Internship Program and industry-focused learning sessions." } ,
-                { icon: ">", title: "UI/UX Design Internship", time: "1 month ago", desc: "Building responsive web applications and improving frontend development skills through hands-on projects." },
+                { icon: ">", title: "UI/UX Design Projects", time: "", desc: "Working on UI/UX design projects and interactive prototypes using Figma." },
+                { icon: ">", title: "Internship", time: "", desc: "Participated in the Uno Minda Internship Program and industry-focused learning sessions." } ,
+                { icon: ">", title: "UI/UX Design Internship", time: "", desc: "Building responsive web applications and improving frontend development skills through hands-on projects." },
             ]
         },
         "anamika-prajapati": {
