@@ -261,9 +261,9 @@
                 { icon: "-->", title: "Appreciation Certificate ", desc: " GDG Hackathon Volunteering." }
             ],
             activity: [
-                { icon: ">", title: "Learninig", time: "6 days ago", desc: "Enhancing programming skills in C and Python." },
-                { icon: ">", title: "Web Development", time: "1 month ago", desc: "Building foundational web development projects using HTML and CSS.." },
-                { icon: ">", title: "Connecting", time: "2 months ago", desc: "Participating in technical events, conferences, and volunteering activities to gain practical experience." }
+                { icon: ">", title: "Learninig", time: "", desc: "Enhancing programming skills in C and Python." },
+                { icon: ">", title: "Web Development", time: "", desc: "Building foundational web development projects using HTML and CSS.." },
+                { icon: ">", title: "Connecting", time: "", desc: "Participating in technical events, conferences, and volunteering activities to gain practical experience." }
             ]
         },
         "aryan-rajput": {
