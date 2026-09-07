@@ -160,8 +160,8 @@
                 {  icon: "-->", title: "CODE CONTRIBUTOR", desc: "Contributed to code reviews and frontend best practices in collaborative projects." }
             ],
             activity: [
-                {  icon: ">", title: "Exploring", time: "6 days ago", desc: " Exploring advanced React patterns and Next.js features for scalable applications." },
-                {  icon: ">", title: "Experimenting", time: "2 weeks ago", desc: " Experimenting with modern UI architectures and component-driven development" }
+                {  icon: ">", title: "Exploring", time: "", desc: " Exploring advanced React patterns and Next.js features for scalable applications." },
+                {  icon: ">", title: "Experimenting", time: "", desc: " Experimenting with modern UI architectures and component-driven development" }
             ]
         },
         "kartikey": {
