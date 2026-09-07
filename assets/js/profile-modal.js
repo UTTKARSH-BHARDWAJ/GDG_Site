@@ -93,8 +93,8 @@
                 {  icon: "-->", title: "Infosys Intern", desc: "BFSI Fraud Detection System using Machine Learning" }
             ],
             activity: [
-                {  icon: ">", title: "Internship", time: "1 week ago", desc: "AIML Intern @ Airport Authority of India" },
-                {  icon: ">", title: "Working On", time: "1 month ago", desc: "Climate_Change_Storyteller under Liquid Galaxy" }
+                {  icon: ">", title: "Internship", time: "", desc: "AIML Intern @ Airport Authority of India" },
+                {  icon: ">", title: "Working On", time: "", desc: "Climate_Change_Storyteller under Liquid Galaxy" }
             ]
         },
         "amol-kumar": {
