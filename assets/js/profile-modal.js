@@ -127,8 +127,8 @@
                 {  icon: "-->", title: "ATTENDED" , desc: "IDE Bootcamp,  NEF Innovation Awards"}
             ],
             activity: [
-                {  icon: ">", title: "Building", time: "latest", desc: "Working on AI-powered design workflows and advanced interaction design techniques." },
-                {  icon: ">", title: "Win", time: "1 week ago", desc: "Winner @ Crack the Code 2.0." }
+                {  icon: ">", title: "Building", time: "", desc: "Working on AI-powered design workflows and advanced interaction design techniques." },
+                {  icon: ">", title: "Win", time: "", desc: "Winner @ Crack the Code 2.0." }
             ]
         },
         "ariyan-pal": {
